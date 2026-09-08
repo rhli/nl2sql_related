@@ -1,0 +1,3960 @@
+[
+  {
+    "citekey": "RASAT2022",
+    "title": "RASAT: Integrating Relational Structures into Pretrained Seq2Seq Model for Text-to-SQL",
+    "year": 2022,
+    "venue": "EMNLP",
+    "venue_class": "NLP",
+    "era": "classic",
+    "found_via": "citation",
+    "doi": "",
+    "arxiv": "2205.06983",
+    "url": "https://arxiv.org/abs/2205.06983",
+    "why": "named relation-aware T5 baseline",
+    "source": "curated",
+    "authors": [
+      "Jiexing Qi",
+      "Jingyao Tang",
+      "Ziwei He",
+      "Xiangpeng Wan",
+      "Yu Cheng",
+      "Chenghu Zhou",
+      "Xinbing Wang",
+      "Quanshi Zhang",
+      "Zhouhan Lin"
+    ],
+    "cited_by": [
+      "CodeS2024",
+      "DAILSQL2024"
+    ],
+    "status": "reviewed",
+    "themes": [
+      "pre-llm"
+    ],
+    "benchmarks": [
+      "Spider"
+    ],
+    "problem": "纯 T5 看不到 schema 关系图。",
+    "method": "把关系结构注入预训练 seq2seq 的 self-attention。",
+    "relation": "PLM + 结构偏置的收官工作之一，用来结束「前 LLM 编码器」小节。"
+  },
+  {
+    "citekey": "S2SQL2022",
+    "title": "S2SQL: Injecting Syntax to Question-Schema Interaction Graph Encoder for Text-to-SQL Parsers",
+    "year": 2022,
+    "venue": "Findings of ACL",
+    "venue_class": "NLP",
+    "era": "classic",
+    "found_via": "citation",
+    "doi": "",
+    "arxiv": "2203.06958",
+    "url": "https://arxiv.org/abs/2203.06958",
+    "why": "named syntax-augmented graph encoder",
+    "source": "curated",
+    "authors": [
+      "Binyuan Hui",
+      "Ruiying Geng",
+      "Lihan Wang",
+      "Bowen Qin",
+      "Bowen Li",
+      "Jian Sun",
+      "Yongbin Li"
+    ],
+    "cited_by": [
+      "BIRD2023"
+    ],
+    "status": "reviewed",
+    "themes": [
+      "pre-llm",
+      "schema-linking"
+    ],
+    "benchmarks": [
+      "Spider"
+    ],
+    "problem": "问题句法结构没有被 schema 图编码器利用。",
+    "method": "把句法注入 question-schema interaction graph。",
+    "relation": "图编码器家族的代表，和 RAT-SQL / LGESQL 放在同一段。"
+  },
+  {
+    "citekey": "KaggleDBQA2021",
+    "title": "KaggleDBQA: Realistic Evaluation of Text-to-SQL Parsers",
+    "year": 2021,
+    "venue": "ACL",
+    "venue_class": "NLP",
+    "era": "classic",
+    "found_via": "citation",
+    "doi": "",
+    "arxiv": "",
+    "url": "",
+    "why": "realistic small-domain benchmark",
+    "source": "curated",
+    "authors": [
+      "Chia-Hsuan Lee",
+      "Oleksandr Polozov",
+      "Matthew Richardson"
+    ],
+    "cited_by": [
+      "BIRD2023",
+      "NL2SQL3602024"
+    ],
+    "status": "reviewed",
+    "themes": [
+      "pre-llm",
+      "benchmark"
+    ],
+    "benchmarks": [
+      "KaggleDBQA"
+    ],
+    "problem": "Spider 的库经过规范化，列名对模型过于友好。",
+    "method": "用真实 Kaggle 数据库和更自然的问题做小规模但更难的评测。",
+    "relation": "BIRD 强调 dirty schema / 外部知识，这条线从 KaggleDBQA 就开始了。"
+  },
+  {
+    "citekey": "LGESQL2021",
+    "title": "LGESQL: Line Graph Enhanced Text-to-SQL Model with Mixed Local and Non-Local Relations",
+    "year": 2021,
+    "venue": "ACL",
+    "venue_class": "NLP",
+    "era": "classic",
+    "found_via": "citation",
+    "doi": "",
+    "arxiv": "2106.01093",
+    "url": "https://arxiv.org/abs/2106.01093",
+    "why": "named line-graph schema encoder",
+    "source": "curated",
+    "authors": [
+      "Ruisheng Cao",
+      "Lu Chen",
+      "Zhi Chen",
+      "Yanbin Zhao",
+      "Su Zhu",
+      "Kai Yu"
+    ],
+    "cited_by": [
+      "BIRD2023",
+      "DINSQL2023"
+    ],
+    "status": "reviewed",
+    "themes": [
+      "pre-llm",
+      "schema-linking"
+    ],
+    "benchmarks": [
+      "Spider"
+    ],
+    "problem": "普通 schema 图难以表达边与边之间的高阶关系。",
+    "method": "用 line graph 增强局部/非局部关系建模。",
+    "relation": "RAT-SQL 之后最常被点名的图编码器之一。"
+  },
+  {
+    "citekey": "PICARD2021",
+    "title": "PICARD: Parsing Incrementally for Constrained Auto-Regressive Decoding from Language Models",
+    "year": 2021,
+    "venue": "EMNLP",
+    "venue_class": "NLP",
+    "era": "classic",
+    "found_via": "citation",
+    "doi": "",
+    "arxiv": "2109.05093",
+    "url": "https://arxiv.org/abs/2109.05093",
+    "why": "constrained decoding baseline repeatedly named",
+    "source": "curated",
+    "authors": [
+      "Torsten Scholak",
+      "Nathan Schucher",
+      "Dzmitry Bahdanau"
+    ],
+    "cited_by": [
+      "DINSQL2023",
+      "DAILSQL2024",
+      "CodeS2024"
+    ],
+    "status": "reviewed",
+    "themes": [
+      "pre-llm",
+      "execution"
+    ],
+    "benchmarks": [
+      "Spider"
+    ],
+    "problem": "T5 等 LM 会生成语法非法或引用不存在列的 SQL。",
+    "method": "增量词法/语法检查，拒绝非法 token，把解码约束在可执行 SQL 空间。",
+    "relation": "执行期约束的经典。对照 LLM 时代的 execution-guided repair / DBMS 反馈（SafeQL）。"
+  },
+  {
+    "citekey": "SmBoP2021",
+    "title": "SmBoP: Semi-autoregressive Bottom-up Semantic Parsing",
+    "year": 2021,
+    "venue": "NAACL",
+    "venue_class": "NLP",
+    "era": "classic",
+    "found_via": "citation",
+    "doi": "",
+    "arxiv": "2010.12412",
+    "url": "https://arxiv.org/abs/2010.12412",
+    "why": "named bottom-up decoder baseline",
+    "source": "curated",
+    "authors": [
+      "Ohad Rubin",
+      "Jonathan Berant"
+    ],
+    "cited_by": [
+      "DINSQL2023"
+    ],
+    "status": "reviewed",
+    "themes": [
+      "pre-llm"
+    ],
+    "benchmarks": [
+      "Spider"
+    ],
+    "problem": "自左向右生成难以先构造子树再组合复杂 SQL。",
+    "method": "自底向上、半自回归地组合 SQL 子树。",
+    "relation": "结构解码对照；我们若走 LLM prompting，不必当 baseline 重跑，但 related work 要承认这条线。"
+  },
+  {
+    "citekey": "BRIDGE2020",
+    "title": "Bridging Textual and Tabular Data for Cross-Domain Text-to-SQL Semantic Parsing",
+    "year": 2020,
+    "venue": "Findings of EMNLP",
+    "venue_class": "NLP",
+    "era": "classic",
+    "found_via": "citation",
+    "doi": "",
+    "arxiv": "2012.12627",
+    "url": "https://arxiv.org/abs/2012.12627",
+    "why": "BRIDGE; named BERT-era schema serialization baseline",
+    "source": "curated",
+    "authors": [
+      "Xi Victoria Lin",
+      "Richard Socher",
+      "Caiming Xiong"
+    ],
+    "cited_by": [
+      "BIRD2023",
+      "DINSQL2023"
+    ],
+    "status": "reviewed",
+    "themes": [
+      "pre-llm",
+      "schema-linking"
+    ],
+    "benchmarks": [
+      "Spider"
+    ],
+    "problem": "如何把表结构和单元格值一起喂给预训练语言模型。",
+    "method": "序列化 schema 与被提及的单元格值，用 BERT 做跨模态编码。",
+    "relation": "值接地（value grounding）的前 LLM 代表，对照 BIRD 上的 value retrieval / evidence。"
+  },
+  {
+    "citekey": "RATSQL2020",
+    "title": "RAT-SQL: Relation-Aware Schema Encoding and Linking for Text-to-SQL Parsers",
+    "year": 2020,
+    "venue": "ACL",
+    "venue_class": "NLP",
+    "era": "classic",
+    "found_via": "citation",
+    "doi": "",
+    "arxiv": "1911.04942",
+    "url": "https://arxiv.org/abs/1911.04942",
+    "why": "foundational schema linking encoder; cited as method heading",
+    "source": "curated",
+    "authors": [
+      "Bailin Wang",
+      "Richard Shin",
+      "Xiaodong Liu",
+      "Oleksandr Polozov",
+      "Matthew Richardson"
+    ],
+    "cited_by": [
+      "DINSQL2023",
+      "CodeS2024",
+      "LinkAlign2025"
+    ],
+    "status": "reviewed",
+    "themes": [
+      "pre-llm",
+      "schema-linking"
+    ],
+    "benchmarks": [
+      "Spider"
+    ],
+    "problem": "问题词和 schema 元素的对齐是跨域 NL2SQL 的核心瓶颈。",
+    "method": "用 relation-aware transformer 同时编码问题和 schema 图，显式做 schema linking。",
+    "relation": "schema linking 必引。用来对照「独立 linking 模块」vs「LLM 隐式 linking / death of schema linking」。"
+  },
+  {
+    "citekey": "CoSQL2019",
+    "title": "CoSQL: A Conversational Text-to-SQL Challenge Towards Cross-Domain Natural Language Interfaces to Databases",
+    "year": 2019,
+    "venue": "EMNLP",
+    "venue_class": "NLP",
+    "era": "classic",
+    "found_via": "citation",
+    "doi": "",
+    "arxiv": "1909.05378",
+    "url": "https://arxiv.org/abs/1909.05378",
+    "why": "conversational NL2SQL benchmark",
+    "source": "curated",
+    "authors": [
+      "Tao Yu",
+      "Rui Zhang",
+      "Heyang Er",
+      "Suyi Li",
+      "Eric Xue",
+      "Bo Pang",
+      "Xi Victoria Lin",
+      "Yi Chern Tan",
+      "Tianze Shi",
+      "Zihan Li",
+      "Youxuan Jiang",
+      "Michihiro Yasunaga",
+      "Sungrok Shim",
+      "Tao Chen",
+      "Alexander Fabbri",
+      "Zifan Li",
+      "Luyao Chen",
+      "Yuwen Zhang",
+      "Shreya Dixit",
+      "Vincent Zhang",
+      "Caiming Xiong",
+      "Richard Socher",
+      "Walter Lasecki",
+      "Dragomir Radev"
+    ],
+    "cited_by": [
+      "NL2SQL3602024"
+    ],
+    "status": "reviewed",
+    "themes": [
+      "pre-llm",
+      "benchmark"
+    ],
+    "benchmarks": [
+      "CoSQL"
+    ],
+    "problem": "真实数据库对话包含澄清、拒绝执行、改写请求，不只是连续提问。",
+    "method": "引入 wizard-of-oz 式数据库对话，混合 SQL 与系统回复动作。",
+    "relation": "BIRD-Interact 等新交互评测的前身；用来区分「多轮 Spider」和「真正的 DB 对话」。"
+  },
+  {
+    "citekey": "SParC2019",
+    "title": "SParC: Cross-Domain Semantic Parsing in Context",
+    "year": 2019,
+    "venue": "ACL",
+    "venue_class": "NLP",
+    "era": "classic",
+    "found_via": "citation",
+    "doi": "",
+    "arxiv": "1906.02285",
+    "url": "https://arxiv.org/abs/1906.02285",
+    "why": "context-dependent benchmark sourced from Spider",
+    "source": "curated",
+    "authors": [
+      "Tao Yu",
+      "Rui Zhang",
+      "Michihiro Yasunaga",
+      "Yi Chern Tan",
+      "Xi Victoria Lin",
+      "Suyi Li",
+      "Heyang Er",
+      "Irene Li",
+      "Bo Pang",
+      "Tao Chen",
+      "Emily Ji",
+      "Shreya Dixit",
+      "David Proctor",
+      "Sungrok Shim",
+      "Jonathan Kraft",
+      "Vincent Zhang",
+      "Caiming Xiong",
+      "Richard Socher",
+      "Dragomir Radev"
+    ],
+    "cited_by": [
+      "NL2SQL3602024"
+    ],
+    "status": "reviewed",
+    "themes": [
+      "pre-llm",
+      "benchmark"
+    ],
+    "benchmarks": [
+      "SParC"
+    ],
+    "problem": "单轮 Spider 不能覆盖真实交互里的指代和省略。",
+    "method": "在 Spider 库上标注多轮问题，要求模型跟踪对话上下文。",
+    "relation": "若我们只做单轮 BIRD，这里一笔带过；若相关工作要谈交互式 NL2SQL，SParC/CoSQL 是源头。"
+  },
+  {
+    "citekey": "IRNet2019",
+    "title": "Towards Complex Text-to-SQL in Cross-Domain Database with Intermediate Representation",
+    "year": 2019,
+    "venue": "ACL",
+    "venue_class": "NLP",
+    "era": "classic",
+    "found_via": "citation",
+    "doi": "",
+    "arxiv": "1905.08205",
+    "url": "https://arxiv.org/abs/1905.08205",
+    "why": "IRNet; named SemQL intermediate generation",
+    "source": "curated",
+    "authors": [
+      "Jiaqi Guo",
+      "Zecheng Zhan",
+      "Yan Gao",
+      "Yan Xiao",
+      "Jian-Guang Lou",
+      "Ting Liu",
+      "Dongmei Zhang"
+    ],
+    "cited_by": [
+      "DINSQL2023",
+      "RESDSQL2023"
+    ],
+    "status": "reviewed",
+    "themes": [
+      "pre-llm"
+    ],
+    "benchmarks": [
+      "Spider"
+    ],
+    "problem": "直接生成 SQL 难以处理跨域 schema 对齐和复杂组合。",
+    "method": "先生成与 schema 解耦的 SemQL 中间表示，再确定性转 SQL。",
+    "relation": "中间表示路线的代表。对照 LLM 时代把 IR 换成 CoT / 子问题分解。"
+  },
+  {
+    "citekey": "Spider2018",
+    "title": "Spider: A Large-Scale Human-Labeled Dataset for Complex and Cross-Domain Semantic Parsing and Text-to-SQL Task",
+    "year": 2018,
+    "venue": "EMNLP",
+    "venue_class": "NLP",
+    "era": "classic",
+    "found_via": "citation",
+    "doi": "",
+    "arxiv": "1809.08887",
+    "url": "https://arxiv.org/abs/1809.08887",
+    "why": "canonical cross-domain benchmark",
+    "source": "curated",
+    "authors": [
+      "Tao Yu",
+      "Rui Zhang",
+      "Kai Yang",
+      "Michihiro Yasunaga",
+      "Dongxu Wang",
+      "Zifan Li",
+      "James Ma",
+      "Irene Li",
+      "Qingning Yao",
+      "Shanelle Roman",
+      "Zilin Zhang",
+      "Dragomir Radev"
+    ],
+    "cited_by": [
+      "BIRD2023",
+      "DINSQL2023",
+      "DAILSQL2024",
+      "Spider22025"
+    ],
+    "status": "reviewed",
+    "themes": [
+      "pre-llm",
+      "benchmark"
+    ],
+    "benchmarks": [
+      "Spider"
+    ],
+    "problem": "WikiSQL 只有单表、查询简单，无法衡量跨库泛化。",
+    "method": "发布 200 库、多表复杂 SQL 的人工标注集，成为十年标准榜。",
+    "relation": "必须引的问题设定。我们的主战场是 BIRD，但 Spider 仍是方法对照和历史主线。"
+  },
+  {
+    "citekey": "SyntaxSQLNet2018",
+    "title": "SyntaxSQLNet: Syntax Tree Networks for Complex and Cross-Domain Text-to-SQL Task",
+    "year": 2018,
+    "venue": "EMNLP",
+    "venue_class": "NLP",
+    "era": "classic",
+    "found_via": "citation",
+    "doi": "",
+    "arxiv": "1810.05237",
+    "url": "https://arxiv.org/abs/1810.05237",
+    "why": "first complex Spider-era syntax-tree decoder",
+    "source": "curated",
+    "authors": [
+      "Tao Yu",
+      "Michihiro Yasunaga",
+      "Kai Yang",
+      "Rui Zhang",
+      "Dongxu Wang",
+      "Zifan Li",
+      "Dragomir Radev"
+    ],
+    "cited_by": [
+      "Spider2018",
+      "IRNet2019"
+    ],
+    "status": "reviewed",
+    "themes": [
+      "pre-llm"
+    ],
+    "benchmarks": [
+      "Spider"
+    ],
+    "problem": "WikiSQL 模块无法生成嵌套 SQL。",
+    "method": "按 SQL 语法树模块化解码，是 Spider 早期强基线。",
+    "relation": "复杂 SQL 结构解码的源头，用来开启 Spider 时代。"
+  },
+  {
+    "citekey": "TypeSQL2018",
+    "title": "TypeSQL: Knowledge-based Type-Aware Neural Text-to-SQL Generation",
+    "year": 2018,
+    "venue": "NAACL",
+    "venue_class": "NLP",
+    "era": "classic",
+    "found_via": "citation",
+    "doi": "",
+    "arxiv": "1804.09769",
+    "url": "https://arxiv.org/abs/1804.09769",
+    "why": "founding type-aware slot filling on WikiSQL",
+    "source": "curated",
+    "authors": [
+      "Tao Yu",
+      "Zifan Li",
+      "Zilin Zhang",
+      "Rui Zhang",
+      "Dragomir Radev"
+    ],
+    "cited_by": [
+      "BIRD2023"
+    ],
+    "status": "reviewed",
+    "themes": [
+      "pre-llm"
+    ],
+    "benchmarks": [
+      "WikiSQL"
+    ],
+    "problem": "数字、人名等类型信息没有进入 SQL 填槽。",
+    "method": "把类型/知识特征注入 SQLNet 风格的 sketch 模型。",
+    "relation": "WikiSQL 时代的知识增强；BIRD 的 evidence / 外部知识可以追溯到这里。"
+  },
+  {
+    "citekey": "SQLNet2017",
+    "title": "SQLNet: Generating Structured Queries From Natural Language Without Reinforcement Learning",
+    "year": 2017,
+    "venue": "arXiv",
+    "venue_class": "other",
+    "era": "classic",
+    "found_via": "citation",
+    "doi": "",
+    "arxiv": "1711.04436",
+    "url": "https://arxiv.org/abs/1711.04436",
+    "why": "named founding sketch-based method",
+    "source": "curated",
+    "authors": [
+      "Xiaojun Xu",
+      "Chang Liu",
+      "Dawn Song"
+    ],
+    "cited_by": [
+      "DINSQL2023",
+      "CodeS2024"
+    ],
+    "status": "reviewed",
+    "themes": [
+      "pre-llm"
+    ],
+    "benchmarks": [
+      "WikiSQL"
+    ],
+    "problem": "Seq2SQL 的 RL 训练不稳定，且 SQL 序列生成会受词序影响。",
+    "method": "用 sketch 填槽代替自左向右解码，避开强化学习。",
+    "relation": "用来说明前 LLM 一代如何把 SQL 结构先验写进模型，对照现在把结构先验放到 prompt/约束解码。"
+  },
+  {
+    "citekey": "Seq2SQL2017",
+    "title": "Seq2SQL: Generating Structured Queries from Natural Language using Reinforcement Learning",
+    "year": 2017,
+    "venue": "arXiv / WikiSQL",
+    "venue_class": "other",
+    "era": "classic",
+    "found_via": "citation",
+    "doi": "",
+    "arxiv": "1709.00103",
+    "url": "https://arxiv.org/abs/1709.00103",
+    "why": "founding neural generation + WikiSQL benchmark",
+    "source": "curated",
+    "authors": [
+      "Victor Zhong",
+      "Caiming Xiong",
+      "Richard Socher"
+    ],
+    "cited_by": [
+      "DINSQL2023",
+      "DAILSQL2024",
+      "BIRD2023"
+    ],
+    "status": "reviewed",
+    "themes": [
+      "pre-llm",
+      "benchmark"
+    ],
+    "benchmarks": [
+      "WikiSQL"
+    ],
+    "problem": "把 NL 直接映射到 SQL，当时缺少大规模标注。",
+    "method": "提出 WikiSQL，并用强化学习（Seq2SQL）按 SQL 子句生成查询。",
+    "relation": "related work 里「第一代 neural NL2SQL」的起点；WikiSQL 单表设定用来对照 Spider/BIRD 的跨库难度。"
+  },
+  {
+    "title": "A Comparative Evaluation of Schema Subsetting for LLM-based NL-to-SQL over Large-Schema Databases",
+    "year": 2026,
+    "venue": "VLDB",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.14778/3819518.3819531",
+    "arxiv": "",
+    "url": "https://www.vldb.org/pvldb/vol19/p2019-luoma.pdf",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Kyle Luoma",
+      "Arun Kumar"
+    ],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "benchmark"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：A Comparative Evaluation of Schema Subsetting for LLM-based NL-to-SQL over Large-Schema Databases。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "NLtoSQL2026"
+  },
+  {
+    "title": "Ambi SQL: Interactive Ambiguity Detection and Resolution for Text-to-SQL",
+    "year": 2026,
+    "venue": "SIGMOD Companion",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.1145/3788853.3801581",
+    "arxiv": "",
+    "url": "https://doi.org/10.1145/3788853.3801581",
+    "why": "Crossref title+container whitelist",
+    "source": "crossref",
+    "authors": [
+      "Zhongjun Ding",
+      "Yin Lin",
+      "Tianjing Zeng",
+      "Rong Zhu",
+      "Bolin Ding",
+      "Jingren Zhou"
+    ],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：Ambi SQL: Interactive Ambiguity Detection and Resolution for Text-to-SQL。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "AmbiSqlInteractiveAmbiguity2026"
+  },
+  {
+    "title": "An Efficient and Effective Evaluator for Text2SQL Models on Unseen and Unlabeled Data",
+    "year": 2026,
+    "venue": "ICDE",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "2603.07841",
+    "url": "https://arxiv.org/abs/2603.07841",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "benchmark"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：An Efficient and Effective Evaluator for Text2SQL Models on Unseen and Unlabeled Data。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "Text2SQL2026"
+  },
+  {
+    "title": "Boosting Small Language Models for Text-to-SQL with Fine-Grained Execution Feedback and Cost-Efficient Rewards",
+    "year": 2026,
+    "venue": "ICDE",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.1109/icde65706.2026.00183",
+    "arxiv": "2605.03465",
+    "url": "https://arxiv.org/abs/2605.03465",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Thanh Dat Hoang",
+      "Thanh Trung Huynh",
+      "Matthias Weidlich",
+      "Thanh Tam Nguyen",
+      "Tong Chen",
+      "Hongzhi Yin",
+      "Quoc Viet Hung Nguyen"
+    ],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "execution",
+      "systems"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：Boosting Small Language Models for Text-to-SQL with Fine-Grained Execution Feedback and Cost-Efficient Rewards。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "BoostingSmallLanguageModels2026"
+  },
+  {
+    "title": "Bridging NL2SQL for CAN Signal Analytics at NIO: From Externalized Schemas to CTE Pipelines",
+    "year": 2026,
+    "venue": "VLDB",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "",
+    "url": "https://www.vldb.org/pvldb/vol19/p4330-zhou.pdf",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：Bridging NL2SQL for CAN Signal Analytics at NIO: From Externalized Schemas to CTE Pipelines。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "BridgingNl2SqlCanSignal2026"
+  },
+  {
+    "title": "CYANSQL: Unlock the Power of NL2SQL via Clustering-based Test-Time Scaling",
+    "year": 2026,
+    "venue": "ICDE",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.1109/icde65706.2026.00084",
+    "arxiv": "",
+    "url": "",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Haoyu Qin",
+      "Tonghui Ren",
+      "Zhenying He",
+      "X.Sean Wang",
+      "Jiashu Xing",
+      "Yanghuan Ye",
+      "Shifei Huang",
+      "Jinbao Li"
+    ],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：CYANSQL: Unlock the Power of NL2SQL via Clustering-based Test-Time Scaling。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "CYANSQL2026"
+  },
+  {
+    "title": "Comparison and Analysis of Value Linking in Text-to-SQL systems: [Experiments & Analysis]",
+    "year": 2026,
+    "venue": "SIGMOD",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.1145/3802029",
+    "arxiv": "",
+    "url": "https://dl.acm.org/doi/10.1145/3802029",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Apostolos Koukouvinis",
+      "George Katsogiannis-Meimarakis",
+      "Georgia Koutrika"
+    ],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "schema-linking",
+      "systems"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：Comparison and Analysis of Value Linking in Text-to-SQL systems: [Experiments & Analysis]。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "ComparisonAnalysisValueLinking2026"
+  },
+  {
+    "title": "DIVER: A Robust Text-to-SQL System with Dynamic Interactive Value Linking and Evidence Reasoning",
+    "year": 2026,
+    "venue": "SIGMOD",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.1145/3786640",
+    "arxiv": "",
+    "url": "https://dl.acm.org/doi/10.1145/3786640",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Yafeng Nan",
+      "Haifeng Sun",
+      "Zirui Zhuang",
+      "Qi Qi",
+      "Guojun Chu",
+      "Jianxin Liao",
+      "Dan Pei",
+      "Jingyu Wang"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "schema-linking",
+      "systems"
+    ],
+    "benchmarks": [
+      "BIRD"
+    ],
+    "citekey": "DIVER2026",
+    "problem": "BIRD 上 value linking 与 evidence 推理仍然脆弱。",
+    "method": "动态交互式 value linking + evidence reasoning，带工具箱和结构化工作区。",
+    "relation": "值接地 / evidence 段的 2026 对照。BIRD 外部知识题要引。"
+  },
+  {
+    "title": "DeepEye-SQL: A Software-Engineering-Inspired Text-to-SQL Framework",
+    "year": 2026,
+    "venue": "SIGMOD",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.1145/3802035",
+    "arxiv": "2510.17586",
+    "url": "https://arxiv.org/abs/2510.17586",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Boyan Li",
+      "Chong Chen",
+      "Zhujun Xue",
+      "Yinan Mei",
+      "Yuyu Luo"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "multi-agent",
+      "systems"
+    ],
+    "benchmarks": [
+      "BIRD"
+    ],
+    "citekey": "DeepEyeSQL2026",
+    "problem": "现有 agent 流水线缺少软件工程式的阶段门控和质量保证。",
+    "method": "把 SDLC 思想搬到 Text-to-SQL：分阶段开发、验证、修复。",
+    "relation": "2026 SIGMOD 的系统/agent 对照。强调工程化 workflow，而不是单点 prompting。"
+  },
+  {
+    "title": "Developing and Benchmarking Verification Algorithms to Improve Text-to-SQL Generation",
+    "year": 2026,
+    "venue": "VLDB",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.14778/3836663.3836721",
+    "arxiv": "",
+    "url": "https://www.vldb.org/pvldb/vol19/p3732-alrashed.pdf",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Tarfah Alrashed",
+      "Madhup Sukoon",
+      "David R. Karger",
+      "Natasha Noy"
+    ],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "execution",
+      "benchmark"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：Developing and Benchmarking Verification Algorithms to Improve Text-to-SQL Generation。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "DevelopingBenchmarkingVerificationAlgorithms2026"
+  },
+  {
+    "title": "Dial: A Knowledge-Grounded Dialect-Specific NL2SQL System",
+    "year": 2026,
+    "venue": "VLDB",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.14778/3836663.3836720",
+    "arxiv": "",
+    "url": "https://www.vldb.org/pvldb/vol19/p3718-zhou.pdf",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Xiang Zhang",
+      "Hongming Xu",
+      "Le Zhou",
+      "Wei Zhou",
+      "Xuanhe Zhou",
+      "Guoliang Li",
+      "Yuyu Luo",
+      "Changdong Liu",
+      "Guorun Chen",
+      "Jiang Liao",
+      "Fan Wu"
+    ],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "systems"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：Dial: A Knowledge-Grounded Dialect-Specific NL2SQL System。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "DialKnowledgeGroundedDialect2026"
+  },
+  {
+    "title": "Hexgen-Flow: Optimizing LLM Inference Request Scheduling for Agentic Text-to-SQL",
+    "year": 2026,
+    "venue": "ICDE",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.1109/icde65706.2026.00134",
+    "arxiv": "2505.05286",
+    "url": "https://arxiv.org/abs/2505.05286",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "You Peng",
+      "Youhe Jiang",
+      "Wenqi Jiang",
+      "Chen Wang",
+      "Binhang Yuan"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "systems"
+    ],
+    "benchmarks": [],
+    "citekey": "HexGenFlow2026",
+    "problem": "agentic Text-to-SQL 的多轮 LLM 请求调度开销大。",
+    "method": "优化 LLM 推理请求调度，降低 agent 流水线的延迟和成本。",
+    "relation": "系统段：证明 agentic NL2SQL 的成本问题已经被 DB 社区认真对待。"
+  },
+  {
+    "title": "Knapsack Optimization-based Schema Linking for LLM-based Text-to-SQL Generation",
+    "year": 2026,
+    "venue": "ICDE",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.1109/icde65706.2026.00046",
+    "arxiv": "2502.12911",
+    "url": "https://arxiv.org/abs/2502.12911",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Zheng Yuan",
+      "Hao Chen",
+      "Zijin Hong",
+      "Qinggang Zhang",
+      "Feiran Huang",
+      "Qing Li",
+      "Xiao Huang"
+    ],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "schema-linking"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：Knapsack Optimization-based Schema Linking for LLM-based Text-to-SQL Generation。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "KnapsackOptimizationBasedSchema2026"
+  },
+  {
+    "title": "LEAF-SQL: Level-wise Exploration with Adaptive Fine-graining for Text-to-SQL Skeleton Prediction",
+    "year": 2026,
+    "venue": "ICDE",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.1109/icde65706.2026.00181",
+    "arxiv": "",
+    "url": "https://github.com/Atlamtiz/LEAF-SQL",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Zhao Tan",
+      "Xiping Liu",
+      "Qing Shu",
+      "Qizhi Wan",
+      "Dexi Liu",
+      "Changxuan Wan"
+    ],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：LEAF-SQL: Level-wise Exploration with Adaptive Fine-graining for Text-to-SQL Skeleton Prediction。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "LEAFSQL2026"
+  },
+  {
+    "title": "MM2SQL: A Benchmark and Method for Visually-Grounded SQL Generation",
+    "year": 2026,
+    "venue": "ICDE",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "",
+    "url": "",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "benchmark"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：MM2SQL: A Benchmark and Method for Visually-Grounded SQL Generation。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "MM2SQL2026"
+  },
+  {
+    "title": "NL2SQLBench: A Modular Benchmarking Framework for LLM-Enabled NL2SQL Solutions",
+    "year": 2026,
+    "venue": "VLDB",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.14778/3796195.3796211",
+    "arxiv": "",
+    "url": "https://www.vldb.org/pvldb/vol19/p1001-hou.pdf",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Shizheng Hou",
+      "Wenqi Pei",
+      "Nuo Chen",
+      "Quang-Trung Ta",
+      "Peng Lu",
+      "Beng Chin Ooi"
+    ],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "benchmark"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：NL2SQLBench: A Modular Benchmarking Framework for LLM-Enabled NL2SQL Solutions。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "Nl2SqlbenchModularBenchmarkingFramework2026"
+  },
+  {
+    "title": "OpenSQL: Data-Efficient Text-to-SQL for Open-Source LLMs via Synthesized Intermediate Supervision",
+    "year": 2026,
+    "venue": "VLDB",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.14778/3801059.3801074",
+    "arxiv": "",
+    "url": "https://www.vldb.org/pvldb/vol19/p1628-li.pdf",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Ruilin Hu",
+      "Yuyu Luo",
+      "Guoliang Li",
+      "Shuangqiao Wu",
+      "Yun Luo"
+    ],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "finetuning"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：OpenSQL: Data-Efficient Text-to-SQL for Open-Source LLMs via Synthesized Intermediate Supervision。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "OpenSQL2026"
+  },
+  {
+    "title": "PRISM: Navigating Cost–Accuracy Trade-offs for NL2SQL",
+    "year": 2026,
+    "venue": "SIGMOD",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.1145/3786679",
+    "arxiv": "",
+    "url": "https://dl.acm.org/doi/10.1145/3786679",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Gaurav Tarlok Kakkar",
+      "Yeounoh Chung",
+      "Fatma Özcan",
+      "Steve Mussmann",
+      "Joy Arulraj"
+    ],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "systems"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：PRISM: Navigating Cost–Accuracy Trade-offs for NL2SQL。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "PrismNavigatingCostAccuracy2026"
+  },
+  {
+    "title": "Pervasive Annotation Errors Break Text-to-SQL Benchmarks and Leaderboards",
+    "year": 2026,
+    "venue": "VLDB",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.14778/3796195.3796206",
+    "arxiv": "2601.08778",
+    "url": "https://arxiv.org/abs/2601.08778",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Tengjun Jin",
+      "Yoojin Choi",
+      "Yuxuan Zhu",
+      "Daniel Kang"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "benchmark"
+    ],
+    "benchmarks": [
+      "BIRD",
+      "Spider"
+    ],
+    "citekey": "AnnotationErrors2026",
+    "problem": "标注错误会让 leaderboard 失真。",
+    "method": "量化 Text-to-SQL 基准中的 pervasive annotation errors。",
+    "relation": "评测可信度。报 top-1 时必须面对「榜本身有噪声」。"
+  },
+  {
+    "title": "Reliable Answers for Recurring Questions: Boosting Text-to-SQL Accuracy with Template-Constrained Decoding",
+    "year": 2026,
+    "venue": "SIGMOD",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.1145/3769822",
+    "arxiv": "",
+    "url": "https://dl.acm.org/doi/10.1145/3769822",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Smit Jivani",
+      "Sarvam Maheshwari",
+      "Sunita Sarawagi"
+    ],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：Reliable Answers for Recurring Questions: Boosting Text-to-SQL Accuracy with Template-Constrained Decoding。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "ReliableAnswersRecurringQuestions2026"
+  },
+  {
+    "title": "Reward-SQL: Boosting Text-to-SQL via Stepwise Execution-Aware Reasoning and Process-Supervised Rewards",
+    "year": 2026,
+    "venue": "SIGMOD",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.1145/3802105",
+    "arxiv": "",
+    "url": "https://dl.acm.org/doi/10.1145/3802105",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Yuxin Zhang",
+      "Meihao Fan",
+      "Ju Fan",
+      "Mingyang Yi",
+      "Yuyu Luo",
+      "Guoliang Li",
+      "Bin Wu",
+      "Wenchao Zhou"
+    ],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "execution"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：Reward-SQL: Boosting Text-to-SQL via Stepwise Execution-Aware Reasoning and Process-Supervised Rewards。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "RewardSQL2026"
+  },
+  {
+    "title": "SQL-Exchange: Transforming SQL Queries Across Domains",
+    "year": 2026,
+    "venue": "VLDB",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "",
+    "url": "https://www.vldb.org/pvldb/vol19/p1291-daviran.pdf",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "systems"
+    ],
+    "benchmarks": [],
+    "citekey": "SQLExchange2026",
+    "problem": "NL2SQL 的训练/评测数据难以跨域迁移。",
+    "method": "把 SQL 查询在域之间转换，扩充跨域数据。",
+    "relation": "数据增广对照；与 NL2SQL 主线相邻，写数据合成段时可一句带过。"
+  },
+  {
+    "title": "SQL-Factory: A Multi-Agent Framework for High-Quality and Large-Scale SQL Generation",
+    "year": 2026,
+    "venue": "VLDB",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "2504.14837",
+    "url": "https://arxiv.org/pdf/2504.14837",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "multi-agent"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：SQL-Factory: A Multi-Agent Framework for High-Quality and Large-Scale SQL Generation。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "SqlFactoryMultiAgent2026"
+  },
+  {
+    "title": "SQLMorph: Query Mutation and Fine-Grained Metrics for Text-to-SQL Evaluation",
+    "year": 2026,
+    "venue": "ICDE",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.1109/icde65706.2026.00196",
+    "arxiv": "",
+    "url": "https://amine.io/papers/2026-icde-sqlmorph.pdf",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Mohammadhossein Malekpour",
+      "Mohamed Riahi",
+      "Maxime Lamothe",
+      "Amine Mhedhbi"
+    ],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "benchmark"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：SQLMorph: Query Mutation and Fine-Grained Metrics for Text-to-SQL Evaluation。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "SqlmorphQueryMutationFine2026"
+  },
+  {
+    "title": "SafeQL: Search-based Refinement for Safe and Efficient LLM-based Text-to-SQL",
+    "year": 2026,
+    "venue": "VLDB",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.14778/3819518.3819545",
+    "arxiv": "",
+    "url": "https://www.vldb.org/pvldb/vol19/p2210-lee.pdf",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Geonho Lee",
+      "Min-Soo Kim"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "execution"
+    ],
+    "benchmarks": [
+      "BIRD",
+      "Spider"
+    ],
+    "citekey": "SafeQL2026",
+    "problem": "失败后整句重生成，DBMS 只当报错器。",
+    "method": "把 DBMS 反馈变成对错误子句的引导搜索，在安全查询空间里修。",
+    "relation": "执行反馈段 2026 代表。我们的 repair 循环要说明是否也把 DBMS 当主动指导。"
+  },
+  {
+    "title": "SchemaRAG: A Schema-aware Retrieval-Augmented Generation Framework for Text-to-SQL",
+    "year": 2026,
+    "venue": "SIGMOD",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.1145/3786696",
+    "arxiv": "",
+    "url": "https://dl.acm.org/doi/10.1145/3786696",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Di Wu",
+      "Zetong Tang",
+      "Yi He",
+      "Xin Luo"
+    ],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "schema-linking"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：SchemaRAG: A Schema-aware Retrieval-Augmented Generation Framework for Text-to-SQL。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "SchemaragSchemaAwareRetrieval2026"
+  },
+  {
+    "title": "TACO: A Benchmark for Open-Domain Text-to-SQL with Ambiguous and Cross-Database Queries",
+    "year": 2026,
+    "venue": "VLDB",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.14778/3797919.3797942",
+    "arxiv": "",
+    "url": "https://www.vldb.org/pvldb/vol19/p1386-fan.pdf",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Chao Deng",
+      "Ju Fan",
+      "Yuyu Luo",
+      "Qinliang Xue",
+      "Meihao Fan",
+      "Yuxin Zhang",
+      "Min Zhang",
+      "Xiaofeng Jia",
+      "Jing Zhang",
+      "Xiaoyong Du"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "benchmark"
+    ],
+    "benchmarks": [
+      "TACO"
+    ],
+    "citekey": "TACO2026",
+    "problem": "现有榜很少同时覆盖歧义和跨库检索。",
+    "method": "开放域、歧义、跨库 Text-to-SQL 基准。",
+    "relation": "2026 新评测，用来说明 BIRD 仍假设库已知。"
+  },
+  {
+    "title": "Text2SQL-Flow: A Robust SQL-Aware Data Augmentation Framework for Text-to-SQL",
+    "year": 2026,
+    "venue": "ICDE",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.1109/icde65706.2026.00267",
+    "arxiv": "2511.10192",
+    "url": "https://arxiv.org/abs/2511.10192",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Qifeng Cai",
+      "Hao Liang",
+      "Chang Xu",
+      "Tao Xie",
+      "Wentao Zhang",
+      "Bin Cui"
+    ],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：Text2SQL-Flow: A Robust SQL-Aware Data Augmentation Framework for Text-to-SQL。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "Text2SQL2026v2"
+  },
+  {
+    "title": "When Text-to-SQL Evaluation Misleads: Rethinking Benchmarking Practices",
+    "year": 2026,
+    "venue": "ICDE",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.1109/icde65706.2026.00364",
+    "arxiv": "",
+    "url": "https://doi.org/10.1109/icde65706.2026.00364",
+    "why": "Crossref title+container whitelist",
+    "source": "crossref",
+    "authors": [
+      "Oktie Hassanzadeh",
+      "Yotam Perlitz",
+      "Nhan Pham",
+      "Timothy Dinger",
+      "Tanvi Kaple",
+      "Long Vu",
+      "Michael Glass",
+      "Dharmashankar Subramanian"
+    ],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "benchmark"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：When Text-to-SQL Evaluation Misleads: Rethinking Benchmarking Practices。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "WhenTextSqlEvaluation2026"
+  },
+  {
+    "title": "AID-SQL: Adaptive In-Context Learning of Text-to-SQL with Difficulty-Aware Instruction and Retrieval-Augmented Generation",
+    "year": 2025,
+    "venue": "ICDE",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.1109/icde65448.2025.00294",
+    "arxiv": "",
+    "url": "https://www.computer.org/csdl/proceedings-article/icde/2025/360300d945/26FZCc99mg0",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Xiuwen Li",
+      "Qifeng Cai",
+      "Yang Shu",
+      "Chenjuan Guo",
+      "Bin Yang"
+    ],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：AID-SQL: Adaptive In-Context Learning of Text-to-SQL with Difficulty-Aware Instruction and Retrieval-Augmented Generation。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "AIDSQL2025"
+  },
+  {
+    "citekey": "AgentarScaleSQL2025",
+    "title": "Agentar-Scale-SQL: Advancing Text-to-SQL through Orchestrated Test-Time Scaling",
+    "year": 2025,
+    "venue": "arXiv",
+    "venue_class": "other",
+    "era": "llm",
+    "found_via": "leaderboard",
+    "doi": "",
+    "arxiv": "2509.24403",
+    "url": "https://arxiv.org/abs/2509.24403",
+    "why": "BIRD test 81.67（Ant Group），orchestrated test-time scaling",
+    "source": "curated",
+    "authors": [
+      "Pengfei Wang",
+      "Baolin Sun",
+      "Xuemei Dong",
+      "Yaxun Dai",
+      "Hongwei Yuan",
+      "Mengdie Chu",
+      "Yingqi Gao",
+      "Xiang Qi",
+      "Peng Zhang",
+      "Ying Yan"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "multi-agent",
+      "execution"
+    ],
+    "benchmarks": [
+      "BIRD"
+    ],
+    "problem": "测试时扩展各组件（分解、候选、校验）孤立使用收益有限。",
+    "method": "把任务分解、多候选生成、执行反馈校验编排成统一的 test-time scaling 流水线。",
+    "relation": "蚂蚁集团上榜系统（test 81.67），「编排式 TTS」和我们系统的流水线设计直接对照。"
+  },
+  {
+    "title": "Alpha-SQL: Zero-Shot Text-to-SQL using Monte Carlo Tree Search",
+    "year": 2025,
+    "venue": "ICML",
+    "venue_class": "ML",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "2502.17248",
+    "url": "https://arxiv.org/abs/2502.17248",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Boyan Li",
+      "Jiayi Zhang",
+      "Ju Fan",
+      "Yanwei Xu",
+      "Chong Chen",
+      "Nan Tang",
+      "Yuyu Luo"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "execution",
+      "multi-agent"
+    ],
+    "benchmarks": [
+      "BIRD"
+    ],
+    "citekey": "AlphaSQL2025",
+    "problem": "零样本模型不会搜索中间 SQL 假设。",
+    "method": "用 MCTS 在执行反馈上搜索 SQL，无需任务微调。",
+    "relation": "测试时搜索对照。和自校正循环、SafeQL 的 DBMS 引导搜索放在一段。"
+  },
+  {
+    "citekey": "ArcticText2SQLR12025",
+    "title": "Arctic-Text2SQL-R1: Simple Rewards, Strong Reasoning in Text-to-SQL",
+    "year": 2025,
+    "venue": "arXiv",
+    "venue_class": "other",
+    "era": "llm",
+    "found_via": "leaderboard",
+    "doi": "",
+    "arxiv": "2505.20315",
+    "url": "https://arxiv.org/abs/2505.20315",
+    "why": "Snowflake 单模型 track 强基线（32B test 73.84）",
+    "source": "curated",
+    "authors": [
+      "Zhewei Yao",
+      "Guoheng Sun",
+      "Lukasz Borchmann",
+      "Gaurav Nuti",
+      "Zheyu Shen",
+      "Minghang Deng",
+      "Bohan Zhai",
+      "Hao Zhang",
+      "Ang Li",
+      "Yuxiong He"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "finetuning",
+      "execution"
+    ],
+    "benchmarks": [
+      "BIRD",
+      "Spider"
+    ],
+    "problem": "RL 训 Text-to-SQL 的奖励设计被普遍认为需要复杂塑形。",
+    "method": "反其道而行：只用简单执行奖励 + GRPO，就在 7B-32B 上训出强推理模型。",
+    "relation": "单模型 track 前排，证明简单 RL 奖励就够；训练段必引的 Snowflake 工作。"
+  },
+  {
+    "title": "Are Your LLM-based Text-to-SQL Models Secure? Exploring SQL Injection via Backdoor Attacks",
+    "year": 2025,
+    "venue": "SIGMOD",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.1145/3769762",
+    "arxiv": "",
+    "url": "https://doi.org/10.1145/3769762",
+    "why": "Crossref title+container whitelist",
+    "source": "crossref",
+    "authors": [
+      "Meiyu Lin",
+      "Haichuan Zhang",
+      "Jiale Lao",
+      "Renyuan Li",
+      "Yuanchun Zhou",
+      "Carl Yang",
+      "Yang Cao",
+      "Mingjie Tang"
+    ],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：Are Your LLM-based Text-to-SQL Models Secure? Exploring SQL Injection via Backdoor Attacks。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "AreYourLlmBased2025"
+  },
+  {
+    "title": "Automated Validating and Fixing of Text-to-SQL Translation with Execution Consistency",
+    "year": 2025,
+    "venue": "SIGMOD",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.1145/3725271",
+    "arxiv": "",
+    "url": "https://ipads.se.sjtu.edu.cn/zh/publications/SQLDriller.pdf",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Yicun Yang",
+      "Zhaoguo Wang",
+      "Yu Xia",
+      "Zhuoran Wei",
+      "Haoran Ding",
+      "Ruzica Piskac",
+      "Haibo Chen",
+      "Jinyang Li"
+    ],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "execution"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：Automated Validating and Fixing of Text-to-SQL Translation with Execution Consistency。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "AutomatedValidatingFixingText2025"
+  },
+  {
+    "citekey": "AskData2025",
+    "title": "Automatic Metadata Extraction for Text-to-SQL",
+    "year": 2025,
+    "venue": "arXiv",
+    "venue_class": "other",
+    "era": "llm",
+    "found_via": "leaderboard",
+    "doi": "",
+    "arxiv": "2505.19988",
+    "url": "https://arxiv.org/abs/2505.19988",
+    "why": "AT&T AskData + GPT-4o（BIRD test 81.95）挂名的公开论文",
+    "source": "curated",
+    "authors": [
+      "Vladislav Shkapenyuk",
+      "Divesh Srivastava",
+      "Theodore Johnson",
+      "Parisa Ghane"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "schema-linking",
+      "systems"
+    ],
+    "benchmarks": [
+      "BIRD"
+    ],
+    "problem": "工业库缺注释，LLM 看不到列语义，AskData 这类系统先要补元数据。",
+    "method": "自动从库内容和查询日志抽取 text-to-SQL 所需的元数据/描述。",
+    "relation": "榜上第 3 的工业系统公开出来的核心组件；说明元数据准备本身就是贡献点。"
+  },
+  {
+    "title": "CHASE-SQL: Multi-Path Reasoning and Preference Optimized Candidate Selection in Text-to-SQL",
+    "year": 2025,
+    "venue": "ICLR",
+    "venue_class": "ML",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "2410.01943",
+    "url": "https://arxiv.org/pdf/2410.01943v1",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Mohammadreza Pourreza",
+      "Hailong Li",
+      "Ruoxi Sun",
+      "Yeounoh Chung",
+      "Shayan Talaei",
+      "Gaurav Tarlok Kakkar",
+      "Yu Gan",
+      "Amin Saberi",
+      "Fatma Ozcan",
+      "Sercan O. Arik"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "multi-agent",
+      "prompting"
+    ],
+    "benchmarks": [
+      "BIRD"
+    ],
+    "citekey": "CHASESQL2025",
+    "problem": "单一推理路径覆盖不了复杂题，多数投票也选不好候选。",
+    "method": "多路径生成（分治、执行计划 CoT、实例感知示例）+ 成对偏好选择 agent。",
+    "relation": "BIRD 上测试时扩展 / 多候选选择的关键 SOTA。我们的选 SQL 策略必须对着它写。"
+  },
+  {
+    "title": "CLEAR: A Parser-Independent Disambiguation Framework for NL2SQL",
+    "year": 2025,
+    "venue": "ICDE",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.1109/icde65448.2025.00247",
+    "arxiv": "",
+    "url": "https://www.computer.org/csdl/proceedings-article/icde/2025/360300d302/26FZBD2hBJe",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Meng Zhang",
+      "Kexin Ma",
+      "Liyang Xu",
+      "Kedi Zhang",
+      "Yuanxi Peng",
+      "Ruochun Jin"
+    ],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：CLEAR: A Parser-Independent Disambiguation Framework for NL2SQL。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "ClearParserIndependentDisambiguation2025"
+  },
+  {
+    "citekey": "CSCSQL2025",
+    "title": "CSC-SQL: Corrective Self-Consistency in Text-to-SQL via Reinforcement Learning",
+    "year": 2025,
+    "venue": "arXiv",
+    "venue_class": "other",
+    "era": "llm",
+    "found_via": "leaderboard",
+    "doi": "",
+    "arxiv": "2505.13271",
+    "url": "https://arxiv.org/abs/2505.13271",
+    "why": "BIRD 榜 CSC-SQL 32B/7B（test 73.67 / 71.72）",
+    "source": "curated",
+    "authors": [
+      "Lei Sheng",
+      "Shuai-Shuai Xu"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "finetuning",
+      "execution"
+    ],
+    "benchmarks": [
+      "BIRD",
+      "Spider"
+    ],
+    "problem": "多数投票选候选时，错误候选之间也会互相「投」出一致错误。",
+    "method": "用 RL（GRPO）训出纠错式自一致性：先并行采样，再让模型修正后投票。",
+    "relation": "self-consistency 的升级版，32B 开源模型打到 73+；候选选择段的开源对照。"
+  },
+  {
+    "title": "DCG-SQL: Enhancing In-Context Learning for Text-to-SQL with Deep Contextual Schema Link Graph",
+    "year": 2025,
+    "venue": "ACL",
+    "venue_class": "NLP",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "2505.19956",
+    "url": "https://arxiv.org/abs/2505.19956",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "schema-linking",
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：DCG-SQL: Enhancing In-Context Learning for Text-to-SQL with Deep Contextual Schema Link Graph。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "DCGSQL2025"
+  },
+  {
+    "title": "EVOSCHEMA: TOWARDS TEXT-TO-SQL ROBUSTNESS AGAINST SCHEMA EVOLUTION",
+    "year": 2025,
+    "venue": "VLDB",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.14778/3748191.3748222",
+    "arxiv": "",
+    "url": "https://openreview.net/pdf?id=NfUHBaZdLw",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Tianshu Zhang",
+      "Kun Qian",
+      "Siddhartha Sahai",
+      "Yuan Tian",
+      "Shaddy Garg",
+      "Huan Sun",
+      "Yunyao Li"
+    ],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：EVOSCHEMA: TOWARDS TEXT-TO-SQL ROBUSTNESS AGAINST SCHEMA EVOLUTION。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "EvoschemaTowardsTextSql2025"
+  },
+  {
+    "title": "Grounding Natural Language to SQL Translation with Data-Based Self-Explanations",
+    "year": 2025,
+    "venue": "ICDE",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "2411.02948",
+    "url": "https://arxiv.org/abs/2411.02948",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：Grounding Natural Language to SQL Translation with Data-Based Self-Explanations。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "GroundingNaturalLanguageSql2025"
+  },
+  {
+    "title": "Is Long Context All You Need? Leveraging LLM's Extended Context for NL2SQL",
+    "year": 2025,
+    "venue": "VLDB",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.14778/3742728.3742761",
+    "arxiv": "2501.12372",
+    "url": "https://arxiv.org/abs/2501.12372",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Yeounoh Chung",
+      "Gaurav T. Kakkar",
+      "Yu Gan",
+      "Brenton Milne",
+      "Fatma Özcan"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "schema-linking",
+      "systems"
+    ],
+    "benchmarks": [
+      "BIRD"
+    ],
+    "citekey": "LongContextNL2SQL2025",
+    "problem": "schema pruning 可能丢掉必要列，长上下文模型或许能吃全库。",
+    "method": "用 Gemini 等长上下文直接喂更多 schema，检验是否还要 linking。",
+    "relation": "和 Death of Schema Linking 同一争论。用实验而不是口号来站队。"
+  },
+  {
+    "title": "Knowledge Base Construction for Knowledge-Augmented Text-to-SQL",
+    "year": 2025,
+    "venue": "ACL Findings",
+    "venue_class": "NLP",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "2505.22096",
+    "url": "https://arxiv.org/pdf/2505.22096",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：Knowledge Base Construction for Knowledge-Augmented Text-to-SQL。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "KnowledgeBaseConstructionKnowledge2025"
+  },
+  {
+    "citekey": "LinkAlign2025",
+    "title": "LinkAlign: Scalable Schema Linking for Real-World Large-Scale Multi-Database Text-to-SQL",
+    "year": 2025,
+    "venue": "EMNLP",
+    "venue_class": "NLP",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "2503.18596",
+    "url": "https://arxiv.org/abs/2503.18596",
+    "why": "EMNLP 2025 schema linking; Spider 2.0-Lite SOTA lineage",
+    "source": "curated",
+    "authors": [
+      "Yihan Wang",
+      "Peiyu Liu",
+      "Xin Yang"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "schema-linking"
+    ],
+    "benchmarks": [
+      "Spider2",
+      "BIRD",
+      "Spider"
+    ],
+    "problem": "真实多库、超大 schema 下 database retrieval 和 item grounding 都失败。",
+    "method": "多轮语义检索 + 无关库隔离 + schema extraction，Agent/Pipeline 双模式。",
+    "relation": "大规模 schema linking 的新 SOTA 叙事，尤其 Spider 2.0-Lite。"
+  },
+  {
+    "citekey": "MACSQL2025",
+    "title": "MAC-SQL: A Multi-Agent Collaborative Framework for Text-to-SQL",
+    "year": 2025,
+    "venue": "COLING",
+    "venue_class": "other",
+    "era": "llm",
+    "found_via": "citation",
+    "doi": "",
+    "arxiv": "2312.11242",
+    "url": "https://arxiv.org/abs/2312.11242",
+    "why": "named multi-agent baseline in almost every agent paper",
+    "source": "curated",
+    "authors": [
+      "Bing Wang",
+      "Changyu Ren",
+      "Jian Yang",
+      "Xinnian Liang",
+      "Jiaqi Bai",
+      "Linzheng Chai",
+      "Zhao Yan",
+      "Qian-Wen Zhang",
+      "Di Yin",
+      "Xing Sun",
+      "Zhoujun Li"
+    ],
+    "cited_by": [
+      "CHASESQL2025",
+      "DeepEyeSQL2026",
+      "OpenSearchSQL2025"
+    ],
+    "status": "reviewed",
+    "themes": [
+      "multi-agent"
+    ],
+    "benchmarks": [
+      "BIRD",
+      "Spider"
+    ],
+    "problem": "单次生成无法覆盖分解、生成、精炼三种不同技能。",
+    "method": "Selector / Decomposer / Refiner 多智能体协作。",
+    "relation": "多智能体 NL2SQL 的标准对照。我们若用 agent workflow，必须和 MAC-SQL 的角色划分对齐或区分。"
+  },
+  {
+    "title": "Natural Language to SQL: State of the Art and Open Problems",
+    "year": 2025,
+    "venue": "VLDB",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.14778/3750601.3750696",
+    "arxiv": "",
+    "url": "https://dbgroup.cs.tsinghua.edu.cn/ligl/papers/VLDB25-NL2SQL.pdf",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Yuyu Luo",
+      "Guoliang Li",
+      "Ju Fan",
+      "Chengliang Chai",
+      "Nan Tang"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "benchmark",
+      "systems"
+    ],
+    "benchmarks": [
+      "BIRD",
+      "Spider"
+    ],
+    "citekey": "NL2SQLSOTA2025",
+    "problem": "LLM 时代 NL2SQL 的开放问题需要从系统视角重述。",
+    "method": "VLDB 2025 教程/综述：现状、模块划分、开放问题。",
+    "relation": "DB 视角综述，related work 框架可以直接借模块划分。"
+  },
+  {
+    "title": "OmniSQL: Synthesizing High-quality Text-to-SQL Data at Scale",
+    "year": 2025,
+    "venue": "VLDB",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.14778/3749646.3749723",
+    "arxiv": "2503.02240",
+    "url": "https://arxiv.org/abs/2503.02240",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Haoyang Li",
+      "Shang Wu",
+      "Xiaokang Zhang",
+      "Xinmei Huang",
+      "Jing Zhang",
+      "Fuxin Jiang",
+      "Shuai Wang",
+      "Tieying Zhang",
+      "Jianjun Chen",
+      "Rui Shi",
+      "Hong Chen",
+      "Cuiping Li"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "finetuning"
+    ],
+    "benchmarks": [
+      "BIRD",
+      "Spider"
+    ],
+    "citekey": "OmniSQL2025",
+    "problem": "公开训练数据覆盖不够，SFT 模型泛化差。",
+    "method": "自动合成 SynSQL-2.5M（库+问题+SQL+CoT），再训 OmniSQL 7B/14B/32B。",
+    "relation": "数据合成路线的代表。和 CodeS 一起构成开源模型段。"
+  },
+  {
+    "title": "OpenSearch-SQL: Enhancing Text-to-SQL with Dynamic Few-shot and Consistency Alignment",
+    "year": 2025,
+    "venue": "SIGMOD",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.1145/3725331",
+    "arxiv": "2502.14913",
+    "url": "https://arxiv.org/pdf/2502.14913",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Xiangjin Xie",
+      "Guangwei Xu",
+      "Lingyan Zhao",
+      "Ruijie Guo"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "prompting",
+      "execution"
+    ],
+    "benchmarks": [
+      "BIRD"
+    ],
+    "citekey": "OpenSearchSQL2025",
+    "problem": "few-shot 与多候选对齐在 BIRD 上仍不稳定。",
+    "method": "动态 few-shot + consistency alignment 的完整流水线。",
+    "relation": "工业检索系统背景的 BIRD 流水线，系统和 prompting 两段都可以引。"
+  },
+  {
+    "title": "Optimizing Reasoning for Text-to-SQL with Execution Feedback",
+    "year": 2025,
+    "venue": "ACL Findings",
+    "venue_class": "NLP",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "2503.19988",
+    "url": "https://arxiv.org/abs/2503.19988",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "execution"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：Optimizing Reasoning for Text-to-SQL with Execution Feedback。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "OptimizingReasoningTextSql2025"
+  },
+  {
+    "title": "PARSQL: Enhancing Text-to-SQL through SQL Parsing and Reasoning",
+    "year": 2025,
+    "venue": "ACL Findings",
+    "venue_class": "NLP",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "",
+    "url": "https://aclanthology.org/2024.findings-acl.120/",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：PARSQL: Enhancing Text-to-SQL through SQL Parsing and Reasoning。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "PARSQL2025"
+  },
+  {
+    "title": "ROUTE: Robust Multitask Tuning and Collaboration for Text-to-SQL",
+    "year": 2025,
+    "venue": "ICLR",
+    "venue_class": "ML",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "2412.10138",
+    "url": "https://arxiv.org/pdf/2412.10138",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "finetuning",
+      "multi-agent"
+    ],
+    "benchmarks": [
+      "BIRD"
+    ],
+    "citekey": "ROUTE2025",
+    "problem": "单任务 SFT 不够鲁棒。",
+    "method": "多任务调优 + 协作，增强 Text-to-SQL。",
+    "relation": "ICLR 2025 开源协作/多任务对照。"
+  },
+  {
+    "title": "RTS+: Reliable Text to SQL",
+    "year": 2025,
+    "venue": "SIGMOD Companion",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.1145/3722212.3725129",
+    "arxiv": "",
+    "url": "https://doi.org/10.1145/3722212.3725129",
+    "why": "Crossref title+container whitelist",
+    "source": "crossref",
+    "authors": [
+      "Kaiwen Chen",
+      "Yueting Chen",
+      "Nick Koudas",
+      "Xiaohui Yu"
+    ],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：RTS+: Reliable Text to SQL。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "RtsReliableTextSql2025"
+  },
+  {
+    "citekey": "ReasoningSQL2025",
+    "title": "Reasoning-SQL: Reinforcement Learning with SQL Tailored Partial Rewards for Reasoning-Enhanced Text-to-SQL",
+    "year": 2025,
+    "venue": "arXiv",
+    "venue_class": "other",
+    "era": "llm",
+    "found_via": "leaderboard",
+    "doi": "",
+    "arxiv": "2503.23157",
+    "url": "https://arxiv.org/abs/2503.23157",
+    "why": "BIRD 榜 Reasoning-SQL 14B（Google Cloud / Stanford，test 72.78）",
+    "source": "curated",
+    "authors": [
+      "Mohammadreza Pourreza",
+      "Shayan Talaei",
+      "Ruoxi Sun",
+      "Xingchen Wan",
+      "Hailong Li",
+      "Azalia Mirhoseini",
+      "Amin Saberi",
+      "Sercan O. Arik"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "finetuning",
+      "execution"
+    ],
+    "benchmarks": [
+      "BIRD"
+    ],
+    "problem": "RL 只用最终执行结果做奖励太稀疏，中间步骤学不到信号。",
+    "method": "设计 SQL 专用的部分奖励（partial rewards），按子句正确性给中间反馈。",
+    "relation": "CHASE-SQL 同组的 RL 训练线，和 SQL-R1 / Arctic-Text2SQL-R1 一起构成 2025 RL 段。"
+  },
+  {
+    "title": "Reliable Text-to-SQL with Adaptive Abstention",
+    "year": 2025,
+    "venue": "SIGMOD",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.1145/3709719",
+    "arxiv": "2501.10858",
+    "url": "https://arxiv.org/abs/2501.10858",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Kaiwen Chen",
+      "Yueting Chen",
+      "Nick Koudas",
+      "Xiaohui Yu"
+    ],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "execution"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：Reliable Text-to-SQL with Adaptive Abstention。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "ReliableTextSqlAdaptive2025"
+  },
+  {
+    "title": "SHARE: An SLM-based Hierarchical Action CorREction Assistant for Text-to-SQL",
+    "year": 2025,
+    "venue": "ACL",
+    "venue_class": "NLP",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "2506.00391",
+    "url": "https://arxiv.org/abs/2506.00391",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：SHARE: An SLM-based Hierarchical Action CorREction Assistant for Text-to-SQL。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "ShareSlmBasedHierarchical2025"
+  },
+  {
+    "title": "SNAILS: Schema Naming Assessments for Improved LLM-Based SQL Inference",
+    "year": 2025,
+    "venue": "SIGMOD",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.1145/3709727",
+    "arxiv": "",
+    "url": "https://dl.acm.org/doi/10.1145/3709727",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：SNAILS: Schema Naming Assessments for Improved LLM-Based SQL Inference。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "SnailsSchemaNamingAssessments2025"
+  },
+  {
+    "title": "SQL-R1: Training Natural Language to SQL Reasoning Model By Reinforcement Learning",
+    "year": 2025,
+    "venue": "NeurIPS",
+    "venue_class": "ML",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "2504.08600",
+    "url": "https://arxiv.org/pdf/2504.08600",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Peixian Ma",
+      "Xialie Zhuang",
+      "Chengjin Xu",
+      "Xuhui Jiang",
+      "Ran Chen",
+      "Jian Guo"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "finetuning",
+      "execution"
+    ],
+    "benchmarks": [
+      "BIRD"
+    ],
+    "citekey": "SQLR12025",
+    "problem": "监督微调学不到可验证的 SQL 推理。",
+    "method": "用强化学习训 NL2SQL 推理模型。",
+    "relation": "NeurIPS 2025 RL 路线，和 STaR-SQL 一起写训练段。"
+  },
+  {
+    "title": "SQLForge: Synthesizing Reliable and Diverse Data to Enhance Text-to-SQL Reasoning in LLMs",
+    "year": 2025,
+    "venue": "ACL Findings",
+    "venue_class": "NLP",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "2505.13725",
+    "url": "https://arxiv.org/abs/2505.13725",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "finetuning"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：SQLForge: Synthesizing Reliable and Diverse Data to Enhance Text-to-SQL Reasoning in LLMs。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "SqlforgeSynthesizingReliableDiverse2025"
+  },
+  {
+    "title": "SQLGenie: A Practical LLM based System for Reliable and Efficient SQL Generation",
+    "year": 2025,
+    "venue": "ACL",
+    "venue_class": "NLP",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "",
+    "url": "https://aclanthology.org/2025.acl-industry.71/",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "systems"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：SQLGenie: A Practical LLM based System for Reliable and Efficient SQL Generation。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "SqlgeniePracticalLlmBased2025"
+  },
+  {
+    "title": "SQLong: Enhanced NL2SQL for Longer Contexts with LLMs",
+    "year": 2025,
+    "venue": "ACL Workshop",
+    "venue_class": "NLP",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "2502.16747",
+    "url": "https://arxiv.org/pdf/2502.16747",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：SQLong: Enhanced NL2SQL for Longer Contexts with LLMs。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "SqlongEnhancedNl2SqlLonger2025"
+  },
+  {
+    "title": "STaR-SQL: Self-Taught Reasoner for Text-to-SQL",
+    "year": 2025,
+    "venue": "ACL",
+    "venue_class": "NLP",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "2502.13550",
+    "url": "https://arxiv.org/abs/2502.13550",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Mingqian He",
+      "Yongliang Shen",
+      "Wenqi Zhang",
+      "Qiuying Peng",
+      "Jun Wang",
+      "Weiming Lu"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "finetuning",
+      "execution"
+    ],
+    "benchmarks": [
+      "BIRD",
+      "Spider"
+    ],
+    "citekey": "STaRSQL2025",
+    "problem": "SQL 生成很少被当成可自我训练的推理过程。",
+    "method": "Self-Taught Reasoner：用结果监督奖励模型迭代改进推理轨迹。",
+    "relation": "推理/RL 微调段。和 SQL-R1、Reward-SQL 构成 2025 训练路线。"
+  },
+  {
+    "title": "Sphinteract: Resolving Ambiguities in NL2SQL Through User Interaction",
+    "year": 2025,
+    "venue": "VLDB",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.14778/3717755.3717772",
+    "arxiv": "",
+    "url": "https://www.vldb.org/pvldb/vol18/p1145-zhao.pdf",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Fuheng Zhao",
+      "Shaleen Deep",
+      "Fotis Psallidas",
+      "Avrilia Floratou",
+      "Divyakant Agrawal",
+      "Amr El Abbadi"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "systems"
+    ],
+    "benchmarks": [
+      "Spider"
+    ],
+    "citekey": "Sphinteract2025",
+    "problem": "NL 歧义不能只靠模型猜。",
+    "method": "通过用户交互消除 NL2SQL 歧义。",
+    "relation": "交互式澄清。若我们做单轮 BIRD，要承认这是另一条产品线。"
+  },
+  {
+    "title": "Spider 2.0: Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows",
+    "year": 2025,
+    "venue": "ICLR",
+    "venue_class": "ML",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "2411.07763",
+    "url": "https://arxiv.org/abs/2411.07763",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Fangyu Lei",
+      "Jixuan Chen",
+      "Yuxiao Ye",
+      "Ruisheng Cao",
+      "Dongchan Shin",
+      "Hongjin Su",
+      "Zhaoqing Suo",
+      "Hongcheng Gao",
+      "Wenjing Hu",
+      "Pengcheng Yin",
+      "Victor Zhong",
+      "Caiming Xiong",
+      "Ruoxi Sun",
+      "Qian Liu",
+      "Sida Wang",
+      "Tao Yu"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "benchmark",
+      "systems"
+    ],
+    "benchmarks": [
+      "Spider2"
+    ],
+    "citekey": "Spider22025",
+    "problem": "学术 Spider/BIRD 仍远小于真实企业仓库上的多方言、长上下文工作流。",
+    "method": "企业级 workflow 评测，Snow/Lite 子集，强调 agent 与多步操作。",
+    "relation": "若我们声称生产可用，必须讨论 Spider 2.0；只打 BIRD 则要承认评测差距。"
+  },
+  {
+    "title": "Structure-Guided Large Language Models for Text-to-SQL Generation",
+    "year": 2025,
+    "venue": "ICML",
+    "venue_class": "ML",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "",
+    "url": "https://icml.cc/virtual/2025/poster/44477",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：Structure-Guided Large Language Models for Text-to-SQL Generation。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "StructureGuidedLargeLanguage2025"
+  },
+  {
+    "title": "The Power of Constraints in Natural Language to SQL Translation",
+    "year": 2025,
+    "venue": "VLDB",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.14778/3734839.3734847",
+    "arxiv": "",
+    "url": "https://www.vldb.org/pvldb/vol18/p2097-ren.pdf",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Tonghui Ren",
+      "Chen Ke",
+      "Yuankai Fan",
+      "Yinan Jing",
+      "Zhenying He",
+      "Kai Zhang",
+      "X. Sean Wang"
+    ],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：The Power of Constraints in Natural Language to SQL Translation。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "PowerConstraintsNaturalLanguage2025"
+  },
+  {
+    "title": "UCS-SQL: Uniting Content and Structure for Enhanced Semantic Bridging In Text-to-SQL",
+    "year": 2025,
+    "venue": "ACL Findings",
+    "venue_class": "NLP",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "",
+    "url": "https://openreview.net/forum?id=xnTouV7wyr",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：UCS-SQL: Uniting Content and Structure for Enhanced Semantic Bridging In Text-to-SQL。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "UCSSQL2025"
+  },
+  {
+    "title": "Uncovering the Impact of Chain-of-Thought Reasoning for Direct Preference Optimization: Lessons from Text-to-SQL",
+    "year": 2025,
+    "venue": "ACL",
+    "venue_class": "NLP",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "2502.11656",
+    "url": "https://arxiv.org/abs/2502.11656",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：Uncovering the Impact of Chain-of-Thought Reasoning for Direct Preference Optimization: Lessons from Text-to-SQL。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "UncoveringImpactChainThought2025"
+  },
+  {
+    "citekey": "XiYanSQL2025",
+    "title": "XiYan-SQL: A Novel Multi-Generator Framework For Text-to-SQL",
+    "year": 2025,
+    "venue": "arXiv",
+    "venue_class": "other",
+    "era": "llm",
+    "found_via": "leaderboard",
+    "doi": "",
+    "arxiv": "2507.04701",
+    "url": "https://arxiv.org/abs/2507.04701",
+    "why": "BIRD top-30 常驻工业系统（Alibaba Cloud，test 75.63）",
+    "source": "curated",
+    "authors": [
+      "Yifu Liu",
+      "Yin Zhu",
+      "Yingqi Gao",
+      "Zhiling Luo",
+      "Xiaoxia Li",
+      "Xiaorong Shi",
+      "Yuntao Hong",
+      "Jinyang Gao",
+      "Yu Li",
+      "Bolin Ding",
+      "Jingren Zhou"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "prompting",
+      "execution"
+    ],
+    "benchmarks": [
+      "BIRD",
+      "Spider"
+    ],
+    "problem": "单一生成器（无论 ICL 还是 SFT）覆盖不了不同风格和难度的题。",
+    "method": "多生成器集成：ICL generator + SFT generator 各出候选，再由选择/精炼模块定稿。",
+    "relation": "多生成器 + 候选选择路线的工业代表，2024 年底起长期挂在 BIRD 前列；写候选选择段绕不开。"
+  },
+  {
+    "title": "You Only Read Once (YORO): Learning to Internalize Database Knowledge for Text-to-SQL",
+    "year": 2025,
+    "venue": "NAACL",
+    "venue_class": "NLP",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "2409.12172",
+    "url": "https://arxiv.org/abs/2409.12172",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "schema-linking",
+      "finetuning"
+    ],
+    "benchmarks": [
+      "BIRD"
+    ],
+    "citekey": "YORO2025",
+    "problem": "每次推理都把整个库读进上下文又慢又容易丢值。",
+    "method": "把数据库知识内化进模型，降低反复读 schema 的需求。",
+    "relation": "schema 内化 vs 检索的对照，适合系统和 linking 两段。"
+  },
+  {
+    "title": "Archer: A Human-Labeled Text-to-SQL Dataset with Arithmetic, Commonsense and Hypothetical Reasoning",
+    "year": 2024,
+    "venue": "ACL",
+    "venue_class": "NLP",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "",
+    "url": "https://aclanthology.org/2024.eacl-long.6/",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "finetuning"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：Archer: A Human-Labeled Text-to-SQL Dataset with Arithmetic, Commonsense and Hypothetical Reasoning。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "ArcherHumanLabeledText2024"
+  },
+  {
+    "citekey": "TASQL2024",
+    "title": "Before Generation, Align it! A Novel and Effective Strategy for Mitigating Hallucinations in Text-to-SQL Generation",
+    "year": 2024,
+    "venue": "ACL Findings",
+    "venue_class": "NLP",
+    "era": "llm",
+    "found_via": "leaderboard",
+    "doi": "",
+    "arxiv": "2405.15307",
+    "url": "https://arxiv.org/abs/2405.15307",
+    "why": "TA-SQL；ACL 2024 Findings，BIRD 榜 TA-SQL + GPT-4",
+    "source": "curated",
+    "authors": [
+      "Ge Qu",
+      "Jinyang Li",
+      "Bowen Li",
+      "Bowen Qin",
+      "Nan Huo",
+      "Chenhao Ma",
+      "Reynold Cheng"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "prompting",
+      "schema-linking"
+    ],
+    "benchmarks": [
+      "BIRD",
+      "Spider"
+    ],
+    "problem": "LLM 生成 SQL 时幻觉出不存在的列/表，源于任务对齐不足。",
+    "method": "生成前先做任务对齐（TA）：把问题与 schema 元素显式对齐，再进入生成。",
+    "relation": "BIRD 团队自己的幻觉缓解工作，mini-dev 的 column_meaning 也来自它；linking/对齐段可引。"
+  },
+  {
+    "citekey": "CHESS2024",
+    "title": "CHESS: Contextual Harnessing for Efficient SQL Synthesis",
+    "year": 2024,
+    "venue": "arXiv",
+    "venue_class": "other",
+    "era": "llm",
+    "found_via": "citation",
+    "doi": "",
+    "arxiv": "2405.16755",
+    "url": "https://arxiv.org/abs/2405.16755",
+    "why": "named retrieval+candidate ranking system; BIRD SOTA lineage",
+    "source": "curated",
+    "authors": [
+      "Shayan Talaei",
+      "Mohammadreza Pourreza",
+      "Yu-Chen Chang",
+      "Azalia Mirhoseini",
+      "Amin Saberi"
+    ],
+    "cited_by": [
+      "CHASESQL2025",
+      "LinkAlign2025"
+    ],
+    "status": "reviewed",
+    "themes": [
+      "schema-linking",
+      "execution"
+    ],
+    "benchmarks": [
+      "BIRD"
+    ],
+    "problem": "大 schema 和证据文档不能整表塞进上下文。",
+    "method": "实体/上下文检索、候选生成与修订，强调 efficient synthesis。",
+    "relation": "BIRD 上检索增强流水线的关键对照，schema linking 并未消失，而是变成检索。"
+  },
+  {
+    "title": "CodeS: Towards Building Open-source Language Models for Text-to-SQL",
+    "year": 2024,
+    "venue": "SIGMOD",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.1145/3654930",
+    "arxiv": "2402.16347",
+    "url": "https://arxiv.org/abs/2402.16347",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Haoyang Li",
+      "Jing Zhang",
+      "Hanbing Liu",
+      "Ju Fan",
+      "Xiaokang Zhang",
+      "Jun Zhu",
+      "Renjie Wei",
+      "Hongyan Pan",
+      "Cuiping Li",
+      "Hong Chen"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "finetuning"
+    ],
+    "benchmarks": [
+      "Spider",
+      "BIRD"
+    ],
+    "citekey": "CodeS2024",
+    "problem": "闭源 LLM prompting 贵、不可定制，开源模型缺 SQL 数据。",
+    "method": "增量预训练 + 双向数据增强，发布 CodeS 系列开源 Text-to-SQL 模型。",
+    "relation": "开源 SFT 主对照。我们若走闭源 agent，要解释为何不走 CodeS 路线；若走开源，它是底座。"
+  },
+  {
+    "title": "Combining Small Language Models and Large Language Models for Zero-Shot NL2SQL",
+    "year": 2024,
+    "venue": "VLDB",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.14778/3681954.3681960",
+    "arxiv": "",
+    "url": "https://doi.org/10.14778/3681954.3681960",
+    "why": "Crossref title+container whitelist",
+    "source": "crossref",
+    "authors": [
+      "Ju Fan",
+      "Zihui Gu",
+      "Songyue Zhang",
+      "Yuxin Zhang",
+      "Zui Chen",
+      "Lei Cao",
+      "Guoliang Li",
+      "Samuel Madden",
+      "Xiaoyong Du",
+      "Nan Tang"
+    ],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：Combining Small Language Models and Large Language Models for Zero-Shot NL2SQL。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "CombiningSmallLanguageModels2024"
+  },
+  {
+    "title": "Data-Centric Text-to-SQL with Large Language Models",
+    "year": 2024,
+    "venue": "NeurIPS Workshop",
+    "venue_class": "ML",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "",
+    "url": "https://openreview.net/pdf?id=gDKIjZcg93",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：Data-Centric Text-to-SQL with Large Language Models。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "DataCentricTextSql2024"
+  },
+  {
+    "citekey": "ESQL2024",
+    "title": "E-SQL: Direct Schema Linking via Question Enrichment in Text-to-SQL",
+    "year": 2024,
+    "venue": "arXiv",
+    "venue_class": "other",
+    "era": "llm",
+    "found_via": "citation",
+    "doi": "",
+    "arxiv": "2409.16751",
+    "url": "https://arxiv.org/abs/2409.16751",
+    "why": "named question-enrichment linking",
+    "source": "curated",
+    "authors": [
+      "Hasan Alp Caferoğlu",
+      "Özgür Ulusoy"
+    ],
+    "cited_by": [
+      "LinkAlign2025"
+    ],
+    "status": "reviewed",
+    "themes": [
+      "schema-linking"
+    ],
+    "benchmarks": [
+      "BIRD"
+    ],
+    "problem": "把 linking 做成独立模块容易级联错误。",
+    "method": "用相关 schema 信息改写问题，让生成阶段直接看见链接结果。",
+    "relation": "「linking 作为问题改写」对照独立 retriever；和 Death of Schema Linking 讨论相关。"
+  },
+  {
+    "title": "Evaluating Text-to-SQL Model Failures on Real-World Data",
+    "year": 2024,
+    "venue": "ICDE",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.1109/icde60146.2024.00456",
+    "arxiv": "",
+    "url": "https://doi.org/10.1109/icde60146.2024.00456",
+    "why": "Crossref title+container whitelist",
+    "source": "crossref",
+    "authors": [
+      "Manasi Ganti",
+      "Laurel Orr",
+      "Sen Wu"
+    ],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "benchmark"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：Evaluating Text-to-SQL Model Failures on Real-World Data。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "EvaluatingTextSqlModel2024"
+  },
+  {
+    "title": "FinSQL: Model-Agnostic LLMs-based Text-to-SQL Framework for Financial Analysis",
+    "year": 2024,
+    "venue": "SIGMOD",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.1145/3626246.3653375",
+    "arxiv": "2401.10506",
+    "url": "https://arxiv.org/abs/2401.10506",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Chao Zhang",
+      "Yuren Mao",
+      "Yijiang Fan",
+      "Yu Mi",
+      "Yunjun Gao",
+      "Lu Chen",
+      "Dongfang Lou",
+      "Jinshu Lin"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "systems",
+      "finetuning"
+    ],
+    "benchmarks": [
+      "BULL"
+    ],
+    "citekey": "FinSQL2024",
+    "problem": "金融库需要模型无关、可私有部署的 NL2SQL。",
+    "method": "模型无关 LLM 框架 + 金融场景数据 BULL。",
+    "relation": "工业/垂直场景段。对照通用 BIRD 榜。"
+  },
+  {
+    "title": "Generating Succinct Descriptions of Database Schemata for Cost-Efficient Prompting of Large Language Models",
+    "year": 2024,
+    "venue": "VLDB",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.14778/3681954.3682017",
+    "arxiv": "",
+    "url": "https://dl.acm.org/doi/abs/10.14778/3681954.3682017",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "schema-linking",
+      "systems"
+    ],
+    "benchmarks": [],
+    "citekey": "SchemaDescriptions2024",
+    "problem": "把整库 schema 塞进 prompt 太贵，列描述冗余。",
+    "method": "自动生成简洁的 schema 描述，降低 prompting 成本。",
+    "relation": "schema 压缩 / 成本控制段可引，和 linking 的「少即是多」同族。"
+  },
+  {
+    "title": "I Need Help! Evaluating LLM’s Ability to Ask for Users’ Support: A Case Study on Text-to-SQL Generation",
+    "year": 2024,
+    "venue": "EMNLP",
+    "venue_class": "NLP",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "2407.14767",
+    "url": "https://arxiv.org/pdf/2407.14767",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "benchmark"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：I Need Help! Evaluating LLM’s Ability to Ask for Users’ Support: A Case Study on Text-to-SQL Generation。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "INeedHelpEvaluating2024"
+  },
+  {
+    "title": "Improving Retrieval-augmented Text-to-SQL with AST-based Ranking and Schema Pruning",
+    "year": 2024,
+    "venue": "EMNLP",
+    "venue_class": "NLP",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "2407.03227",
+    "url": "https://arxiv.org/pdf/2407.03227",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "schema-linking"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：Improving Retrieval-augmented Text-to-SQL with AST-based Ranking and Schema Pruning。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "ImprovingRetrievalAugmentedText2024"
+  },
+  {
+    "title": "Interleaving Pre-Trained Language Models and Large Language Models for Zero-Shot NL2SQL Generation",
+    "year": 2024,
+    "venue": "VLDB",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "2306.08891",
+    "url": "https://arxiv.org/abs/2306.08891",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：Interleaving Pre-Trained Language Models and Large Language Models for Zero-Shot NL2SQL Generation。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "InterleavingPreTrainedLanguage2024"
+  },
+  {
+    "citekey": "MCSSQL2024",
+    "title": "MCS-SQL: Leveraging Multiple Prompts and Multiple-Choice Selection for Text-to-SQL Generation",
+    "year": 2024,
+    "venue": "COLING",
+    "venue_class": "other",
+    "era": "llm",
+    "found_via": "citation",
+    "doi": "",
+    "arxiv": "2405.07467",
+    "url": "https://arxiv.org/abs/2405.07467",
+    "why": "named multiple-prompt selection baseline",
+    "source": "curated",
+    "authors": [
+      "Dongjun Lee",
+      "Choongwon Park",
+      "Jaehyuk Kim",
+      "Heesoo Park"
+    ],
+    "cited_by": [
+      "CHASESQL2025"
+    ],
+    "status": "reviewed",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [
+      "BIRD",
+      "Spider"
+    ],
+    "problem": "单一 prompt 风格覆盖不了不同难度的题。",
+    "method": "多种 prompt 出候选，再做 multiple-choice 选择。",
+    "relation": "测试时扩展 / 多路径生成的早期形式，CHASE-SQL 多路径推理的近邻。"
+  },
+  {
+    "title": "METASQL: A Generate-then-Rank Framework for Natural Language to SQL Translation",
+    "year": 2024,
+    "venue": "ICDE",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "2402.17144",
+    "url": "https://arxiv.org/abs/2402.17144",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [
+      "Spider"
+    ],
+    "citekey": "MetaSQL2024",
+    "problem": "一次生成无法覆盖语义等价的多种 SQL 写法。",
+    "method": "generate-then-rank：先多样生成再排序。",
+    "relation": "候选生成+排序，和 CHASE 选择器同一族，但还在 ICDE 2024。"
+  },
+  {
+    "citekey": "PETSQL2024",
+    "title": "PET-SQL: A Prompt-Enhanced Two-Round Refinement of Text-to-SQL with Cross-consistency",
+    "year": 2024,
+    "venue": "arXiv",
+    "venue_class": "other",
+    "era": "llm",
+    "found_via": "citation",
+    "doi": "",
+    "arxiv": "2403.09732",
+    "url": "https://arxiv.org/abs/2403.09732",
+    "why": "named two-round consistency refinement",
+    "source": "curated",
+    "authors": [
+      "Zhishuai Li",
+      "Xiang Wang",
+      "Jingjing Zhao",
+      "Sun Yang",
+      "Guoqing Du",
+      "Xiaoru Hu",
+      "Bin Zhang",
+      "Yuxiao Ye",
+      "Ziyue Li",
+      "Rui Zhao",
+      "Hangyu Mao"
+    ],
+    "cited_by": [
+      "CHASESQL2025",
+      "OpenSearchSQL2025"
+    ],
+    "status": "reviewed",
+    "themes": [
+      "prompting",
+      "execution"
+    ],
+    "benchmarks": [
+      "BIRD",
+      "Spider"
+    ],
+    "problem": "单轮 prompt 的 schema 引用和最终 SQL 不一致。",
+    "method": "两轮 prompt，用 cross-consistency 在多候选间投票。",
+    "relation": "self-consistency / 多候选选择的对照，CHASE-SQL 的 pairwise selector 可以对着它写。"
+  },
+  {
+    "title": "PTD-SQL: Partitioning and Targeted Drilling with LLMs in Text-to-SQL",
+    "year": 2024,
+    "venue": "EMNLP",
+    "venue_class": "NLP",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "2409.14082",
+    "url": "https://arxiv.org/pdf/2409.14082",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：PTD-SQL: Partitioning and Targeted Drilling with LLMs in Text-to-SQL。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "PTDSQL2024"
+  },
+  {
+    "title": "PURPLE: Making a Large Language Model a Better SQL Writer",
+    "year": 2024,
+    "venue": "ICDE",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "2403.20014",
+    "url": "https://arxiv.org/abs/2403.20014",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "prompting",
+      "schema-linking"
+    ],
+    "benchmarks": [
+      "Spider"
+    ],
+    "citekey": "PURPLE2024",
+    "problem": "LLM 写 SQL 时对中间结构的利用不够。",
+    "method": "解析、检索、提示、修复的组合，让 LLM 更像 SQL writer。",
+    "relation": "ICDE 2024 的模块化流水线，DB 会议里的 prompting 代表。"
+  },
+  {
+    "title": "ScienceBenchmark: A Complex Real-World Benchmark for Evaluating Natural Language to SQL Systems",
+    "year": 2024,
+    "venue": "VLDB",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.14778/3636218.3636225",
+    "arxiv": "2306.04743",
+    "url": "https://arxiv.org/abs/2306.04743",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Yi Zhang",
+      "Jan Deriu",
+      "George Katsogiannis-Meimarakis",
+      "Catherine Kosten",
+      "Georgia Koutrika",
+      "Kurt Stockinger"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "benchmark"
+    ],
+    "benchmarks": [
+      "ScienceBenchmark"
+    ],
+    "citekey": "ScienceBenchmark2024",
+    "problem": "通用 Spider 不能代表科研库的领域术语和复杂 schema。",
+    "method": "三个真实科学数据库上的 NL2SQL 基准。",
+    "relation": "领域基准对照，说明 BIRD 也不是唯一真实设定。"
+  },
+  {
+    "title": "Synthesizing Text-to-SQL Data from Weak and Strong LLMs",
+    "year": 2024,
+    "venue": "ACL",
+    "venue_class": "NLP",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "2408.03256",
+    "url": "https://arxiv.org/pdf/2408.03256",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "finetuning"
+    ],
+    "benchmarks": [
+      "Spider",
+      "BIRD"
+    ],
+    "citekey": "SENSE2024",
+    "problem": "强模型数据贵，弱模型数据噪。",
+    "method": "用强弱 LLM 合成互补数据，训 SENSE。",
+    "relation": "ACL 2024 数据合成，和 OmniSQL 前后相接。"
+  },
+  {
+    "title": "Text-to-SQL Empowered by Large Language Models: A Benchmark Evaluation",
+    "year": 2024,
+    "venue": "VLDB",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.14778/3641204.3641221",
+    "arxiv": "2308.15363",
+    "url": "https://arxiv.org/abs/2308.15363",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Dawei Gao",
+      "Haibin Wang",
+      "Yaliang Li",
+      "Xiuyu Sun",
+      "Yichen Qian",
+      "Bolin Ding",
+      "Jingren Zhou"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "prompting",
+      "benchmark"
+    ],
+    "benchmarks": [
+      "Spider",
+      "BIRD"
+    ],
+    "citekey": "DAILSQL2024",
+    "problem": "当时缺少对 prompt 工程选项的系统评测。",
+    "method": "系统比较 example selection / 组织方式，提出 DAIL-SQL，并成为 Spider 测试集强基线。",
+    "relation": "example selection 必引。也是「prompting 就能打榜」的证据。"
+  },
+  {
+    "title": "The Dawn of Natural Language to SQL: Are We Fully Ready?",
+    "year": 2024,
+    "venue": "VLDB",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.14778/3681954.3682003",
+    "arxiv": "2406.01265",
+    "url": "https://arxiv.org/abs/2406.01265",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Boyan Li",
+      "Yuyu Luo",
+      "Chengliang Chai",
+      "Guoliang Li",
+      "Nan Tang"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "benchmark",
+      "systems"
+    ],
+    "benchmarks": [
+      "Spider",
+      "BIRD"
+    ],
+    "citekey": "NL2SQL3602024",
+    "problem": "只看 EX 无法判断方法在难度、开销、鲁棒性上的差异。",
+    "method": "NL2SQL360 测试床，多指标细粒度评估，并给出 SuperSQL 等观察。",
+    "relation": "评测协议段必引。我们报 BIRD EX 时要用它来承认指标盲区。"
+  },
+  {
+    "citekey": "DeathOfSchemaLinking2024",
+    "title": "The Death of Schema Linking? Text-to-SQL in the Age of Well-Reasoned Language Models",
+    "year": 2024,
+    "venue": "arXiv",
+    "venue_class": "other",
+    "era": "llm",
+    "found_via": "citation",
+    "doi": "",
+    "arxiv": "2408.07702",
+    "url": "https://arxiv.org/abs/2408.07702",
+    "why": "named position paper on schema linking",
+    "source": "curated",
+    "authors": [
+      "Karime Maamari",
+      "Fadhil Abubaker",
+      "Daniel Jaroslawicz",
+      "Amine Mhedhbi"
+    ],
+    "cited_by": [
+      "LinkAlign2025",
+      "LongContextNL2SQL2025"
+    ],
+    "status": "reviewed",
+    "themes": [
+      "schema-linking"
+    ],
+    "benchmarks": [
+      "BIRD"
+    ],
+    "problem": "独立 schema linking 模块在强推理模型上可能成为误差源。",
+    "method": "论证对足够强的 LLM，完整 schema + 推理可能优于激进 pruning。",
+    "relation": "schema linking 小节的对立面。我们要明确自己站在「仍需检索」还是「长上下文足够」。"
+  },
+  {
+    "title": "Understanding the Effects of Noise in Text-to-SQL: An Examination of the BIRD-Bench Benchmark",
+    "year": 2024,
+    "venue": "ACL",
+    "venue_class": "NLP",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "2402.12243",
+    "url": "https://arxiv.org/pdf/2402.12243",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "benchmark"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：Understanding the Effects of Noise in Text-to-SQL: An Examination of the BIRD-Bench Benchmark。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "UnderstandingEffectsNoiseText2024"
+  },
+  {
+    "title": "A survey on deep learning approaches for text-to-SQL",
+    "year": 2023,
+    "venue": "VLDBJ",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.1007/s00778-022-00776-8",
+    "arxiv": "",
+    "url": "https://dl.acm.org/doi/10.1007/s00778-022-00776-8",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "George Katsogiannis-Meimarakis",
+      "Georgia Koutrika"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "benchmark"
+    ],
+    "benchmarks": [
+      "Spider"
+    ],
+    "citekey": "KatsogiannisSurvey2023",
+    "problem": "深度学习 NL2SQL 方法缺乏统一梳理。",
+    "method": "VLDBJ 综述覆盖编码、解码、数据集。",
+    "relation": "用来迅速收束前 LLM 文献，避免 related work 写成编年史。"
+  },
+  {
+    "title": "ACT-SQL: In-Context Learning for Text-to-SQL with Automatically-Generated Chain-of-Thought",
+    "year": 2023,
+    "venue": "EMNLP",
+    "venue_class": "NLP",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "2310.17342",
+    "url": "https://arxiv.org/abs/2310.17342",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [
+      "Spider"
+    ],
+    "citekey": "ACTSQL2023",
+    "problem": "手工 CoT 示范贵。",
+    "method": "自动生成 chain-of-thought 示范再做 ICL。",
+    "relation": "自动 CoT 对照 DIN-SQL 手工分解。"
+  },
+  {
+    "citekey": "C32023",
+    "title": "C3: Zero-shot Text-to-SQL with ChatGPT",
+    "year": 2023,
+    "venue": "arXiv",
+    "venue_class": "other",
+    "era": "llm",
+    "found_via": "citation",
+    "doi": "",
+    "arxiv": "2307.07306",
+    "url": "https://arxiv.org/abs/2307.07306",
+    "why": "named zero-shot ChatGPT pipeline; Spider test 82.3",
+    "source": "curated",
+    "authors": [
+      "Xuemei Dong",
+      "Chao Zhang",
+      "Yuhang Ge",
+      "Yuren Mao",
+      "Yunjun Gao",
+      "Lu Chen",
+      "Jinshu Lin",
+      "Dongfang Lou"
+    ],
+    "cited_by": [
+      "DAILSQL2024",
+      "NL2SQL3602024"
+    ],
+    "status": "reviewed",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [
+      "Spider"
+    ],
+    "problem": "ChatGPT 直接生成 SQL 容易忽略 schema 约束和清晰布局。",
+    "method": "Clear prompting + Calibration with hints + Consistent self-consistency 的零样本流水线。",
+    "relation": "早期 GPT-3.5 流水线代表，和 DIN-SQL / DAIL-SQL 一起构成 prompting 基线族。"
+  },
+  {
+    "citekey": "BIRD2023",
+    "title": "Can LLM Already Serve as A Database Interface? A BIg Bench for Large-Scale Database Grounded Text-to-SQLs",
+    "year": 2023,
+    "venue": "NeurIPS",
+    "venue_class": "ML",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "2305.03111",
+    "url": "https://arxiv.org/abs/2305.03111",
+    "why": "BIRD benchmark; NeurIPS 2023 Datasets and Benchmarks",
+    "source": "curated",
+    "authors": [
+      "Jinyang Li",
+      "Binyuan Hui",
+      "Ge Qu",
+      "Jiaxi Yang",
+      "Binhua Li",
+      "Bowen Li",
+      "Bailin Wang",
+      "Bowen Qin",
+      "Rongyu Cao",
+      "Ruiying Geng",
+      "Nan Huo",
+      "Xuanhe Zhou",
+      "Chenhao Ma",
+      "Guoliang Li",
+      "Kevin C. C. Chang",
+      "Fei Huang",
+      "Reynold Cheng",
+      "Yongbin Li"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "benchmark"
+    ],
+    "benchmarks": [
+      "BIRD"
+    ],
+    "problem": "Spider 上的高分无法迁移到更大、更脏、需要外部知识的真实数据库。",
+    "method": "发布 BIRD：95 库、外键脏 schema、evidence，并引入执行准确率与 VES。",
+    "relation": "我们的主评测场。related work 的问题设定段从这里起笔。"
+  },
+  {
+    "title": "CatSQL: Towards Real World Natural Language to SQL Applications",
+    "year": 2023,
+    "venue": "VLDB",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.14778/3583140.3583165",
+    "arxiv": "",
+    "url": "https://www.vldb.org/pvldb/vol16/p1534-fu.pdf",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Han Fu",
+      "Chang Liu",
+      "Bin Wu",
+      "Feifei Li",
+      "Jian Tan",
+      "Jianling Sun"
+    ],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：CatSQL: Towards Real World Natural Language to SQL Applications。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "CatSQL2023"
+  },
+  {
+    "title": "DIN-SQL: Decomposed In-Context Learning of Text-to-SQL with Self-Correction",
+    "year": 2023,
+    "venue": "NeurIPS",
+    "venue_class": "ML",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "2304.11015",
+    "url": "https://arxiv.org/abs/2304.11015",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Mohammadreza Pourreza",
+      "Davood Rafiei"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "prompting",
+      "execution"
+    ],
+    "benchmarks": [
+      "Spider",
+      "BIRD"
+    ],
+    "citekey": "DINSQL2023",
+    "problem": "复杂 SQL 一次生成容易在 schema linking 和嵌套上同时出错。",
+    "method": "把任务分解为 schema linking、分类、生成、自校正四个 prompt。",
+    "relation": "LLM 分解式 prompting 的标准对照。我们的流水线若更重，要说明比 DIN-SQL 多在哪。"
+  },
+  {
+    "title": "Data Ambiguity Strikes Back: How Documentation Improves GPT's Text-to-SQL",
+    "year": 2023,
+    "venue": "NeurIPS Workshop",
+    "venue_class": "ML",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "",
+    "url": "https://openreview.net/pdf?id=FflKTuIRTD",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：Data Ambiguity Strikes Back: How Documentation Improves GPT's Text-to-SQL。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "DataAmbiguityStrikesBack2023"
+  },
+  {
+    "title": "Few-shot Text-to-SQL Translation using Structure and Content Prompt Learning",
+    "year": 2023,
+    "venue": "VLDB",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.1145/3589292",
+    "arxiv": "",
+    "url": "https://dl.acm.org/doi/abs/10.1145/3589292",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "Zihui Gu",
+      "Ju Fan",
+      "Nan Tang",
+      "Lei Cao",
+      "Bowen Jia",
+      "Sam Madden",
+      "Xiaoyong Du"
+    ],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：Few-shot Text-to-SQL Translation using Structure and Content Prompt Learning。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "FewShotTextSql2023"
+  },
+  {
+    "title": "G 3 R: A Graph-Guided Generate-and-Rerank Framework for Complex and Cross-domain Text-to-SQL Generation",
+    "year": 2023,
+    "venue": "ACL Findings",
+    "venue_class": "NLP",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "",
+    "url": "https://aclanthology.org/2023.findings-acl.23/",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：G 3 R: A Graph-Guided Generate-and-Rerank Framework for Complex and Cross-domain Text-to-SQL Generation。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "G3RGraph2023"
+  },
+  {
+    "citekey": "GraphixT52023",
+    "title": "Graphix-T5: Mixing Pre-trained Transformers with Graph-Aware Layers for Text-to-SQL Parsing",
+    "year": 2023,
+    "venue": "AAAI",
+    "venue_class": "other",
+    "era": "llm",
+    "found_via": "citation",
+    "doi": "",
+    "arxiv": "2301.07507",
+    "url": "https://arxiv.org/abs/2301.07507",
+    "why": "named graph-aware T5 baseline",
+    "source": "curated",
+    "authors": [
+      "Jinyang Li",
+      "Binyuan Hui",
+      "Reynold Cheng",
+      "Bowen Qin",
+      "Chenhao Ma",
+      "Nan Huo",
+      "Fei Huang",
+      "Wenyu Du",
+      "Luo Si",
+      "Yongbin Li"
+    ],
+    "cited_by": [
+      "BIRD2023",
+      "CodeS2024"
+    ],
+    "status": "reviewed",
+    "themes": [
+      "pre-llm",
+      "schema-linking"
+    ],
+    "benchmarks": [
+      "Spider"
+    ],
+    "problem": "T5 缺乏显式 schema 图偏置。",
+    "method": "在 T5 中插入 graph-aware 层混合预训练表示与关系图。",
+    "relation": "PLM+图 的 2023 代表，作为 LLM prompting 之前的最后一代结构模型。"
+  },
+  {
+    "title": "Importance of Synthesizing High-quality Data for Text-to-SQL Parsing",
+    "year": 2023,
+    "venue": "ACL Findings",
+    "venue_class": "NLP",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "",
+    "url": "https://aclanthology.org/2023.findings-acl.86.pdf",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "finetuning"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：Importance of Synthesizing High-quality Data for Text-to-SQL Parsing。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "ImportanceSynthesizingHighQuality2023"
+  },
+  {
+    "title": "Improving Generalization in Language Model-based Text-to-SQL Semantic Parsing: Two Simple Semantic Boundary-based Techniques",
+    "year": 2023,
+    "venue": "ACL",
+    "venue_class": "NLP",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "",
+    "url": "https://virtual2023.aclweb.org/paper_P4350.html",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：Improving Generalization in Language Model-based Text-to-SQL Semantic Parsing: Two Simple Semantic Boundary-based Techniques。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "ImprovingGeneralizationLanguageModel2023"
+  },
+  {
+    "title": "Know What I don’t Know: Handling Ambiguous and Unknown Questions for Text-to-SQL",
+    "year": 2023,
+    "venue": "ACL Findings",
+    "venue_class": "NLP",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "",
+    "url": "https://aclanthology.org/2023.findings-acl.352/",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "drafted",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [],
+    "problem": "围绕 Text-to-SQL / NL2SQL 的具体问题，见论文题目：Know What I don’t Know: Handling Ambiguous and Unknown Questions for Text-to-SQL。",
+    "method": "方法细节待精读；当前按标题与会议归入对应 theme。",
+    "relation": "入口论文，写作 related work 前需精读后改这一段。",
+    "citekey": "KnowWhatIDon2023"
+  },
+  {
+    "title": "Natural Language Interfaces for Databases with Deep Learning",
+    "year": 2023,
+    "venue": "VLDB",
+    "venue_class": "DB",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "10.14778/3611540.3611575",
+    "arxiv": "",
+    "url": "https://dl.acm.org/doi/10.14778/3611540.3611575",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [
+      "George Katsogiannis-Meimarakis",
+      "Mike Xydas",
+      "Georgia Koutrika"
+    ],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "systems"
+    ],
+    "benchmarks": [],
+    "citekey": "NLIDBTutorial2023",
+    "problem": "深度学习 NLIDB 的模块和流程缺乏面向 DB 社区的系统梳理。",
+    "method": "VLDB 2023 教程：从语义解析到 LLM 的 NLIDB 全景。",
+    "relation": "DB 视角的教程，related work 开头可用来一句话收束 NLIDB 历史。"
+  },
+  {
+    "citekey": "RESDSQL2023",
+    "title": "RESDSQL: Decoupling Schema Linking and Skeleton Parsing for Text-to-SQL",
+    "year": 2023,
+    "venue": "AAAI",
+    "venue_class": "other",
+    "era": "llm",
+    "found_via": "citation",
+    "doi": "",
+    "arxiv": "2302.05965",
+    "url": "https://arxiv.org/abs/2302.05965",
+    "why": "last strong PLM baseline before LLM era; named skeleton ranking",
+    "source": "curated",
+    "authors": [
+      "Haoyang Li",
+      "Jing Zhang",
+      "Cuiping Li",
+      "Hong Chen"
+    ],
+    "cited_by": [
+      "CodeS2024",
+      "OmniSQL2025",
+      "DAILSQL2024"
+    ],
+    "status": "reviewed",
+    "themes": [
+      "pre-llm",
+      "schema-linking",
+      "finetuning"
+    ],
+    "benchmarks": [
+      "Spider"
+    ],
+    "problem": "linking 和 SQL 骨架生成缠在一起，难优化。",
+    "method": "先做 schema linking / 骨架排序，再填值，基于 T5。",
+    "relation": "前 LLM 最强开源对照之一；CodeS / OmniSQL 常拿它当 PLM 基线。"
+  },
+  {
+    "title": "Selective Demonstrations for Cross-domain Text-to-SQL",
+    "year": 2023,
+    "venue": "EMNLP",
+    "venue_class": "NLP",
+    "era": "llm",
+    "found_via": "venue",
+    "doi": "",
+    "arxiv": "2310.06302",
+    "url": "https://arxiv.org/abs/2310.06302",
+    "why": "handbook venue badge in spec list",
+    "source": "handbook",
+    "authors": [],
+    "cited_by": [],
+    "status": "reviewed",
+    "themes": [
+      "prompting"
+    ],
+    "benchmarks": [
+      "Spider"
+    ],
+    "citekey": "ODIS2023",
+    "problem": "跨域 few-shot 选例不当会伤害泛化。",
+    "method": "ODIS：为跨域 Text-to-SQL 选择示范。",
+    "relation": "example selection 和 DAIL-SQL 同一段。"
+  }
+]

@@ -1,0 +1,2641 @@
+[
+  {
+    "title": "SafeQL: Search-based Refinement for Safe and Efficient LLM-based Text-to-SQL",
+    "year": 2026,
+    "venue_key": "PVLDB",
+    "container": "Proceedings of the VLDB Endowment",
+    "doi": "10.14778/3819518.3819545"
+  },
+  {
+    "title": "Pervasive Annotation Errors Break Text-to-SQL Benchmarks and Leaderboards",
+    "year": 2026,
+    "venue_key": "PVLDB",
+    "container": "Proceedings of the VLDB Endowment",
+    "doi": "10.14778/3796195.3796206"
+  },
+  {
+    "title": "Developing and Benchmarking Verification Algorithms to Improve Text-to-SQL Generation",
+    "year": 2026,
+    "venue_key": "PVLDB",
+    "container": "Proceedings of the VLDB Endowment",
+    "doi": "10.14778/3836663.3836721"
+  },
+  {
+    "title": "Evoschema: Towards Text-to-SQL Robustness against Schema Evolution",
+    "year": 2025,
+    "venue_key": "PVLDB",
+    "container": "Proceedings of the VLDB Endowment",
+    "doi": "10.14778/3748191.3748222"
+  },
+  {
+    "title": "OpenSQL: Data-Efficient Text-to-SQL for Open-Source LLMs via Synthesized Intermediate Supervision",
+    "year": 2026,
+    "venue_key": "PVLDB",
+    "container": "Proceedings of the VLDB Endowment",
+    "doi": "10.14778/3801059.3801074"
+  },
+  {
+    "title": "Text-to-SQL Empowered by Large Language Models: A Benchmark Evaluation",
+    "year": 2024,
+    "venue_key": "PVLDB",
+    "container": "Proceedings of the VLDB Endowment",
+    "doi": "10.14778/3641204.3641221"
+  },
+  {
+    "title": "OmniSQL: Synthesizing High-Quality Text-to-SQL Data at Scale",
+    "year": 2025,
+    "venue_key": "PVLDB",
+    "container": "Proceedings of the VLDB Endowment",
+    "doi": "10.14778/3749646.3749723"
+  },
+  {
+    "title": "TACO: A Benchmark for Open-Domain Text-to-SQL with Ambiguous and Cross-Database Queries",
+    "year": 2026,
+    "venue_key": "PVLDB",
+    "container": "Proceedings of the VLDB Endowment",
+    "doi": "10.14778/3797919.3797942"
+  },
+  {
+    "title": "A Comparative Evaluation of Schema Subsetting for LLM-based NL-to-SQL over Large-Schema Databases",
+    "year": 2026,
+    "venue_key": "PVLDB",
+    "container": "Proceedings of the VLDB Endowment",
+    "doi": "10.14778/3819518.3819531"
+  },
+  {
+    "title": "Natural Language to SQL: State of the Art and Open Problems",
+    "year": 2025,
+    "venue_key": "PVLDB",
+    "container": "Proceedings of the VLDB Endowment",
+    "doi": "10.14778/3750601.3750696"
+  },
+  {
+    "title": "The Dawn of Natural Language to SQL: Are We Fully Ready?",
+    "year": 2024,
+    "venue_key": "PVLDB",
+    "container": "Proceedings of the VLDB Endowment",
+    "doi": "10.14778/3681954.3682003"
+  },
+  {
+    "title": "<i>CatSQL</i>\n                    : Towards Real World Natural Language to SQL Applications",
+    "year": 2023,
+    "venue_key": "PVLDB",
+    "container": "Proceedings of the VLDB Endowment",
+    "doi": "10.14778/3583140.3583165"
+  },
+  {
+    "title": "ScienceBenchmark: A Complex Real-World Benchmark for Evaluating Natural Language to SQL Systems",
+    "year": 2023,
+    "venue_key": "PVLDB",
+    "container": "Proceedings of the VLDB Endowment",
+    "doi": "10.14778/3636218.3636225"
+  },
+  {
+    "title": "The Power of Constraints in Natural Language to SQL Translation",
+    "year": 2025,
+    "venue_key": "PVLDB",
+    "container": "Proceedings of the VLDB Endowment",
+    "doi": "10.14778/3734839.3734847"
+  },
+  {
+    "title": "A survey on deep learning approaches for text-to-SQL",
+    "year": 2023,
+    "venue_key": "PVLDB",
+    "container": "The VLDB Journal",
+    "doi": "10.1007/s00778-022-00776-8"
+  },
+  {
+    "title": "Sphinteract: Resolving Ambiguities in NL2SQL through User Interaction",
+    "year": 2024,
+    "venue_key": "PVLDB",
+    "container": "Proceedings of the VLDB Endowment",
+    "doi": "10.14778/3717755.3717772"
+  },
+  {
+    "title": "NL2SQLBench: A Modular Benchmarking Framework for LLM-Enabled NL2SQL Solutions",
+    "year": 2026,
+    "venue_key": "PVLDB",
+    "container": "Proceedings of the VLDB Endowment",
+    "doi": "10.14778/3796195.3796211"
+  },
+  {
+    "title": "Is Long Context All You Need? Leveraging LLM's Extended Context for NL2SQL",
+    "year": 2025,
+    "venue_key": "PVLDB",
+    "container": "Proceedings of the VLDB Endowment",
+    "doi": "10.14778/3742728.3742761"
+  },
+  {
+    "title": "Dial: A Knowledge-Grounded Dialect-Specific NL2SQL System",
+    "year": 2026,
+    "venue_key": "PVLDB",
+    "container": "Proceedings of the VLDB Endowment",
+    "doi": "10.14778/3836663.3836720"
+  },
+  {
+    "title": "Combining Small Language Models and Large Language Models for Zero-Shot NL2SQL",
+    "year": 2024,
+    "venue_key": "PVLDB",
+    "container": "Proceedings of the VLDB Endowment",
+    "doi": "10.14778/3681954.3681960"
+  },
+  {
+    "title": "A\n                    <scp>mbi</scp>\n                    SQL: Interactive Ambiguity Detection and Resolution for Text-to-SQL",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "Companion of the International Conference on Management of Data",
+    "doi": "10.1145/3788853.3801581"
+  },
+  {
+    "title": "RTS+: Reliable Text to SQL",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "Companion of the 2025 International Conference on Management of Data",
+    "doi": "10.1145/3722212.3725129"
+  },
+  {
+    "title": "Text2sql-Flow: a Robust Sql-Aware Data Augmentation Framework for Text-To-Sql",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)",
+    "doi": "10.1109/icde65706.2026.00267"
+  },
+  {
+    "title": "Text-to-SQL with Large Language Models: Challenges Revisited and New Dimensions",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "Proceedings of the 15th International Conference on Data Science, Technology and Applications",
+    "doi": "10.5220/0015161100004091"
+  },
+  {
+    "title": "LEAF-SQL: Level-Wise Exploration with Adaptive Fine-Graining for Text-to-SQL Skeleton Prediction",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)",
+    "doi": "10.1109/icde65706.2026.00181"
+  },
+  {
+    "title": "AID-SQL: Adaptive In-Context Learning of Text-to-SQL with Difficulty-Aware Instruction and Retrieval-Augmented Generation",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 IEEE 41st International Conference on Data Engineering (ICDE)",
+    "doi": "10.1109/icde65448.2025.00294"
+  },
+  {
+    "title": "MixCoT-SQL: A User-Adaptive Text-to-SQL Framework Based on Mixed Chain-of-Thought and Result Reflection Refinement",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 IEEE International Conference on Big Data (BigData)",
+    "doi": "10.1109/bigdata66926.2025.11400955"
+  },
+  {
+    "title": "BESR-SQL: A Budget-Aware Error-Granularity Self-Repair Agent for Chinese Multi-Turn Text-to-SQL",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "2026 6th International Conference on Artificial Intelligence, Big Data and Algorithms (CAIBDA)",
+    "doi": "10.1109/caibda70336.2026.11621820"
+  },
+  {
+    "title": "EVOLVE: Evaluation of Language-to-SQL Validity and Effectiveness - A Detailed Review Framework for Complex Text-to-SQL Queries",
+    "year": 2024,
+    "venue_key": "SIGMOD",
+    "container": "2024 IEEE International Conference on Big Data (BigData)",
+    "doi": "10.1109/bigdata62323.2024.10825883"
+  },
+  {
+    "title": "TC-SQL: Table Completion-Based Optimization of Schema Linking for Text-to-SQL",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 International Conference on Cyberworlds (CW）",
+    "doi": "10.1109/cw68232.2025.00067"
+  },
+  {
+    "title": "DeepEye-SQL: A Software-Engineering-Inspired Text-to-SQL Framework",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "Proceedings of the ACM on Management of Data",
+    "doi": "10.1145/3802035"
+  },
+  {
+    "title": "OpenSearch-SQL: Enhancing Text-to-SQL with Dynamic Few-shot and Consistency Alignment",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "Proceedings of the ACM on Management of Data",
+    "doi": "10.1145/3725331"
+  },
+  {
+    "title": "Evaluating Text-to-SQL Model Failures on Real-World Data",
+    "year": 2024,
+    "venue_key": "SIGMOD",
+    "container": "2024 IEEE 40th International Conference on Data Engineering (ICDE)",
+    "doi": "10.1109/icde60146.2024.00456"
+  },
+  {
+    "title": "GS-SQL: Modeling Spatial Semantics in Spatial Text-to-SQL",
+    "year": 2024,
+    "venue_key": "SIGMOD",
+    "container": "2024 International Joint Conference on Neural Networks (IJCNN)",
+    "doi": "10.1109/ijcnn60899.2024.10651125"
+  },
+  {
+    "title": "HI-SQL: Optimizing Text-to-SQL Systems through Dynamic Hint Integration",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 International Joint Conference on Neural Networks (IJCNN)",
+    "doi": "10.1109/ijcnn64981.2025.11227320"
+  },
+  {
+    "title": "FinSQL: Model-Agnostic LLMs-based Text-to-SQL Framework for Financial Analysis",
+    "year": 2024,
+    "venue_key": "SIGMOD",
+    "container": "Companion of the 2024 International Conference on Management of Data",
+    "doi": "10.1145/3626246.3653375"
+  },
+  {
+    "title": "CityChat: Template-Guided Text-to-SQL over City-Scale Spatial Data",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "2026 IEEE 42nd International Conference on Data Engineering Workshops (ICDEW)",
+    "doi": "10.1109/icdew71238.2026.00028"
+  },
+  {
+    "title": "Error-Aware Text-to-SQL Generation for Clinical Trial Eligibility Criteria Querying in EHR Databases",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 IEEE International Conference on Big Data (BigData)",
+    "doi": "10.1109/bigdata66926.2025.11402102"
+  },
+  {
+    "title": "Applying Text-to-SQL to SQL/OLAP Using LLMs",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 8th International Conference on Machine Learning and Natural Language Processing (MLNLP)",
+    "doi": "10.1109/mlnlp66797.2025.11389090"
+  },
+  {
+    "title": "LLMSQL: Upgrading WikiSQL for the LLM Era of Text-to-SQL",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 IEEE International Conference on Data Mining Workshops (ICDMW)",
+    "doi": "10.1109/icdmw69685.2025.00066"
+  },
+  {
+    "title": "LLM-Powered Text-to-SQL Generation and Data Visualization",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "2026 International Conference on Artificial Intelligence and Data Engineering (AIDE)",
+    "doi": "10.1109/aide69088.2026.11544926"
+  },
+  {
+    "title": "SQLMorph: Query Mutation and Fine-Grained Metrics for Text-to-SQL Evaluation",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)",
+    "doi": "10.1109/icde65706.2026.00196"
+  },
+  {
+    "title": "Enhancing LLM Fine-Tuning for Text-to-SQLs by SQL Quality Measurement",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 IEEE International Conference on Data Mining Workshops (ICDMW)",
+    "doi": "10.1109/icdmw69685.2025.00343"
+  },
+  {
+    "title": "Reward-SQL: Boosting Text-to-SQL via Stepwise Execution-Aware Reasoning and Process-Supervised Rewards",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "Proceedings of the ACM on Management of Data",
+    "doi": "10.1145/3802105"
+  },
+  {
+    "title": "Evaluating ChatGPT for Text-To-SQL: An Empirical Approach",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 International Conference on Artificial Intelligence, Computer, Data Sciences and Applications (ACDSA)",
+    "doi": "10.1109/acdsa65407.2025.11166458"
+  },
+  {
+    "title": "MTC-SQL: a memory-enhanced and task-decomposed correction method for text-to-SQL",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "International Journal of Data Science and Analytics",
+    "doi": "10.1007/s41060-025-00995-6"
+  },
+  {
+    "title": "Are Your LLM-based Text-to-SQL Models Secure? Exploring SQL Injection via Backdoor Attacks",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "Proceedings of the ACM on Management of Data",
+    "doi": "10.1145/3769762"
+  },
+  {
+    "title": "IRAM-SQL: A Language Model Integrating Relation-Aware Mechanism for Text-to-SQL",
+    "year": 2024,
+    "venue_key": "SIGMOD",
+    "container": "2024 10th International Conference on Computer and Communications (ICCC)",
+    "doi": "10.1109/iccc62609.2024.10942231"
+  },
+  {
+    "title": "SEED: Enhancing Text-to-SQL Performance and Practical Usability Through Automatic Evidence Generation",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 IEEE 41st International Conference on Data Engineering Workshops (ICDEW)",
+    "doi": "10.1109/icdew67478.2025.00005"
+  },
+  {
+    "title": "CCS-SQL: Enhancing Text-to-SQL Framework for Computational Queries via Large Language Models",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 International Joint Conference on Neural Networks (IJCNN)",
+    "doi": "10.1109/ijcnn64981.2025.11227969"
+  },
+  {
+    "title": "PS-SQL: Phrase-based Schema-Linking with Pre-trained Language Models for Text-to-SQL Parsing",
+    "year": 2024,
+    "venue_key": "SIGMOD",
+    "container": "2024 6th International Conference on Natural Language Processing (ICNLP)",
+    "doi": "10.1109/icnlp60986.2024.10692964"
+  },
+  {
+    "title": "RH-SQL: Refined Schema and Hardness Prompt for Text-to-SQL",
+    "year": 2024,
+    "venue_key": "SIGMOD",
+    "container": "2024 6th International Conference on Electronic Engineering and Informatics (EEI)",
+    "doi": "10.1109/eei63073.2024.10696753"
+  },
+  {
+    "title": "Text-to-SQL Generation for Medical Databases via Large Language Models and SQL Decomposition",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 International Conference on Signal Processing and Communication Technology (SPCT)",
+    "doi": "10.1109/spct68223.2025.11406783"
+  },
+  {
+    "title": "HEXGEN-FLOW: Optimizing LLM Inference Request Scheduling for Agentic Text-to-SQL",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)",
+    "doi": "10.1109/icde65706.2026.00134"
+  },
+  {
+    "title": "Text to SQL Generation Using Beam Search and an Enhanced Bert  Model",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "Proceedings of the 3rd International Conference on Futuristic Technology",
+    "doi": "10.5220/0013608600004664"
+  },
+  {
+    "title": "Lightweight and Data-Efficient Fine-Tuning of Language Models for Bidirectional Text-to-SQL and SQL-to-Text Tasks: A Systematic Review",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "Advanced International Journal for Research",
+    "doi": "10.63363/aijfr.2025.v06i06.2745"
+  },
+  {
+    "title": "Integrating Non-Parametric Attention and Prompt Refinement to Enhance LLM-Based Text-to-SQL Without External Knowledge",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 IEEE International Conference on Data Mining Workshops (ICDMW)",
+    "doi": "10.1109/icdmw69685.2025.00056"
+  },
+  {
+    "title": "MG-SQL: A Multi-Graph Reasoning Framework for Text-to-SQL in Power Grid Dispatching",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 6th International Conference on Smart Grid and Energy Engineering (SGEE)",
+    "doi": "10.1109/sgee68429.2025.11385648"
+  },
+  {
+    "title": "AES-SQL: Text-to-SQL Based on Adaptive Prompting and Intelligent Example Selection",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "2026 6th International Conference on Consumer Electronics and Computer Engineering (ICCECE)",
+    "doi": "10.1109/iccece69169.2026.11399787"
+  },
+  {
+    "title": "MCR-SQL: Improving Text-to-SQL with Generative Schema Retrieval and Multi-Model Collaborative Revision",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "2026 5th International Conference on Electronic Information Engineering, Big Data and Computer Technology (EIBDCT)",
+    "doi": "10.1109/eibdct69742.2026.11566706"
+  },
+  {
+    "title": "Cost Trade-offs of Reasoning and Non-Reasoning Large Language Models in Text-to-SQL",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "2026 IEEE 42nd International Conference on Data Engineering Workshops (ICDEW)",
+    "doi": "10.1109/icdew71238.2026.00036"
+  },
+  {
+    "title": "Sequential Feature Augmentation for Robust Text-to-SQL",
+    "year": 2023,
+    "venue_key": "SIGMOD",
+    "container": "2023 International Conference on Algorithms, Computing and Data Processing (ACDP)",
+    "doi": "10.1109/acdp59959.2023.00042"
+  },
+  {
+    "title": "FATO-SQL: a comprehensive framework for high-performance Text-to-SQL task",
+    "year": 2024,
+    "venue_key": "SIGMOD",
+    "container": "International Conference on Optics, Electronics, and Communication Engineering (OECE 2024)",
+    "doi": "10.1117/12.3049621"
+  },
+  {
+    "title": "SCE-SQL: Self-Correction Enhancement in Text-to-SQL Tasks",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 IEEE 3rd International Conference on Electrical, Automation and Computer Engineering (ICEACE)",
+    "doi": "10.1109/iceace67491.2025.11439575"
+  },
+  {
+    "title": "MA-SToR-SQL: Memory-Augmented Self-Taught Reasoning for High-Accuracy Text-to-SQL Translation on the Spider Benchmark",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "International Journal of Research Publication and Reviews",
+    "doi": "10.55248/gengpi.07.0426.d1010"
+  },
+  {
+    "title": "Retrieval and Augmentation of Domain Knowledge for Text-to-SQL Semantic Parsing",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 IEEE International Conference on Data Mining Workshops (ICDMW)",
+    "doi": "10.1109/icdmw69685.2025.00201"
+  },
+  {
+    "title": "DaMiT-SQL: Detecting and Mitigating Text-to-SQL Prompt Injection Attacks",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 IEEE International Conference on Collaborative Advances in Software and COmputiNg (CASCON)",
+    "doi": "10.1109/cascon66301.2025.00116"
+  },
+  {
+    "title": "When Text-to-SQL Evaluation Misleads: Rethinking Benchmarking Practices",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)",
+    "doi": "10.1109/icde65706.2026.00364"
+  },
+  {
+    "title": "Text-to-SQL Experiments with Engineering Data Extracted from CAD Files",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "Proceedings of the 27th International Conference on Enterprise Information Systems",
+    "doi": "10.5220/0013436800003929"
+  },
+  {
+    "title": "On the Text-to-SQL Task Supported by Database Keyword Search",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "Proceedings of the 27th International Conference on Enterprise Information Systems",
+    "doi": "10.5220/0013126300003929"
+  },
+  {
+    "title": "Bootstrapping Text-to-SQL Resources for Knowledge Graph Question Answering",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 IEEE Swiss Conference on Data Science (SDS)",
+    "doi": "10.1109/sds66131.2025.00009"
+  },
+  {
+    "title": "GTR-SQL: Graph Pruning, Tournament Selection, and Taxonomy Repair for Text-to-SQL",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 5th International Conference on Communication Technology and Information Technology (ICCTIT)",
+    "doi": "10.1109/icctit68197.2025.11406408"
+  },
+  {
+    "title": "Text-to-SQL Meets the Real-World",
+    "year": 2024,
+    "venue_key": "SIGMOD",
+    "container": "Proceedings of the 26th International Conference on Enterprise Information Systems",
+    "doi": "10.5220/0012555200003690"
+  },
+  {
+    "title": "Reliable Text-to-SQL with Adaptive Abstention",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "Proceedings of the ACM on Management of Data",
+    "doi": "10.1145/3709719"
+  },
+  {
+    "title": "Knapsack Optimization-Based Schema Linking for LLM-Based Text-to-SQL Generation",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)",
+    "doi": "10.1109/icde65706.2026.00046"
+  },
+  {
+    "title": "Prism-SQL: A Self-Judging Dual-Path Refraction Framework for Multi-Turn Text-to-SQL",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 6th International Conference on Intelligent Computing and Human-Computer Interaction (ICHCI)",
+    "doi": "10.1109/ichci67614.2025.11291703"
+  },
+  {
+    "title": "Auto prompt SQL: a resource-efficient architecture for text-to-SQL translation in constrained environments",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "IET Conference Proceedings",
+    "doi": "10.1049/icp.2025.2864"
+  },
+  {
+    "title": "The Generalization and Error Detection in LLM-based Text-to-SQL Systems",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "Proceedings of the Eighteenth ACM International Conference on Web Search and Data Mining",
+    "doi": "10.1145/3701551.3707416"
+  },
+  {
+    "title": "EC-SQL: A Text-to-SQL Framework for Time-series Semantic Alignment In the Energy and Carbon Domain",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "2026 10th International Conference on Electronic Information Technology and Computer Engineering (EITCE)",
+    "doi": "10.1109/eitce70137.2026.11634435"
+  },
+  {
+    "title": "TFFSQL:Enhancing Graph Neural Network through Text Feature Fusion for Text-to-SQL",
+    "year": 2024,
+    "venue_key": "SIGMOD",
+    "container": "International Conference on Artificial Intelligence, Automation and High Performance Computing",
+    "doi": "10.1145/3690931.3691010"
+  },
+  {
+    "title": "Design of an Interactive Text-to-SQL System with User Feedback Based on Lightweight Models",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "Journal of the Korea Management Engineers Society",
+    "doi": "10.35373/kmes.31.1.3"
+  },
+  {
+    "title": "LINC-SQL: A Collaborative Framework for Robust Text-to-SQL Generation",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "2026 29th International Conference on Computer Supported Cooperative Work in Design (CSCWD)",
+    "doi": "10.1109/cscwd68734.2026.11582832"
+  },
+  {
+    "title": "SPSQL-2: Make Submodels More Adaptable to Subtasks in the Pipelined Text-to-SQL Model",
+    "year": 2023,
+    "venue_key": "SIGMOD",
+    "container": "2023 International Conference on Algorithms, Computing and Data Processing (ACDP)",
+    "doi": "10.1109/acdp59959.2023.00046"
+  },
+  {
+    "title": "SQLight: Reasoning-Augmented and Workflow-Decoupled Text-to-SQL",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 5th International Symposium on Artificial Intelligence and Big Data (AIBDF)",
+    "doi": "10.1109/aibdf67964.2025.11440856"
+  },
+  {
+    "title": "Same Data, Different Schemas: Robustness of LLM-based Text-to-SQL",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "Proceedings of the Ninth International Workshop on Exploiting Artificial Intelligence Techniques for Data Management",
+    "doi": "10.1145/3814940.3815329"
+  },
+  {
+    "title": "APEX-SQL: Talking to the data via Agentic Exploration for Text-to-SQL",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2",
+    "doi": "10.1145/3770855.3818075"
+  },
+  {
+    "title": "Reliable Answers for Recurring Questions: Boosting Text-to-SQL Accuracy with Template Constrained Decoding",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "Proceedings of the ACM on Management of Data",
+    "doi": "10.1145/3769822"
+  },
+  {
+    "title": "MGRR-SQL: Multi-Granularity Relevant Retrieval-Based in-Context Learning Approach for Text-to-SQL Generation",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 8th International Conference on Advanced Algorithms and Control Engineering (ICAACE)",
+    "doi": "10.1109/icaace65325.2025.11019241"
+  },
+  {
+    "title": "SA-SQL: A Schema-Aligned Framework for Text-to-SQL through Large Language Models",
+    "year": 2024,
+    "venue_key": "SIGMOD",
+    "container": "2024 International Conference on Computational Linguistics and Natural Language Processing (CLNLP)",
+    "doi": "10.1109/clnlp64123.2024.00021"
+  },
+  {
+    "title": "RAG-based Unanswerable Question Detection in Clinical Text-to-SQL",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "Proceedings of the 34th ACM International Conference on Information and Knowledge Management",
+    "doi": "10.1145/3746252.3760821"
+  },
+  {
+    "title": "Comparison and Analysis of Value Linking in Text-to-SQL systems: [Experiments &amp; Analysis]",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "Proceedings of the ACM on Management of Data",
+    "doi": "10.1145/3802029"
+  },
+  {
+    "title": "SchemaRAG: A Schema-aware Retrieval-Augmented Generation Framework for Text-to-SQL",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "Proceedings of the ACM on Management of Data",
+    "doi": "10.1145/3786696"
+  },
+  {
+    "title": "AMPC-SQL: A Large Model Enhancement Scheme for Text-to-SQL Capability Based on Prompt Learning",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 International Conference on Artificial Intelligence, Digital Media Technology and Social Computing (ICAIDS)",
+    "doi": "10.1109/icaids67687.2025.00029"
+  },
+  {
+    "title": "SQL-Checker: Error Detection and Labeling for Text-to-SQL with Interpretability Analysis",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "Proceedings of the ACM Web Conference 2026",
+    "doi": "10.1145/3774904.3792212"
+  },
+  {
+    "title": "Learn From Mistakes: Guidance on Zero-shot Conversational Text-to-SQL",
+    "year": 2024,
+    "venue_key": "SIGMOD",
+    "container": "Proceedings of the 33rd ACM International Conference on Information and Knowledge Management",
+    "doi": "10.1145/3627673.3679951"
+  },
+  {
+    "title": "RAGSQL: Context Retrieval Evaluation on Augmenting Text-to-SQL Prompts",
+    "year": 2024,
+    "venue_key": "SIGMOD",
+    "container": "2024 IEEE 12th International Conference on Intelligent Systems (IS)",
+    "doi": "10.1109/is61756.2024.10705186"
+  },
+  {
+    "title": "Meta-Aware Learning in text-to-SQL Large Language Model",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 IEEE International Conference on Systems, Man, and Cybernetics (SMC)",
+    "doi": "10.1109/smc58881.2025.11343583"
+  },
+  {
+    "title": "Boosting Small Language Models for Text-to-SQL with Fine-Grained Execution Feedback and Cost-Efficient Rewards",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)",
+    "doi": "10.1109/icde65706.2026.00183"
+  },
+  {
+    "title": "ITDS-SQL: Enhancing Text-to-SQL Parsing by In-Context Learning with Inference Time Data Synthesis",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+    "doi": "10.1109/icassp55912.2026.11462681"
+  },
+  {
+    "title": "MTSL-SQL: Multi-Turn Schema Linking for Context-dependent Text-to-SQL Paring with Open-Source LLMs",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 Asian Conference on Artificial Intelligence Technology (ACAIT)",
+    "doi": "10.1109/acait67930.2025.11522618"
+  },
+  {
+    "title": "E\n                    <scp>rror</scp>\n                    LLM: Modeling SQL Errors for Text-to-SQL Refinement",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2",
+    "doi": "10.1145/3770855.3818164"
+  },
+  {
+    "title": "Multi-Turn Interactions for Text-to-SQL with Large Language Models",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "Proceedings of the 34th ACM International Conference on Information and Knowledge Management",
+    "doi": "10.1145/3746252.3761052"
+  },
+  {
+    "title": "A Study of the Performance of Large Language Models in Text-to-SQL Tasks",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "2026 5th International Informatics and Software Engineering Conference (IISEC)",
+    "doi": "10.1109/iisec69317.2026.11418515"
+  },
+  {
+    "title": "Sinhala Text-to-SQL: A Hybrid Approach",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 IEEE 17th International Conference on Computational Intelligence and Communication Networks (CICN)",
+    "doi": "10.1109/cicn67655.2025.11367980"
+  },
+  {
+    "title": "Fine-Tuning Large Language Models for Text-to-SQL",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 IEEE 5th International Conference on Electronic Technology, Communication and Information (ICETCI)",
+    "doi": "10.1109/icetci64844.2025.11084052"
+  },
+  {
+    "title": "EPSP-SQL: Enhancing Text-To-SQL by Explicit Prompt-Based Self-Play Fine-Tuning",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 IEEE 7th International Conference on Artificial Intelligence, Computer Science, and Information Processing (AICSIP)",
+    "doi": "10.1109/aicsip65423.2025.11427190"
+  },
+  {
+    "title": "Few-shot Text-to-SQL Translation using Structure and Content Prompt Learning",
+    "year": 2023,
+    "venue_key": "SIGMOD",
+    "container": "Proceedings of the ACM on Management of Data",
+    "doi": "10.1145/3589292"
+  },
+  {
+    "title": "Lightweight Text-to-SQL Enhancement via Schema Ranking and Skeleton-Constrained CoT Distillation",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 5th International Symposium on Artificial Intelligence and Big Data (AIBDF)",
+    "doi": "10.1109/aibdf67964.2025.11440751"
+  },
+  {
+    "title": "Demonstration of a Multi-agent Framework for Text to SQL Applications with Large Language Models",
+    "year": 2024,
+    "venue_key": "SIGMOD",
+    "container": "Proceedings of the 33rd ACM International Conference on Information and Knowledge Management",
+    "doi": "10.1145/3627673.3679216"
+  },
+  {
+    "title": "Fine-Tuning Gemma-2B for Text-to-SQL Generation",
+    "year": 2024,
+    "venue_key": "SIGMOD",
+    "container": "2024 9th International Conference on Communication and Electronics Systems (ICCES)",
+    "doi": "10.1109/icces63552.2024.10860111"
+  },
+  {
+    "title": "SQL3M: Token Efficient Text-to-SQL Generation",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "2026 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)",
+    "doi": "10.1109/saner67736.2026.00105"
+  },
+  {
+    "title": "NL2SQL-BUGs: A Benchmark for Detecting Semantic Errors in NL2SQL Translation",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2",
+    "doi": "10.1145/3711896.3737427"
+  },
+  {
+    "title": "CLEAR: A Parser-Independent Disambiguation Framework for NL2SQL",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 IEEE 41st International Conference on Data Engineering (ICDE)",
+    "doi": "10.1109/icde65448.2025.00247"
+  },
+  {
+    "title": "NL2SQL method based on Thesaurus and Knowledge-Augmented",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 IEEE 6th International Conference on Computer, Big Data, Artificial Intelligence (ICCBD+AI)",
+    "doi": "10.1109/iccbdai66607.2025.11388593"
+  },
+  {
+    "title": "Power Communication Planning Data Query System Based on the NL2SQL Framework",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 7th International Conference on Next Generation Data-driven Networks (NGDN)",
+    "doi": "10.1109/ngdn66208.2025.11182085"
+  },
+  {
+    "title": "CYANSQL: Unlock the Power of NL2SQL Via Clustering-Based Test-Time Scaling",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)",
+    "doi": "10.1109/icde65706.2026.00084"
+  },
+  {
+    "title": "PRISM: Navigating Cost–Accuracy Trade-offs for NL2SQL",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "Proceedings of the ACM on Management of Data",
+    "doi": "10.1145/3786679"
+  },
+  {
+    "title": "Research on NL2SQL in the logistics field based on large language models under resource constraints",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "Proceedings of the 2025 5th International Conference on Big Data, Artificial Intelligence and Risk Management",
+    "doi": "10.1145/3800227.3800276"
+  },
+  {
+    "title": "NL2SQL Generation Technology for Multi-Source Heterogeneous Data Based on RLHF and Knowledge Graph",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 5th International Symposium on Artificial Intelligence and Big Data (AIBDF)",
+    "doi": "10.1109/aibdf67964.2025.11440762"
+  },
+  {
+    "title": "An Agentic System for Schema Aware NL2SQL Generation",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "2026 IEEE Conference on Artificial Intelligence (CAI)",
+    "doi": "10.1109/cai68641.2026.11536543"
+  },
+  {
+    "title": "Data Security Protection and Analysis of ERP System Based on NL2SQL with Large Language Model and Encrypted Database",
+    "year": 2024,
+    "venue_key": "SIGMOD",
+    "container": "Proceedings of the 2024 7th International Conference on Big Data Technologies",
+    "doi": "10.1145/3698300.3698320"
+  },
+  {
+    "title": "Robust Clinical Querying with Local LLMs: Lexical Challenges in NL2SQL and Retrieval-Augmented QA on EHRs",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "Big Data and Cognitive Computing",
+    "doi": "10.3390/bdcc9100256"
+  },
+  {
+    "title": "Dual-Pattern Decomposition and Python Intermediate Layer for Reliable Nl2sql",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 11th International Conference on Computer and Communications (ICCC)",
+    "doi": "10.1109/iccc68654.2025.11437718"
+  },
+  {
+    "title": "NL2SQL-OLM: A Novel Framework for Natural Language to SQL with Schema-Aware LLM Prompting and Zero-Shot Query Generation",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 IEEE International Conference on Advances in Data-Driven Analytics And Intelligent Systems (ADACIS)",
+    "doi": "10.1109/adacis65663.2025.11437141"
+  },
+  {
+    "title": "A Survey of NL2SQL Research: From Foundations to Frontiers",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 2nd International Conference on Intelligent Perception and Pattern Recognition (IPPR)",
+    "doi": "10.1109/ippr66507.2025.11198387"
+  },
+  {
+    "title": "NL2SQL: Rule-Based Model for Natural Language to SQL",
+    "year": 2023,
+    "venue_key": "SIGMOD",
+    "container": "Algorithms for Intelligent Systems",
+    "doi": "10.1007/978-981-99-4626-6_66"
+  },
+  {
+    "title": "LLM-Enhanced Chinese NL2SQL Translation Task Under Resource-Limited Condition",
+    "year": 2024,
+    "venue_key": "SIGMOD",
+    "container": "ACM Turing Award Celebration Conference 2024",
+    "doi": "10.1145/3674399.3674433"
+  },
+  {
+    "title": "LangGraph-Orchestrated NL2SQL: Combining PII Anonymization with Deterministic SQL Validation",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "2026 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+    "doi": "10.1109/icscan66520.2026.11588432"
+  },
+  {
+    "title": "Graph-Fusion RESDSQL: Enhancing NL2SQL Robustness with Dynamic Schema Linking and Contextual Integration",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 IEEE 7th International Conference on Communications, Information System and Computer Engineering (CISCE)",
+    "doi": "10.1109/cisce65916.2025.11065889"
+  },
+  {
+    "title": "NL2SQL for Cybersecurity: Automating Osquery Threat Hunting via Natural Language Queries",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "2026 18th International Conference on COMmunication Systems and NETworks (COMSNETS)",
+    "doi": "10.1109/comsnets67989.2026.11418133"
+  },
+  {
+    "title": "Research on Tobacco Data Query Application Based on NL2SQL",
+    "year": 2024,
+    "venue_key": "SIGMOD",
+    "container": "Proceedings of the 2024 9th International Conference on Cyber Security and Information Engineering",
+    "doi": "10.1145/3689236.3695386"
+  },
+  {
+    "title": "NL2SQL Method in the Power Domain Based on the Multi-Layer Collaborative Optimization Strategy",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 International Conference on Electrical, Control and Artificial Intelligence (ICOECAI)",
+    "doi": "10.1109/icoecai67333.2025.11335997"
+  },
+  {
+    "title": "Research on Intelligent NL2SQL Data Query Method for Energy Systems Using RAG-Enhanced Large Language Models",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "2025 6th International Conference on Smart Grid and Energy Engineering (SGEE)",
+    "doi": "10.1109/sgee68429.2025.11385475"
+  },
+  {
+    "title": "Research and Practice of NL2SQL Technology Based on LLM for Big Data of Enterprise Finance",
+    "year": 2024,
+    "venue_key": "SIGMOD",
+    "container": "2024 4th International Conference on Advanced Enterprise Information System (AEIS)",
+    "doi": "10.1109/aeis65978.2024.00015"
+  },
+  {
+    "title": "ViewLearner: GNN-Driven Pre-Built Views for Multi-Table NL2SQL",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+    "doi": "10.1109/icassp55912.2026.11460810"
+  },
+  {
+    "title": "Multi-Agent NL2SQL: An Adaptive S-N-M Framework for Chinese Text-to-SQL with Weighted Selection",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "2026 9th International Conference on Advanced Electronic Technology, Computers and Software Engineering (AETCSE)",
+    "doi": "10.1109/aetcse69203.2026.11504381"
+  },
+  {
+    "title": "An LLM-Powered Intelligent Assistant for Learning Management Systems Using RAG and NL2SQL Pipelines",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "2026 5th International Conference on Distributed Computing and Electrical Circuits and Electronics (ICDCECE)",
+    "doi": "10.1109/icdcece68961.2026.11646016"
+  },
+  {
+    "title": "Intelligent Interaction of Fluorine containing materials Based on NL2SQL",
+    "year": 2023,
+    "venue_key": "SIGMOD",
+    "container": "International Journal of Computer Science and Information Technology",
+    "doi": "10.62051/ijcsit.v1n1.25"
+  },
+  {
+    "title": "Natural Language to SQL (NL2SQL): A Comprehensive Study of Text-to-SQL Systems, Conversational AI for Databases, Enterprise Architectures, Challenges, and Future Directions",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "International Journal of Advanced Research in Science Communication and Technology",
+    "doi": "10.48175/ijarsct-37344"
+  },
+  {
+    "title": "Retrieval-Augmented NL2SQL Generation with Data-Centric Query Capsules for Enterprise Applications",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "Proceedings of the 2025 Annual International ACM SIGIR Conference on Research and Development in Information Retrieval in the Asia Pacific Region",
+    "doi": "10.1145/3767695.3769489"
+  },
+  {
+    "title": "PowerSQL-Agent: Domain-Aware NL2SQL for Power System Data Analytics",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "2026 3rd International Symposium on New Energy Technologies and Power Systems (NETPS)",
+    "doi": "10.1109/netps70564.2026.11650187"
+  },
+  {
+    "title": "From NL2SQL to NL2Code: Exploring A New Paradigm for Natural Language to Programming Code Generation",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "Lecture Notes in Networks and Systems",
+    "doi": "10.1007/978-981-96-5373-7_90"
+  },
+  {
+    "title": "Feather-SQL: A Lightweight NL2SQL Framework with Dual-Model Collaboration Paradigm for Small Language Models",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "Proceedings of the 14th International Joint Conference on Natural Language Processing and the 4th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics",
+    "doi": "10.18653/v1/2025.findings-ijcnlp.130"
+  },
+  {
+    "title": "DAC-SQL: A Controlled DSL as an Allowlist-Validatable Security Control Point for Deterministic Vertical-Domain NL2SQL",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "2026 IEEE 27th China Conference on System Simulation Technology and its Applications (CCSSTA)",
+    "doi": "10.1109/ccssta69471.2026.11635782"
+  },
+  {
+    "title": "GRAY: Enhancing Few-Shot NL2SQL Translation Through Incremental SQL Log-Based Demonstration Expansion",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "Lecture Notes in Computer Science",
+    "doi": "10.1007/978-981-95-5716-5_5"
+  },
+  {
+    "title": "caliber: Benchmarking Environmental Impact of Generated Queries in NL2SQL Pipelines",
+    "year": 2026,
+    "venue_key": "SIGMOD",
+    "container": "Lecture Notes in Computer Science",
+    "doi": "10.1007/978-3-032-37685-5_19"
+  },
+  {
+    "title": "Distill-C: Enhanced NL2SQL via Distilled Customization with LLMs",
+    "year": 2025,
+    "venue_key": "SIGMOD",
+    "container": "Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 3: Industry Track)",
+    "doi": "10.18653/v1/2025.naacl-industry.64"
+  },
+  {
+    "title": "Automated Validating and Fixing of Text-to-SQL Translation with Execution Consistency",
+    "year": 2025,
+    "venue_key": "PACMMOD",
+    "container": "Proceedings of the ACM on Management of Data",
+    "doi": "10.1145/3725271"
+  },
+  {
+    "title": "CodeS: Towards Building Open-source Language Models for Text-to-SQL",
+    "year": 2024,
+    "venue_key": "PACMMOD",
+    "container": "Proceedings of the ACM on Management of Data",
+    "doi": "10.1145/3654930"
+  },
+  {
+    "title": "DIVER: A Robust Text-to-SQL System with Dynamic Interactive Value Linking and Evidence Reasoning",
+    "year": 2026,
+    "venue_key": "PACMMOD",
+    "container": "Proceedings of the ACM on Management of Data",
+    "doi": "10.1145/3786640"
+  },
+  {
+    "title": "A Survey on Employing Large Language Models for Text-to-SQL Tasks",
+    "year": 2025,
+    "venue_key": "PACMMOD",
+    "container": "ACM Computing Surveys",
+    "doi": "10.1145/3737873"
+  },
+  {
+    "title": "AutoRuleSQL: Hybrid Text-to-SQL via Rule-Driven Fast Paths and LLM Bootstrapping",
+    "year": 2025,
+    "venue_key": "PACMMOD",
+    "container": "Proceedings of the 34th ACM International Conference on Information and Knowledge Management",
+    "doi": "10.1145/3746252.3761438"
+  },
+  {
+    "title": "EMLC: An extensible multi-level correction framework for text-to-SQL",
+    "year": 2026,
+    "venue_key": "PACMMOD",
+    "container": "Information Processing &amp; Management",
+    "doi": "10.1016/j.ipm.2025.104560"
+  },
+  {
+    "title": "Ar-Spider: Text-to-SQL in Arabic",
+    "year": 2024,
+    "venue_key": "PACMMOD",
+    "container": "Proceedings of the 39th ACM/SIGAPP Symposium on Applied Computing",
+    "doi": "10.1145/3605098.3636065"
+  },
+  {
+    "title": "MedT5SQL: a transformers-based large language model for text-to-SQL conversion in the healthcare domain",
+    "year": 2024,
+    "venue_key": "PACMMOD",
+    "container": "Frontiers in Big Data",
+    "doi": "10.3389/fdata.2024.1371680"
+  },
+  {
+    "title": "XiYan-SQL: A Novel Multi-Generator Framework for Text-to-SQL",
+    "year": 2026,
+    "venue_key": "PACMMOD",
+    "container": "IEEE Transactions on Knowledge and Data Engineering",
+    "doi": "10.1109/tkde.2026.3657851"
+  },
+  {
+    "title": "Towards Automating Domain-Specific Data Generation for Text-to-SQL: A Comprehensive Approach",
+    "year": 2026,
+    "venue_key": "PACMMOD",
+    "container": "ACM Transactions on Software Engineering and Methodology",
+    "doi": "10.1145/3746226"
+  },
+  {
+    "title": "Towards More Realistic Natural Language Queries in Text-to-SQL Benchmarks",
+    "year": 2026,
+    "venue_key": "PACMMOD",
+    "container": "Proceedings of the Workshop on Human-In-the-Loop Data Analytics",
+    "doi": "10.1145/3814573.3814945"
+  },
+  {
+    "title": "SqPal - Text to SQL GenAI Tool for PayPal",
+    "year": 2025,
+    "venue_key": "PACMMOD",
+    "container": "2025 IEEE/ACM 4th International Conference on AI Engineering – Software Engineering for AI (CAIN)",
+    "doi": "10.1109/cain66642.2025.00034"
+  },
+  {
+    "title": "SQLord: A Robust Enterprise Text-to-SQL Solution via Reverse Data Generation and Workflow Decomposition",
+    "year": 2025,
+    "venue_key": "PACMMOD",
+    "container": "Companion Proceedings of the ACM on Web Conference 2025",
+    "doi": "10.1145/3701716.3715541"
+  },
+  {
+    "title": "Optimizing text-to-SQL conversion techniques through the integration of intelligent agents and large language models",
+    "year": 2025,
+    "venue_key": "PACMMOD",
+    "container": "Information Processing &amp; Management",
+    "doi": "10.1016/j.ipm.2025.104136"
+  },
+  {
+    "title": "Graph Reasoning Enhanced Language Models for Text-to-SQL",
+    "year": 2024,
+    "venue_key": "PACMMOD",
+    "container": "Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+    "doi": "10.1145/3626772.3657961"
+  },
+  {
+    "title": "Utilizing Past User Feedback for More Accurate Text-to-SQL",
+    "year": 2025,
+    "venue_key": "PACMMOD",
+    "container": "Proceedings of the Workshop on Human-In-the-Loop Data Analytics",
+    "doi": "10.1145/3736733.3736739"
+  },
+  {
+    "title": "Q-value guided Text-to-SQL generation: Structured reasoning meets efficient inference exploration",
+    "year": 2026,
+    "venue_key": "PACMMOD",
+    "container": "Information Processing &amp; Management",
+    "doi": "10.1016/j.ipm.2025.104607"
+  },
+  {
+    "title": "Multi-pattern retrieval-augmented framework for Text-to-SQL with Poincaré-Skeleton retrieval and meta-instruction reasoning",
+    "year": 2025,
+    "venue_key": "PACMMOD",
+    "container": "Information Processing &amp; Management",
+    "doi": "10.1016/j.ipm.2024.103978"
+  },
+  {
+    "title": "Data Warehousing with Generative AI and Text-to-SQL Reporting with Amazon Redshift",
+    "year": 2026,
+    "venue_key": "PACMMOD",
+    "container": "Data Engineering with Generative and Agentic AI on AWS",
+    "doi": "10.1007/979-8-8688-2199-8_10"
+  },
+  {
+    "title": "Investigating Pretrained Language Models and Learning Methods for Vietnamese Text-to-SQL",
+    "year": 2023,
+    "venue_key": "PACMMOD",
+    "container": "2023 IEEE Asia-Pacific Conference on Computer Science and Data Engineering (CSDE)",
+    "doi": "10.1109/csde59766.2023.10487773"
+  },
+  {
+    "title": "Reflect-SQL: A Self-reflection Based Framework for Text-to-SQL",
+    "year": 2026,
+    "venue_key": "PACMMOD",
+    "container": "Lecture Notes in Computer Science",
+    "doi": "10.1007/978-981-92-2014-4_7"
+  },
+  {
+    "title": "DarijaDB: Unlocking Text-to-SQL for Arabic Dialects",
+    "year": 2026,
+    "venue_key": "PACMMOD",
+    "container": "ACM Transactions on Asian and Low-Resource Language Information Processing",
+    "doi": "10.1145/3787497"
+  },
+  {
+    "title": "RBDQ: A Reliable LLM-based Text-to-SQL System for Business Data Queries",
+    "year": 2025,
+    "venue_key": "PACMMOD",
+    "container": "Companion Proceedings of the ACM on Web Conference 2025",
+    "doi": "10.1145/3701716.3715257"
+  },
+  {
+    "title": "Enhanced Text-to-SQL Generation via Query Classification",
+    "year": 2025,
+    "venue_key": "PACMMOD",
+    "container": "Frontiers in Artificial Intelligence and Applications",
+    "doi": "10.3233/faia250441"
+  },
+  {
+    "title": "Text-to-SQL via Model Context Protocol: Structured Context Orchestration for Reliable Database Query Generation",
+    "year": 2026,
+    "venue_key": "PACMMOD",
+    "container": "IEEE Transactions on Knowledge and Data Engineering",
+    "doi": "10.1109/tkde.2026.3716724"
+  },
+  {
+    "title": "Application of Noise Filter Mechanism for T5-Based Text-to-SQL Generation",
+    "year": 2023,
+    "venue_key": "ICDE",
+    "container": "2023 Moratuwa Engineering Research Conference (MERCon)",
+    "doi": "10.1109/mercon60487.2023.10355492"
+  },
+  {
+    "title": "TUR2SQL: A Cross-Domain Turkish Dataset For Text-to-SQL",
+    "year": 2023,
+    "venue_key": "ICDE",
+    "container": "2023 8th International Conference on Computer Science and Engineering (UBMK)",
+    "doi": "10.1109/ubmk59864.2023.10286686"
+  },
+  {
+    "title": "Thai Question Text-To-SQL Parsing Using Transformer",
+    "year": 2024,
+    "venue_key": "ICDE",
+    "container": "2024 21st International Joint Conference on Computer Science and Software Engineering (JCSSE)",
+    "doi": "10.1109/jcsse61278.2024.10613642"
+  },
+  {
+    "title": "Knowledge Filtering vs. Architectural Stability: A Comparative Study on Optimizing Lightweight LLMs for Text-to-SQL",
+    "year": 2025,
+    "venue_key": "ICDE",
+    "container": "2025 6th International Conference on Big Data &amp;amp; Artificial Intelligence &amp;amp; Software Engineering (ICBASE)",
+    "doi": "10.1109/icbase66587.2025.11181278"
+  },
+  {
+    "title": "Fine-Tuning Large Language Models for Text-to-SQL Tasks in Agricultural Census Anomaly Detection",
+    "year": 2024,
+    "venue_key": "ICDE",
+    "container": "2024 International Conference on Electrical Engineering and Informatics (ICELTICs)",
+    "doi": "10.1109/iceltics62730.2024.10776457"
+  },
+  {
+    "title": "Exploring Large Language Models for Text-to-SQL Error Correction with LoRA Fine-Tuning",
+    "year": 2025,
+    "venue_key": "ICDE",
+    "container": "2025 8th International Conference on Advanced Algorithms and Control Engineering (ICAACE)",
+    "doi": "10.1109/icaace65325.2025.11018984"
+  },
+  {
+    "title": "Text to SQL Query",
+    "year": 2025,
+    "venue_key": "ICDE",
+    "container": "International Journal for Research in Applied Science and Engineering Technology",
+    "doi": "10.22214/ijraset.2025.71793"
+  },
+  {
+    "title": "Text to SQL Transformation Using LLM: A Comparative Research of T5, Seq2Seq, and SQLNet Models",
+    "year": 2024,
+    "venue_key": "ICDE",
+    "container": "2024 9th International Conference on Computer Science and Engineering (UBMK)",
+    "doi": "10.1109/ubmk63289.2024.10773579"
+  },
+  {
+    "title": "BoA-SQL: Executable Blueprint-of-Action for Text-to-SQL with reinforcement learning",
+    "year": 2026,
+    "venue_key": "ICDE",
+    "container": "Engineering Applications of Artificial Intelligence",
+    "doi": "10.1016/j.engappai.2025.113454"
+  },
+  {
+    "title": "A Text-to-SQL strategy based on large language models and knowledge graphs for real-world databases",
+    "year": 2026,
+    "venue_key": "ICDE",
+    "container": "Data &amp; Knowledge Engineering",
+    "doi": "10.1016/j.datak.2026.102580"
+  },
+  {
+    "title": "Mixed Node and Edge GraphSAGE Based Schema Encoding for Text-to-SQL",
+    "year": 2024,
+    "venue_key": "ICDE",
+    "container": "2024 4th International Conference on Industrial Automation, Robotics and Control Engineering (IARCE)",
+    "doi": "10.1109/iarce64300.2024.00075"
+  },
+  {
+    "title": "Error-Driven Iterative Prompt Engineering for Text-to-SQL: From Simple Prompting to Hybrid Pipelines",
+    "year": 2026,
+    "venue_key": "ICDE",
+    "container": "2026 23rd International Joint Conference on Computer Science and Software Engineering (JCSSE)",
+    "doi": "10.1109/jcsse68839.2026.11596997"
+  },
+  {
+    "title": "A Proposed System for Text-to-SQL Translation Using Large Language Models",
+    "year": 2026,
+    "venue_key": "ICDE",
+    "container": "2026 2nd International Conference on Computing, Communication and Green Engineering (CCGE)",
+    "doi": "10.1109/ccge67142.2026.11581896"
+  },
+  {
+    "title": "Prompt Patterns That Improve Text-To-SQL Accuracy Under Increasing Schema Complexity",
+    "year": 2026,
+    "venue_key": "ICDE",
+    "container": "Iconic Research and Engineering Journals",
+    "doi": "10.64388/irev8i12-1716727"
+  },
+  {
+    "title": "Enhancing NL2SQL Conversion: Addressing Schema and Temporal Challenges with a Hierarchical Tree Structure",
+    "year": 2025,
+    "venue_key": "ICDE",
+    "container": "Applied and Computational Engineering",
+    "doi": "10.54254/2755-2721/2025.po23472"
+  },
+  {
+    "title": "Intelligent Question Answering System for Electricity Trading (NL2SQL): Semantic Understanding Optimization Based on Domain-Large Model",
+    "year": 2026,
+    "venue_key": "ICDE",
+    "container": "Advances in Transdisciplinary Engineering",
+    "doi": "10.3233/atde260381"
+  },
+  {
+    "title": "Bridging the gap between text-to-SQL research and real-world applications: A unified all-in-one framework for text-to-SQL",
+    "year": 2024,
+    "venue_key": "CIDR",
+    "container": "Knowledge-Based Systems",
+    "doi": "10.1016/j.knosys.2024.112697"
+  },
+  {
+    "title": "HLR-SQL: Human-like reasoning for Text-to-SQL with the human in the loop",
+    "year": 2026,
+    "venue_key": "CIDR",
+    "container": "Information Systems",
+    "doi": "10.1016/j.is.2025.102670"
+  },
+  {
+    "title": "DIN-SQL: Decomposed In-Context Learning of Text-to-SQL with Self-Correction",
+    "year": 2023,
+    "venue_key": "CIDR",
+    "container": "Advances in Neural Information Processing Systems 36",
+    "doi": "10.52202/075280-1577"
+  },
+  {
+    "title": "Enhanced financial text-to-SQL generation via fine-grained SQL refinement",
+    "year": 2026,
+    "venue_key": "CIDR",
+    "container": "Expert Systems with Applications",
+    "doi": "10.1016/j.eswa.2026.133067"
+  },
+  {
+    "title": "SV2-SQL: a text-to-SQL transformation mechanism based on BERT models for slot filling, value extraction, and verification",
+    "year": 2024,
+    "venue_key": "CIDR",
+    "container": "Multimedia Systems",
+    "doi": "10.1007/s00530-023-01201-y"
+  },
+  {
+    "title": "SKT-SQL: multi-decoupling and skeleton prompt framework for text-to-SQL on small-scale LMs",
+    "year": 2025,
+    "venue_key": "CIDR",
+    "container": "Journal of Intelligent Information Systems",
+    "doi": "10.1007/s10844-025-00963-3"
+  },
+  {
+    "title": "G²SQL: guided &amp; guarded Text-to-SQL generation with two-stage verification",
+    "year": 2026,
+    "venue_key": "CIDR",
+    "container": "Expert Systems with Applications",
+    "doi": "10.1016/j.eswa.2026.131276"
+  },
+  {
+    "title": "KADP-SQL: Knowledge-Augmented Generation and Dual-Path Validation in Text-to-SQL",
+    "year": 2026,
+    "venue_key": "CIDR",
+    "container": "ICST Transactions on Scalable Information Systems",
+    "doi": "10.4108/eetsis.10499"
+  },
+  {
+    "title": "USD-RAG:Unique Schema-Driven Retrieval Augmented Generation for Text-to-SQL via In-Context Learning",
+    "year": 2024,
+    "venue_key": "CIDR",
+    "container": "Journal of Korean Institute of Intelligent Systems",
+    "doi": "10.5391/jkiis.2024.34.5.448"
+  },
+  {
+    "title": "PPR-SQL: a robust text-to-SQL system via probabilistic graph pruning and multi-view reasoning",
+    "year": 2026,
+    "venue_key": "CIDR",
+    "container": "Journal of Intelligent Information Systems",
+    "doi": "10.1007/s10844-026-01049-4"
+  },
+  {
+    "title": "SafeSQL-LLM: A Synthetic Data Approach to Privacy-Preserving Text-to-SQL",
+    "year": 2025,
+    "venue_key": "CIDR",
+    "container": "2025 IEEE 31th International Conference on Parallel and Distributed Systems (ICPADS)",
+    "doi": "10.1109/icpads67057.2025.11323205"
+  },
+  {
+    "title": "PTD-SQL: Partitioning and Targeted Drilling with LLMs in Text-to-SQL",
+    "year": 2024,
+    "venue_key": "CIDR",
+    "container": "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    "doi": "10.18653/v1/2024.emnlp-main.221"
+  },
+  {
+    "title": "Autonomous Multi Agent Collaborators for Enterprise Decision Support: An Agentic AI Framework to Hybrid RAG and Text-to-SQL",
+    "year": 2026,
+    "venue_key": "CIDR",
+    "container": "2026 5th International Conference on Innovative Practices in Technology and Management (ICIPTM)",
+    "doi": "10.1109/iciptm69057.2026.11465444"
+  },
+  {
+    "title": "MCTS-SQL: Light-Weight LLMs Can Master the Text-to-SQL Through Monte Carlo Tree Search",
+    "year": 2026,
+    "venue_key": "CIDR",
+    "container": "Proceedings of the AAAI Conference on Artificial Intelligence",
+    "doi": "10.1609/aaai.v40i41.40751"
+  },
+  {
+    "title": "SAFE-SQL: Self-Augmented In-Context Learning with Fine-grained Example Selection for Text-to-SQL",
+    "year": 2025,
+    "venue_key": "CIDR",
+    "container": "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    "doi": "10.18653/v1/2025.emnlp-main.962"
+  },
+  {
+    "title": "Text-to-SQL Correction Based on Correlation Degree and Multi-round Error Evaluation",
+    "year": 2025,
+    "venue_key": "CIDR",
+    "container": "2025 IEEE International Conference on Systems, Man, and Cybernetics (SMC)",
+    "doi": "10.1109/smc58881.2025.11342895"
+  },
+  {
+    "title": "OilRAGSQL: A RAG-based large language model framework for NL2SQL tasks in oilfield data analysis",
+    "year": 2026,
+    "venue_key": "CIDR",
+    "container": "Journal of Intelligent Information Systems",
+    "doi": "10.1007/s10844-026-01055-6"
+  },
+  {
+    "title": "MSAE-SQL: A Multi-layer Semantic-Aware Enhanced NL2SQL Model",
+    "year": 2026,
+    "venue_key": "CIDR",
+    "container": "Lecture Notes in Computer Science",
+    "doi": "10.1007/978-981-95-6426-2_32"
+  },
+  {
+    "title": "Optimizing Few-Shot NL2SQL for Sepsis Data Analysis in Medical Databases",
+    "year": 2026,
+    "venue_key": "CIDR",
+    "container": "Lecture Notes in Computer Science",
+    "doi": "10.1007/978-981-95-6426-2_3"
+  },
+  {
+    "title": "SQL-to-Schema Enhances Schema Linking in Text-to-SQL",
+    "year": 2024,
+    "venue_key": "TODS",
+    "container": "Lecture Notes in Computer Science",
+    "doi": "10.1007/978-3-031-68309-1_11"
+  },
+  {
+    "title": "Bridge-SQL: Bridging Single- and Multi-Turn Text-to-SQL via Preference-Aligned Question Rewriting",
+    "year": 2026,
+    "venue_key": "TODS",
+    "container": "Lecture Notes in Computer Science",
+    "doi": "10.1007/978-981-92-0372-7_8"
+  },
+  {
+    "title": "MR-SQL: Multi-level Retrieval Enhances Inference for LLM in Text-to-SQL",
+    "year": 2026,
+    "venue_key": "TODS",
+    "container": "Lecture Notes in Computer Science",
+    "doi": "10.1007/978-981-95-3830-0_27"
+  },
+  {
+    "title": "PET-SQL: A Prompt-Enhanced Two-Round Refinement of Text-to-SQL with Cross-Consistency",
+    "year": 2026,
+    "venue_key": "TODS",
+    "container": "Lecture Notes in Computer Science",
+    "doi": "10.1007/978-981-95-3830-0_13"
+  },
+  {
+    "title": "SQL-GRID: A Grounded Retrieval and Interactive Disambiguation Agent for Text-to-SQL over Power Grid Data",
+    "year": 2026,
+    "venue_key": "TODS",
+    "container": "EAI Endorsed Transactions on Energy Web",
+    "doi": "10.4108/ew.14071"
+  },
+  {
+    "title": "A Systematic Literature Review of Text-to-SQL: Performance, Challenges, and Limitations",
+    "year": 2025,
+    "venue_key": "TODS",
+    "container": "ICCK Transactions on Advanced Computing and Systems",
+    "doi": "10.62762/tacs.2025.497935"
+  },
+  {
+    "title": "MAVIDSQL: A Model-Agnostic Visualization for Interpretation and Diagnosis of Text-to-SQL Tasks",
+    "year": 2024,
+    "venue_key": "TODS",
+    "container": "IEEE Transactions on Cognitive and Developmental Systems",
+    "doi": "10.1109/tcds.2024.3391278"
+  },
+  {
+    "title": "LLCE-SQL: Data-Efficient Text-to-SQL Training via Logic-Linking Driven Collaborative Evolution",
+    "year": 2026,
+    "venue_key": "TODS",
+    "container": "IEEE Transactions on Audio, Speech and Language Processing",
+    "doi": "10.1109/taslpro.2026.3724417"
+  },
+  {
+    "title": "Enhancing Chain-of-Thought Reasoning for Text-to-SQL with Effective Retrieval-Augmented Generation",
+    "year": 2026,
+    "venue_key": "TODS",
+    "container": "Lecture Notes in Computer Science",
+    "doi": "10.1007/978-981-95-3827-0_33"
+  },
+  {
+    "title": "Bravely Say I Don’t Know: Relational Question-Schema Graph for Text-to-SQL Answerability Classification",
+    "year": 2023,
+    "venue_key": "TODS",
+    "container": "ACM Transactions on Asian and Low-Resource Language Information Processing",
+    "doi": "10.1145/3579030"
+  },
+  {
+    "title": "A Comprehensive Review of LLM-based Text-to-SQL Systems: Methods, Datasets, and Trends",
+    "year": 2026,
+    "venue_key": "TODS",
+    "container": "Computational Systems and Artificial Intelligence",
+    "doi": "10.69882/adba.csai.2026011"
+  },
+  {
+    "title": "Execution-Feedback and Retrieval-Augmented Generation for Conversational Text-to-SQL: From One-Shot Questions to Clarification-Driven Executable Dialogs",
+    "year": 2023,
+    "venue_key": "TODS",
+    "container": "Journal of Advanced Computing Systems",
+    "doi": "10.69987/jacs.2023.30201"
+  },
+  {
+    "title": "From Natural Language to SQL: A Survey on LLM-Based Text-to-SQL Research and Applications",
+    "year": 2026,
+    "venue_key": "TODS",
+    "container": "Lecture Notes in Networks and Systems",
+    "doi": "10.1007/978-3-032-15395-1_13"
+  },
+  {
+    "title": "Self-Correcting Text-to-SQL Agent with Error Feedback: A Reproducible Closed-Loop Evaluation on Compact Executable SQLite Benchmarks",
+    "year": 2024,
+    "venue_key": "TODS",
+    "container": "Journal of Advanced Computing Systems",
+    "doi": "10.69987/jacs.2024.41107"
+  },
+  {
+    "title": "MoAF-SQL: A Feedback-Driven Mixture-of-Agents Approach for Text-to-SQL",
+    "year": 2026,
+    "venue_key": "TODS",
+    "container": "Advances in Science, Technology &amp; Innovation",
+    "doi": "10.1007/978-3-032-24784-1_12"
+  },
+  {
+    "title": "DTS-SQL: Decomposed Text-to-SQL with Small Large Language Models",
+    "year": 2024,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: EMNLP 2024",
+    "doi": "10.18653/v1/2024.findings-emnlp.481"
+  },
+  {
+    "title": "Enhancing SQL Table Acquisition with Reverse Engineering for Text-to-SQL",
+    "year": 2025,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    "doi": "10.18653/v1/2025.findings-emnlp.425"
+  },
+  {
+    "title": "PV-SQL: Synergizing Database Probing and Rule-based Verification for Text-to-SQL Agents",
+    "year": 2026,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: ACL 2026",
+    "doi": "10.18653/v1/2026.findings-acl.1286"
+  },
+  {
+    "title": "PARSQL: Enhancing Text-to-SQL through SQL Parsing and Reasoning",
+    "year": 2025,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: ACL 2025",
+    "doi": "10.18653/v1/2025.findings-acl.37"
+  },
+  {
+    "title": "R3-SQL: Ranking Reward and Resampling for Text-to-SQL",
+    "year": 2026,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: ACL 2026",
+    "doi": "10.18653/v1/2026.findings-acl.2146"
+  },
+  {
+    "title": "Semantic Decomposition of Question and SQL for Text-to-SQL Parsing",
+    "year": 2023,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    "doi": "10.18653/v1/2023.findings-emnlp.910"
+  },
+  {
+    "title": "Learning SQL Like a Human: Structure-Aware Curriculum Learning for Text-to-SQL Generation",
+    "year": 2025,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    "doi": "10.18653/v1/2025.findings-emnlp.190"
+  },
+  {
+    "title": "ACT-SQL: In-Context Learning for Text-to-SQL with Automatically-Generated Chain-of-Thought",
+    "year": 2023,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    "doi": "10.18653/v1/2023.findings-emnlp.227"
+  },
+  {
+    "title": "TS-SQL: Test-driven Self-refinement for Text-to-SQL",
+    "year": 2025,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    "doi": "10.18653/v1/2025.findings-emnlp.156"
+  },
+  {
+    "title": "SPFT-SQL: Enhancing Large Language Model for Text-to-SQL Parsing by Self-Play Fine-Tuning",
+    "year": 2025,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    "doi": "10.18653/v1/2025.findings-emnlp.59"
+  },
+  {
+    "title": "LitE-SQL: A Lightweight and Efficient Text-to-SQL Framework with Vector-based Schema Linking and Execution-Guided Self-Correction",
+    "year": 2026,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: EACL 2026",
+    "doi": "10.18653/v1/2026.findings-eacl.186"
+  },
+  {
+    "title": "ExeSQL: Self-Taught Text-to-SQL Models with Execution-Driven Bootstrapping for SQL Dialects",
+    "year": 2025,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    "doi": "10.18653/v1/2025.findings-emnlp.1320"
+  },
+  {
+    "title": "EXPO-SQL: Execution-based Clause-level Policy Optimization for Text-to-SQL",
+    "year": 2026,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: ACL 2026",
+    "doi": "10.18653/v1/2026.findings-acl.1107"
+  },
+  {
+    "title": "Pi-SQL: Enhancing Text-to-SQL with Fine-Grained Guidance from Pivot Programming Languages",
+    "year": 2025,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    "doi": "10.18653/v1/2025.findings-emnlp.1369"
+  },
+  {
+    "title": "Selective Demonstrations for Cross-domain Text-to-SQL",
+    "year": 2023,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    "doi": "10.18653/v1/2023.findings-emnlp.944"
+  },
+  {
+    "title": "Re-appraising the Schema Linking for Text-to-SQL",
+    "year": 2023,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: ACL 2023",
+    "doi": "10.18653/v1/2023.findings-acl.53"
+  },
+  {
+    "title": "UCS-SQL: Uniting Content and Structure for Enhanced Semantic Bridging In Text-to-SQL",
+    "year": 2025,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: ACL 2025",
+    "doi": "10.18653/v1/2025.findings-acl.427"
+  },
+  {
+    "title": "Error Detection for Text-to-SQL Semantic Parsing",
+    "year": 2023,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    "doi": "10.18653/v1/2023.findings-emnlp.785"
+  },
+  {
+    "title": "Unmasking Database Vulnerabilities: Zero-Knowledge Schema Inference Attacks in Text-to-SQL Systems",
+    "year": 2025,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: NAACL 2025",
+    "doi": "10.18653/v1/2025.findings-naacl.386"
+  },
+  {
+    "title": "Optimizing Reasoning for Text-to-SQL with Execution Feedback",
+    "year": 2025,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: ACL 2025",
+    "doi": "10.18653/v1/2025.findings-acl.982"
+  },
+  {
+    "title": "Rethinking Text-to-SQL: Dynamic Multi-turn SQL Interaction for Real-world Database Exploration",
+    "year": 2026,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: ACL 2026",
+    "doi": "10.18653/v1/2026.findings-acl.1654"
+  },
+  {
+    "title": "DAC: Decomposed Automation Correction for Text-to-SQL",
+    "year": 2025,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    "doi": "10.18653/v1/2025.findings-emnlp.22"
+  },
+  {
+    "title": "Text-to-SQL Task-oriented Dialogue Ontology Construction",
+    "year": 2026,
+    "venue_key": "ACL",
+    "container": "Transactions of the Association for Computational Linguistics",
+    "doi": "10.1162/tacl.a.689"
+  },
+  {
+    "title": "VET: Verifiable Execution Tracing for Reliable Text-to-SQL Generation",
+    "year": 2026,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: ACL 2026",
+    "doi": "10.18653/v1/2026.findings-acl.1544"
+  },
+  {
+    "title": "Enhancing Text-to-SQL with Question Classification and Multi-Agent Collaboration",
+    "year": 2025,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: NAACL 2025",
+    "doi": "10.18653/v1/2025.findings-naacl.245"
+  },
+  {
+    "title": "DSMR-SQL: Enhancing Text-to-SQL with Dual-Strategy SQL Generation and Multi-role SQL Selection",
+    "year": 2025,
+    "venue_key": "ACL",
+    "container": "Lecture Notes in Computer Science",
+    "doi": "10.1007/978-981-95-2725-0_26"
+  },
+  {
+    "title": "SDE-SQL: Enhancing Text-to-SQL Generation in Large Language Models via Self-Driven Exploration with SQL Probes",
+    "year": 2026,
+    "venue_key": "ACL",
+    "container": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "doi": "10.18653/v1/2026.acl-long.116"
+  },
+  {
+    "title": "Graph-Reward-SQL: Execution-Free Reinforcement Learning for Text-to-SQL via Graph Matching and Stepwise Reward",
+    "year": 2025,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    "doi": "10.18653/v1/2025.findings-emnlp.694"
+  },
+  {
+    "title": "LatentRefusal: Latent-Signal Refusal for Unanswerable Text-to-SQL Queries",
+    "year": 2026,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: ACL 2026",
+    "doi": "10.18653/v1/2026.findings-acl.1007"
+  },
+  {
+    "title": "SQLSpace: A Representation Space for Text-to-SQL to Discover and Mitigate Robustness Gaps",
+    "year": 2025,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    "doi": "10.18653/v1/2025.findings-emnlp.81"
+  },
+  {
+    "title": "Improving Demonstration Diversity by Human-Free Fusing for Text-to-SQL",
+    "year": 2024,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: EMNLP 2024",
+    "doi": "10.18653/v1/2024.findings-emnlp.65"
+  },
+  {
+    "title": "EHR-SeqSQL : A Sequential Text-to-SQL Dataset For Interactively Exploring Electronic Health Records",
+    "year": 2024,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics ACL 2024",
+    "doi": "10.18653/v1/2024.findings-acl.971"
+  },
+  {
+    "title": "SynTQA: Synergistic Table-based Question Answering via Mixture of Text-to-SQL and E2E TQA",
+    "year": 2024,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: EMNLP 2024",
+    "doi": "10.18653/v1/2024.findings-emnlp.131"
+  },
+  {
+    "title": "Knowledge Base Construction for Knowledge-Augmented Text-to-SQL",
+    "year": 2025,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: ACL 2025",
+    "doi": "10.18653/v1/2025.findings-acl.1363"
+  },
+  {
+    "title": "Rethinking Schema Linking: A Context-Aware Bidirectional Retrieval Approach for Text-to-SQL",
+    "year": 2026,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: EACL 2026",
+    "doi": "10.18653/v1/2026.findings-eacl.236"
+  },
+  {
+    "title": "Exploring Schema Generalizability of Text-to-SQL",
+    "year": 2023,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: ACL 2023",
+    "doi": "10.18653/v1/2023.findings-acl.87"
+  },
+  {
+    "title": "Know What I don’t Know: Handling Ambiguous and Unknown Questions for Text-to-SQL",
+    "year": 2023,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: ACL 2023",
+    "doi": "10.18653/v1/2023.findings-acl.352"
+  },
+  {
+    "title": "ReSQL: Self-Improving Framework for Reasoning-Aware Text-to-SQL Dataset Generation",
+    "year": 2026,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: ACL 2026",
+    "doi": "10.18653/v1/2026.findings-acl.1677"
+  },
+  {
+    "title": "Beyond Read-Only: Crafting a Comprehensive Chinese Text-to-SQL Dataset for Database Manipulation and Query",
+    "year": 2024,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: NAACL 2024",
+    "doi": "10.18653/v1/2024.findings-naacl.214"
+  },
+  {
+    "title": "An Exploratory Study on Model Compression for Text-to-SQL",
+    "year": 2023,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: ACL 2023",
+    "doi": "10.18653/v1/2023.findings-acl.740"
+  },
+  {
+    "title": "SQLPrompt: In-Context Text-to-SQL with Minimal Labeled Data",
+    "year": 2023,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    "doi": "10.18653/v1/2023.findings-emnlp.39"
+  },
+  {
+    "title": "Exploring the Compositional Generalization in Context Dependent Text-to-SQL Parsing",
+    "year": 2023,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: ACL 2023",
+    "doi": "10.18653/v1/2023.findings-acl.43"
+  },
+  {
+    "title": "Enhancing Text-to-SQL Parsing through Question Rewriting and Execution-Guided Refinement",
+    "year": 2024,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics ACL 2024",
+    "doi": "10.18653/v1/2024.findings-acl.120"
+  },
+  {
+    "title": "Beyond Static Rules: Automated Discovery of Latent Vulnerabilities in Text-to-SQL",
+    "year": 2026,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: ACL 2026",
+    "doi": "10.18653/v1/2026.findings-acl.842"
+  },
+  {
+    "title": "SQLForge: Synthesizing Reliable and Diverse Data to Enhance Text-to-SQL Reasoning in LLMs",
+    "year": 2025,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: ACL 2025",
+    "doi": "10.18653/v1/2025.findings-acl.443"
+  },
+  {
+    "title": "G3R: A Graph-Guided Generate-and-Rerank Framework for Complex and Cross-domain Text-to-: A Graph-Guided Generate-and-Rerank Framework for Complex and Cross-domain Text-to-SQL Generation",
+    "year": 2023,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: ACL 2023",
+    "doi": "10.18653/v1/2023.findings-acl.23"
+  },
+  {
+    "title": "Learning from Imperfect Data: Towards Efficient Knowledge Distillation of Autoregressive Language Models for Text-to-SQL",
+    "year": 2024,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: EMNLP 2024",
+    "doi": "10.18653/v1/2024.findings-emnlp.403"
+  },
+  {
+    "title": "ReFSQL: A Retrieval-Augmentation Framework for Text-to-SQL Generation",
+    "year": 2023,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    "doi": "10.18653/v1/2023.findings-emnlp.48"
+  },
+  {
+    "title": "STaR-SQL: Self-Taught Reasoner for Text-to-SQL",
+    "year": 2025,
+    "venue_key": "ACL",
+    "container": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "doi": "10.18653/v1/2025.acl-long.1187"
+  },
+  {
+    "title": "CSS: A Large-scale Cross-schema Chinese Text-to-SQL Medical Dataset",
+    "year": 2023,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: ACL 2023",
+    "doi": "10.18653/v1/2023.findings-acl.435"
+  },
+  {
+    "title": "Arctic-Text2SQL-R1: Simple Rewards, Strong Reasoning in Text-to-SQL",
+    "year": 2026,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: ACL 2026",
+    "doi": "10.18653/v1/2026.findings-acl.1345"
+  },
+  {
+    "title": "DB-Explore: Automated Database Exploration and Instruction Synthesis for Text-to-SQL",
+    "year": 2025,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    "doi": "10.18653/v1/2025.findings-emnlp.1032"
+  },
+  {
+    "title": "SchemaGraphSQL: Efficient Schema Linking with Pathfinding Graph Algorithms for Text-to-SQL on Large-Scale Databases",
+    "year": 2026,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: EACL 2026",
+    "doi": "10.18653/v1/2026.findings-eacl.134"
+  },
+  {
+    "title": "CORES: Code-Oriented Reasoning for Complex Text-to-SQL and Generalizable TableQA",
+    "year": 2026,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: ACL 2026",
+    "doi": "10.18653/v1/2026.findings-acl.237"
+  },
+  {
+    "title": "Enhancing Text-to-SQL Capabilities of Large Language Models: A Study on Prompt Design Strategies",
+    "year": 2023,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    "doi": "10.18653/v1/2023.findings-emnlp.996"
+  },
+  {
+    "title": "Before Generation, Align it! A Novel and Effective Strategy for Mitigating Hallucinations in Text-to-SQL Generation",
+    "year": 2024,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics ACL 2024",
+    "doi": "10.18653/v1/2024.findings-acl.324"
+  },
+  {
+    "title": "Decomposition for Enhancing Attention: Improving LLM-based Text-to-SQL through Workflow Paradigm",
+    "year": 2024,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics ACL 2024",
+    "doi": "10.18653/v1/2024.findings-acl.641"
+  },
+  {
+    "title": "Investigating the Impact of Data Contamination of Large Language Models in Text-to-SQL translation",
+    "year": 2024,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics ACL 2024",
+    "doi": "10.18653/v1/2024.findings-acl.827"
+  },
+  {
+    "title": "Abacus-SQL: A Text-to-SQL System Empowering Cross-Domain and Open-Domain Database Retrieval",
+    "year": 2025,
+    "venue_key": "ACL",
+    "container": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 3: System Demonstrations)",
+    "doi": "10.18653/v1/2025.acl-demo.12"
+  },
+  {
+    "title": "Rose-SQL: Role-State Evolution Guided Structured Reasoning for Multi-Turn Text-to-SQL",
+    "year": 2026,
+    "venue_key": "ACL",
+    "container": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "doi": "10.18653/v1/2026.acl-long.2107"
+  },
+  {
+    "title": "DSQG-Syn: Synthesizing High-quality Data for Text-to-SQL Parsing by Domain Specific Question Generation",
+    "year": 2025,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: NAACL 2025",
+    "doi": "10.18653/v1/2025.findings-naacl.162"
+  },
+  {
+    "title": "DCG-SQL: Enhancing In-Context Learning for Text-to-SQL with Deep Contextual Schema Link Graph",
+    "year": 2025,
+    "venue_key": "ACL",
+    "container": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "doi": "10.18653/v1/2025.acl-long.748"
+  },
+  {
+    "title": "Battle of the Large Language Models: Dolly vs LLaMA vs Vicuna vs Guanaco vs Bard vs ChatGPT - A Text-to-SQL Parsing Comparison",
+    "year": 2023,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    "doi": "10.18653/v1/2023.findings-emnlp.750"
+  },
+  {
+    "title": "ReEx-SQL: Reasoning with Execution-Aware Reinforcement Learning for Text-to-SQL",
+    "year": 2026,
+    "venue_key": "ACL",
+    "container": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "doi": "10.18653/v1/2026.acl-long.35"
+  },
+  {
+    "title": "ADEPT-SQL: A High-performance Text-to-SQL Application for Real-World Enterprise-Level Databases",
+    "year": 2025,
+    "venue_key": "ACL",
+    "container": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 3: System Demonstrations)",
+    "doi": "10.18653/v1/2025.acl-demo.27"
+  },
+  {
+    "title": "SQL-Trail: Multi-Turn Reinforcement Learning with Interleaved Feedback for Text-to-SQL",
+    "year": 2026,
+    "venue_key": "ACL",
+    "container": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "doi": "10.18653/v1/2026.acl-long.1677"
+  },
+  {
+    "title": "Importance of Synthesizing High-quality Data for Text-to-SQL Parsing",
+    "year": 2023,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: ACL 2023",
+    "doi": "10.18653/v1/2023.findings-acl.86"
+  },
+  {
+    "title": "SLM-SQL: An Exploration of Small Language Models for Text-to-SQL",
+    "year": 2025,
+    "venue_key": "ACL",
+    "container": "Proceedings of the 14th International Joint Conference on Natural Language Processing and the 4th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics",
+    "doi": "10.18653/v1/2025.findings-ijcnlp.92"
+  },
+  {
+    "title": "Uncovering and Categorizing Social Biases in Text-to-SQL",
+    "year": 2023,
+    "venue_key": "ACL",
+    "container": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "doi": "10.18653/v1/2023.acl-long.759"
+  },
+  {
+    "title": "CSC-SQL: Corrective Self-Consistency in Text-to-SQL via Reinforcement Learning",
+    "year": 2025,
+    "venue_key": "ACL",
+    "container": "Proceedings of the 14th International Joint Conference on Natural Language Processing and the 4th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics",
+    "doi": "10.18653/v1/2025.findings-ijcnlp.91"
+  },
+  {
+    "title": "DPC: Training-Free Text-to-SQL Candidate Selection via Dual-Paradigm Consistency",
+    "year": 2026,
+    "venue_key": "ACL",
+    "container": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "doi": "10.18653/v1/2026.acl-long.313"
+  },
+  {
+    "title": "CoE-SQL: In-Context Learning for Multi-Turn Text-to-SQL with Chain-of-Editions",
+    "year": 2024,
+    "venue_key": "ACL",
+    "container": "Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+    "doi": "10.18653/v1/2024.naacl-long.361"
+  },
+  {
+    "title": "Synthesizing Text-to-SQL Data from Weak and Strong LLMs",
+    "year": 2024,
+    "venue_key": "ACL",
+    "container": "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "doi": "10.18653/v1/2024.acl-long.425"
+  },
+  {
+    "title": "Squrve: A Unified and Modular Framework for Complex Real-World Text-to-SQL Tasks",
+    "year": 2026,
+    "venue_key": "ACL",
+    "container": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 3: System Demonstrations)",
+    "doi": "10.18653/v1/2026.acl-demo.16"
+  },
+  {
+    "title": "PExA: Parallel Exploration Agent for Complex Text-to-SQL",
+    "year": 2026,
+    "venue_key": "ACL",
+    "container": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+    "doi": "10.18653/v1/2026.acl-short.48"
+  },
+  {
+    "title": "SHARE: An SLM-based Hierarchical Action CorREction Assistant for Text-to-SQL",
+    "year": 2025,
+    "venue_key": "ACL",
+    "container": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "doi": "10.18653/v1/2025.acl-long.552"
+  },
+  {
+    "title": "Text-to-SQL Error Correction with Language Models of Code",
+    "year": 2023,
+    "venue_key": "ACL",
+    "container": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+    "doi": "10.18653/v1/2023.acl-short.117"
+  },
+  {
+    "title": "Understanding the Effects of Noise in Text-to-SQL: An Examination of the BIRD-Bench Benchmark",
+    "year": 2024,
+    "venue_key": "ACL",
+    "container": "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+    "doi": "10.18653/v1/2024.acl-short.34"
+  },
+  {
+    "title": "Multitask Pretraining with Structured Knowledge for Text-to-SQL Generation",
+    "year": 2023,
+    "venue_key": "ACL",
+    "container": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "doi": "10.18653/v1/2023.acl-long.620"
+  },
+  {
+    "title": "Improving Generalization in Language Model-based Text-to-SQL Semantic Parsing: Two Simple Semantic Boundary-based Techniques",
+    "year": 2023,
+    "venue_key": "ACL",
+    "container": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+    "doi": "10.18653/v1/2023.acl-short.15"
+  },
+  {
+    "title": "Patient-Similarity Cohort Reasoning in Clinical Text-to-SQL",
+    "year": 2026,
+    "venue_key": "ACL",
+    "container": "Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "doi": "10.18653/v1/2026.eacl-long.64"
+  },
+  {
+    "title": "MTSQL-R1: Towards Long-Horizon Multi-Turn Text-to-SQL via Agentic Training",
+    "year": 2026,
+    "venue_key": "ACL",
+    "container": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "doi": "10.18653/v1/2026.acl-long.1563"
+  },
+  {
+    "title": "MSc-SQL: Multi-Sample Critiquing Small Language Models For Text-To-SQL Translation",
+    "year": 2025,
+    "venue_key": "ACL",
+    "container": "Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+    "doi": "10.18653/v1/2025.naacl-long.107"
+  },
+  {
+    "title": "Evaluating NL2SQL via SQL2NL",
+    "year": 2025,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    "doi": "10.18653/v1/2025.findings-emnlp.1031"
+  },
+  {
+    "title": "FD-NL2SQL: Feedback-Driven Clinical NL2SQL that Improves with Use",
+    "year": 2026,
+    "venue_key": "ACL",
+    "container": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 3: System Demonstrations)",
+    "doi": "10.18653/v1/2026.acl-demo.75"
+  },
+  {
+    "title": "Memo-SQL: Structured Decomposition and Experience-Driven Self-Correction for Training-Free NL2SQL",
+    "year": 2026,
+    "venue_key": "ACL",
+    "container": "Findings of the Association for Computational Linguistics: ACL 2026",
+    "doi": "10.18653/v1/2026.findings-acl.253"
+  },
+  {
+    "title": "VeriMinder: Mitigating Analytical Vulnerabilities in NL2SQL",
+    "year": 2025,
+    "venue_key": "ACL",
+    "container": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 3: System Demonstrations)",
+    "doi": "10.18653/v1/2025.acl-demo.43"
+  },
+  {
+    "title": "SPENCE: A Syntactic Probe for Detecting Contamination in NL2SQL Benchmarks",
+    "year": 2026,
+    "venue_key": "ACL",
+    "container": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "doi": "10.18653/v1/2026.acl-long.926"
+  },
+  {
+    "title": "ROSE: An Intent-Centered Evaluation Metric for NL2SQL",
+    "year": 2026,
+    "venue_key": "ACL",
+    "container": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "doi": "10.18653/v1/2026.acl-long.257"
+  },
+  {
+    "title": "CLARITY: A Framework and Benchmark for Conversational Language Ambiguity and Unanswerability in Interactive NL2SQL Systems",
+    "year": 2026,
+    "venue_key": "ACL",
+    "container": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 6: Industry Track)",
+    "doi": "10.18653/v1/2026.acl-industry.86"
+  },
+  {
+    "title": "JOLT-SQL: Joint Loss Tuning of Text-to-SQL with Confusion-aware Noisy Schema Sampling",
+    "year": 2025,
+    "venue_key": "EMNLP",
+    "container": "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    "doi": "10.18653/v1/2025.emnlp-main.308"
+  },
+  {
+    "title": "Dialect-SQL: An Adaptive Framework for Bridging the Dialect Gap in Text-to-SQL",
+    "year": 2025,
+    "venue_key": "EMNLP",
+    "container": "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    "doi": "10.18653/v1/2025.emnlp-main.178"
+  },
+  {
+    "title": "Evaluating Cross-Domain Text-to-SQL Models and Benchmarks",
+    "year": 2023,
+    "venue_key": "EMNLP",
+    "container": "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    "doi": "10.18653/v1/2023.emnlp-main.99"
+  },
+  {
+    "title": "Enhancing security in text-to-SQL systems: A novel dataset and agent-based framework",
+    "year": 2025,
+    "venue_key": "EMNLP",
+    "container": "Natural Language Processing",
+    "doi": "10.1017/nlp.2025.10008"
+  },
+  {
+    "title": "Benchmarking and Improving Text-to-SQL Generation under Ambiguity",
+    "year": 2023,
+    "venue_key": "EMNLP",
+    "container": "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    "doi": "10.18653/v1/2023.emnlp-main.436"
+  },
+  {
+    "title": "LinkAlign: Scalable Schema Linking for Real-World Large-Scale Multi-Database Text-to-SQL",
+    "year": 2025,
+    "venue_key": "EMNLP",
+    "container": "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    "doi": "10.18653/v1/2025.emnlp-main.51"
+  },
+  {
+    "title": "Exploring Chain of Thought Style Prompting for Text-to-SQL",
+    "year": 2023,
+    "venue_key": "EMNLP",
+    "container": "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    "doi": "10.18653/v1/2023.emnlp-main.327"
+  },
+  {
+    "title": "Fine-tuning text-to-SQL models with reinforcement-learning training objectives",
+    "year": 2025,
+    "venue_key": "EMNLP",
+    "container": "Natural Language Processing Journal",
+    "doi": "10.1016/j.nlp.2025.100135"
+  },
+  {
+    "title": "Calibrating LLMs for Text-to-SQL Parsing by Leveraging Sub-clause Frequencies",
+    "year": 2025,
+    "venue_key": "EMNLP",
+    "container": "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    "doi": "10.18653/v1/2025.emnlp-main.859"
+  },
+  {
+    "title": "Interactive Text-to-SQL Generation via Editable Step-by-Step Explanations",
+    "year": 2023,
+    "venue_key": "EMNLP",
+    "container": "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    "doi": "10.18653/v1/2023.emnlp-main.1004"
+  },
+  {
+    "title": "GenLink: Generation-Driven Schema-Linking via Multi-Model Learning for Text-to-SQL",
+    "year": 2025,
+    "venue_key": "EMNLP",
+    "container": "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    "doi": "10.18653/v1/2025.emnlp-main.1518"
+  },
+  {
+    "title": "TinySQL: A Progressive Text-to-SQL Dataset for Mechanistic Interpretability Research",
+    "year": 2025,
+    "venue_key": "EMNLP",
+    "container": "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    "doi": "10.18653/v1/2025.emnlp-main.1489"
+  },
+  {
+    "title": "Non-Programmers Can Label Programs Indirectly via Active Examples: A Case Study with Text-to-SQL",
+    "year": 2023,
+    "venue_key": "EMNLP",
+    "container": "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    "doi": "10.18653/v1/2023.emnlp-main.312"
+  },
+  {
+    "title": "Improving Retrieval-augmented Text-to-SQL with AST-based Ranking and Schema Pruning",
+    "year": 2024,
+    "venue_key": "EMNLP",
+    "container": "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    "doi": "10.18653/v1/2024.emnlp-main.449"
+  },
+  {
+    "title": "I Need Help! Evaluating LLM’s Ability to Ask for Users’ Support: A Case Study on Text-to-SQL Generation",
+    "year": 2024,
+    "venue_key": "EMNLP",
+    "container": "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    "doi": "10.18653/v1/2024.emnlp-main.131"
+  },
+  {
+    "title": "Can LLMs Narrate Tabular Data? An Evaluation Framework for Natural Language Representations of Text-to-SQL System Outputs",
+    "year": 2025,
+    "venue_key": "EMNLP",
+    "container": "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing: Industry Track",
+    "doi": "10.18653/v1/2025.emnlp-industry.60"
+  },
+  {
+    "title": "Retrieval augmented text-to-SQL generation for epidemiological question answering using electronic health records",
+    "year": 2024,
+    "venue_key": "EMNLP",
+    "container": "Proceedings of the 6th Clinical Natural Language Processing Workshop",
+    "doi": "10.18653/v1/2024.clinicalnlp-1.4"
+  },
+  {
+    "title": "Overview of the EHRSQL 2024 Shared Task on Reliable Text-to-SQL Modeling on Electronic Health Records",
+    "year": 2024,
+    "venue_key": "EMNLP",
+    "container": "Proceedings of the 6th Clinical Natural Language Processing Workshop",
+    "doi": "10.18653/v1/2024.clinicalnlp-1.62"
+  },
+  {
+    "title": "LTRC-IIITH at EHRSQL 2024: Enhancing Reliability of Text-to-SQL Systems through Abstention and Confidence Thresholding",
+    "year": 2024,
+    "venue_key": "EMNLP",
+    "container": "Proceedings of the 6th Clinical Natural Language Processing Workshop",
+    "doi": "10.18653/v1/2024.clinicalnlp-1.66"
+  },
+  {
+    "title": "Project PRIMUS at EHRSQL 2024 : Text-to-SQL Generation using Large Language Model for EHR Analysis",
+    "year": 2024,
+    "venue_key": "EMNLP",
+    "container": "Proceedings of the 6th Clinical Natural Language Processing Workshop",
+    "doi": "10.18653/v1/2024.clinicalnlp-1.41"
+  },
+  {
+    "title": "CPO-SQL: Boosting Small LLMs for Text-to-SQL via Efficient In-Context Learning and Preference Optimization",
+    "year": 2025,
+    "venue_key": "EMNLP",
+    "container": "Lecture Notes in Computer Science",
+    "doi": "10.1007/978-981-95-3346-6_29"
+  },
+  {
+    "title": "MQA-SQL: Mitigating Question Ambiguity in Text-to-SQL with Multi-model Collaboration and Multi-variant Query Rephrasing",
+    "year": 2025,
+    "venue_key": "EMNLP",
+    "container": "Lecture Notes in Computer Science",
+    "doi": "10.1007/978-981-95-3346-6_22"
+  },
+  {
+    "title": "Divide, Link, and Conquer: Recall-oriented Schema Linking for NL-to-SQL via Question Decomposition",
+    "year": 2025,
+    "venue_key": "EMNLP",
+    "container": "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing: Industry Track",
+    "doi": "10.18653/v1/2025.emnlp-industry.122"
+  },
+  {
+    "title": "LG AI Research &amp; KAIST at EHRSQL 2024: Self-Training Large Language Models with Pseudo-Labeled Unanswerable Questions for a Reliable Text-to-SQL System on EHRs",
+    "year": 2024,
+    "venue_key": "EMNLP",
+    "container": "Proceedings of the 6th Clinical Natural Language Processing Workshop",
+    "doi": "10.18653/v1/2024.clinicalnlp-1.61"
+  },
+  {
+    "title": "Assessing the utility of text-to-SQL approaches for satisfying software developer information needs",
+    "year": 2023,
+    "venue_key": "EMNLP",
+    "container": "Empirical Software Engineering",
+    "doi": "10.1007/s10664-023-10374-z"
+  },
+  {
+    "title": "Architecting a NL2SQL Project for Immense Enterprise Databases",
+    "year": 2024,
+    "venue_key": "EMNLP",
+    "container": "Large Language Models Projects",
+    "doi": "10.1007/979-8-8688-0515-8_8"
+  },
+  {
+    "title": "On Linearizing Structured Data in Encoder-Decoder Language Models: Insights from Text-to-SQL",
+    "year": 2024,
+    "venue_key": "NAACL",
+    "container": "Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+    "doi": "10.18653/v1/2024.naacl-long.8"
+  },
+  {
+    "title": "BookSQL: A Large Scale Text-to-SQL Dataset for Accounting Domain",
+    "year": 2024,
+    "venue_key": "NAACL",
+    "container": "Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+    "doi": "10.18653/v1/2024.naacl-long.28"
+  },
+  {
+    "title": "Archer: A Human-Labeled Text-to-SQL Dataset with Arithmetic, Commonsense and Hypothetical Reasoning",
+    "year": 2024,
+    "venue_key": "NAACL",
+    "container": "Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "doi": "10.18653/v1/2024.eacl-long.6"
+  },
+  {
+    "title": "Track-SQL: Enhancing Generative Language Models with Dual-Extractive Modules for Schema and Context Tracking in Multi-turn Text-to-SQL",
+    "year": 2025,
+    "venue_key": "NAACL",
+    "container": "Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+    "doi": "10.18653/v1/2025.naacl-long.536"
+  },
+  {
+    "title": "FLEX: Expert-level False-Less EXecution Metric for Text-to-SQL Benchmark",
+    "year": 2025,
+    "venue_key": "NAACL",
+    "container": "Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+    "doi": "10.18653/v1/2025.naacl-long.228"
+  },
+  {
+    "title": "SQLens: An End-to-End Framework for Error Detection and Correction in Text-to-SQL",
+    "year": 2025,
+    "venue_key": "NeurIPS",
+    "container": "Advances in Neural Information Processing Systems 38",
+    "doi": "10.52202/085713-4526"
+  },
+  {
+    "title": "SQL-R1: Training Natural Language to SQL Reasoning Model By Reinforcement Learning",
+    "year": 2025,
+    "venue_key": "NeurIPS",
+    "container": "Advances in Neural Information Processing Systems 38",
+    "doi": "10.52202/085713-5805"
+  },
+  {
+    "title": "Improving Text-to-SQL Reliability by Leveraging Operational SQL",
+    "year": 2026,
+    "venue_key": "NeurIPS",
+    "container": "Journal of the Korea Society of Computer and Information",
+    "doi": "10.9708/jksci.2026.31.04.147"
+  },
+  {
+    "title": "Retrieval-Augmented GPT-3.5-Based Text-to-SQL Framework with Sample-Aware Prompting and Dynamic Revision Chain",
+    "year": 2023,
+    "venue_key": "NeurIPS",
+    "container": "Lecture Notes in Computer Science",
+    "doi": "10.1007/978-981-99-8076-5_25"
+  },
+  {
+    "title": "Prompt Engineering for Improving NL2SQL Accuracy based on GPT-4o Error Patterns",
+    "year": 2025,
+    "venue_key": "NeurIPS",
+    "container": "The Journal of Korean Institute of Information Technology",
+    "doi": "10.14801/jkiit.2025.23.7.123"
+  },
+  {
+    "title": "Research on Multi-Turn Chinese NL2SQL Methods Based on Semantic Rewriting",
+    "year": 2025,
+    "venue_key": "NeurIPS",
+    "container": "Academic Journal of Computing &amp; Information Science",
+    "doi": "10.25236/ajcis.2025.080504"
+  },
+  {
+    "title": "REFORMER: A ChatGPT-Driven Data Synthesis Framework Elevating Text-to-SQL Models",
+    "year": 2024,
+    "venue_key": "ICLR",
+    "container": "2024 International Conference on Machine Learning and Applications (ICMLA)",
+    "doi": "10.1109/icmla61862.2024.00119"
+  },
+  {
+    "title": "Making SQL Executable with Execution-Guided Text-to-SQL: A Reproducible Study on WikiSQL-Style Queries",
+    "year": 2025,
+    "venue_key": "ICLR",
+    "container": "Artificial Intelligence and Machine Learning Review",
+    "doi": "10.69987/aimlr.2025.60301"
+  },
+  {
+    "title": "Lifting the Answer: Reranking Candidates on Data Augmented Text-to-SQL",
+    "year": 2023,
+    "venue_key": "ICLR",
+    "container": "2023 International Conference on Machine Learning and Cybernetics (ICMLC)",
+    "doi": "10.1109/icmlc58545.2023.10327960"
+  },
+  {
+    "title": "Foundational Text-to-SQL Pipeline: Modular Design and Inference Benchmarking",
+    "year": 2026,
+    "venue_key": "ICLR",
+    "container": "2026 International Conference on Smart Computing, IoT, and Machine Learning (SIML)",
+    "doi": "10.1109/siml69834.2026.11621422"
+  },
+  {
+    "title": "R3: “This is My SQL, Are You With Me?” A Consensus-Based Multi-Agent System for Text-to-SQL Tasks",
+    "year": 2025,
+    "venue_key": "ICLR",
+    "container": "Proceedings of the 4th Table Representation Learning Workshop",
+    "doi": "10.18653/v1/2025.trl-1.4"
+  },
+  {
+    "title": "Three-Level Hierarchical Reasoning for Complex Text-to-SQL: Combining Structural Awareness with Semantic Filtering",
+    "year": 2025,
+    "venue_key": "ICLR",
+    "container": "2025 International Conference on Machine Learning, Computational Intelligence and Pattern Recognition (MLCIPR)",
+    "doi": "10.1109/mlcipr68329.2025.11407306"
+  },
+  {
+    "title": "PCEM-SQL: enhancing text-to-SQL capabilities by large language models and prompt engineering with self-consistency and self-evaluation mechanism",
+    "year": 2024,
+    "venue_key": "ICLR",
+    "container": "Fifth International Conference on Control, Robotics, and Intelligent System (CCRIS 2024)",
+    "doi": "10.1117/12.3050108"
+  },
+  {
+    "title": "Text to SQL AI Agentic Workflow Implementations: A Systematic Literature Review",
+    "year": 2025,
+    "venue_key": "ICLR",
+    "container": "2025 International Conference on Advances in Technology and Computing (ICATC)",
+    "doi": "10.1109/icatc68823.2025.11407744"
+  },
+  {
+    "title": "EBA-SQL: A Multi-Agent Collaborative Framework with Entity-Based Analysis for Text-to-SQL",
+    "year": 2025,
+    "venue_key": "ICLR",
+    "container": "2025 IEEE International Symposium on Parallel and Distributed Processing with Applications (ISPA)",
+    "doi": "10.1109/ispa67752.2025.00181"
+  },
+  {
+    "title": "Prompt Engineering Techniques for Context-dependent Text-to-SQL in Arabic",
+    "year": 2025,
+    "venue_key": "ICLR",
+    "container": "2025 International Joint Conference on Neural Networks (IJCNN)",
+    "doi": "10.1109/ijcnn64981.2025.11228397"
+  },
+  {
+    "title": "Multi-hop Relational Graph Attention Network for Text-to-SQL Parsing",
+    "year": 2023,
+    "venue_key": "ICLR",
+    "container": "2023 International Joint Conference on Neural Networks (IJCNN)",
+    "doi": "10.1109/ijcnn54540.2023.10191914"
+  },
+  {
+    "title": "Smaller Large Language Models for Text-To-Sql: Performance Analysis and Optimal Performance",
+    "year": 2025,
+    "venue_key": "ICLR",
+    "container": "2025 International Conference on Inventive Computation Technologies (ICICT)",
+    "doi": "10.1109/icict64420.2025.11005216"
+  },
+  {
+    "title": "The Chain-of-Thought Text-to-SQL Parsing Method Based on Coverage and Redundancy Feedback",
+    "year": 2025,
+    "venue_key": "ICLR",
+    "container": "2025 5th International Conference on Computer Science and Blockchain (CCSB)",
+    "doi": "10.1109/ccsb66722.2025.11154305"
+  },
+  {
+    "title": "Evaluating Large Language Models for Text-to-SQL Tasks: Comparing First Normal Form (1NF) and Star Schema",
+    "year": 2025,
+    "venue_key": "ICLR",
+    "container": "2025 IEEE 16th International Conference on Cognitive Infocommunications (CogInfoCom)",
+    "doi": "10.1109/coginfocom66819.2025.11200921"
+  },
+  {
+    "title": "Temporal Reasoning of LLMs in Relation to Text-to-SQL",
+    "year": 2026,
+    "venue_key": "ICLR",
+    "container": "International Journal of Computer Applications",
+    "doi": "10.5120/ijca2790209b707b"
+  },
+  {
+    "title": "PEFT Innovations in Text-to-SQL: Adapter and Prefix Tuning Methods with Structural Awareness",
+    "year": 2025,
+    "venue_key": "ICLR",
+    "container": "2025 International Joint Conference on Neural Networks (IJCNN)",
+    "doi": "10.1109/ijcnn64981.2025.11228968"
+  },
+  {
+    "title": "IDSpider: Indonesian Standard Dataset for Text-to-SQL",
+    "year": 2024,
+    "venue_key": "ICLR",
+    "container": "2024 Ninth International Conference on Informatics and Computing (ICIC)",
+    "doi": "10.1109/icic64337.2024.10956918"
+  },
+  {
+    "title": "ScenarioBench: Trace-Grounded Compliance Evaluation for Text-to-SQL and RAG",
+    "year": 2025,
+    "venue_key": "ICLR",
+    "container": "2025 IEEE International Conference on Collaborative Advances in Software and COmputiNg (CASCON)",
+    "doi": "10.1109/cascon66301.2025.00111"
+  },
+  {
+    "title": "Text to SQL Using Retrieval-Augmented Generation and Large Language Models",
+    "year": 2025,
+    "venue_key": "ICLR",
+    "container": "2025 29th International Conference on System Theory, Control and Computing (ICSTCC)",
+    "doi": "10.1109/icstcc66753.2025.11240489"
+  },
+  {
+    "title": "Performance Evaluation of Open-Source LLMs for Text-to-SQL Conversion in Healthcare Data",
+    "year": 2025,
+    "venue_key": "ICLR",
+    "container": "2025 International Conference on Pervasive Computational Technologies (ICPCT)",
+    "doi": "10.1109/icpct64145.2025.10941238"
+  },
+  {
+    "title": "UniSAr: a unified structure-aware autoregressive language model for text-to-SQL semantic parsing",
+    "year": 2023,
+    "venue_key": "ICLR",
+    "container": "International Journal of Machine Learning and Cybernetics",
+    "doi": "10.1007/s13042-023-01898-3"
+  },
+  {
+    "title": "LLM-based Text-to-SQL: A Case Study of Geospatial Information Retrieval",
+    "year": 2026,
+    "venue_key": "ICLR",
+    "container": "2026 International Conference on Semantic Computing (ICSC)",
+    "doi": "10.1109/icsc67292.2026.00075"
+  },
+  {
+    "title": "SQLong: Enhanced NL2SQL for Longer Contexts with LLMs",
+    "year": 2025,
+    "venue_key": "ICLR",
+    "container": "Proceedings of the 4th Table Representation Learning Workshop",
+    "doi": "10.18653/v1/2025.trl-1.5"
+  },
+  {
+    "title": "ConDA: state-based data augmentation for context-dependent text-to-SQL",
+    "year": 2024,
+    "venue_key": "ICML",
+    "container": "International Journal of Machine Learning and Cybernetics",
+    "doi": "10.1007/s13042-023-02086-z"
+  },
+  {
+    "title": "SPSQL: Step-by-step Parsing Based Framework for Text-to-SQL Generation",
+    "year": 2023,
+    "venue_key": "ICML",
+    "container": "2023 7th International Conference on Machine Vision and Information Technology (CMVIT)",
+    "doi": "10.1109/cmvit57620.2023.00030"
+  },
+  {
+    "title": "Enhancing Industrial Data Access with Text-to-SQL using Portuguese LLMs and LangGraph",
+    "year": 2025,
+    "venue_key": "ICML",
+    "container": "2025 12th International Conference on Soft Computing &amp;amp; Machine Intelligence (ISCMI)",
+    "doi": "10.1109/iscmi67495.2025.11358511"
+  },
+  {
+    "title": "ASKSQL: Enabling cost-effective natural language to SQL conversion for enhanced analytics and search",
+    "year": 2025,
+    "venue_key": "ICML",
+    "container": "Machine Learning with Applications",
+    "doi": "10.1016/j.mlwa.2025.100641"
+  },
+  {
+    "title": "LLM-Based Text-to-SQL for SparkSQL Queries in Manufacturing Data Lakes: An Architecture for Industry 4.0",
+    "year": 2025,
+    "venue_key": "ICML",
+    "container": "2025 12th International Conference on Soft Computing &amp;amp; Machine Intelligence (ISCMI)",
+    "doi": "10.1109/iscmi67495.2025.11358579"
+  }
+]
